@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Radium HTML5 Agency Template | Homepage Style Three</title>
+<title>Radium HTML5 Agency Template | Homepage Style Four</title>
 <!-- Stylesheets -->
 <link href="css/bootstrap.css" rel="stylesheet">
 <link href="css/revolution-slider.css" rel="stylesheet">
@@ -59,12 +59,12 @@
                 
                     <!-- Logo -->
                     <div class="logo">
-                        <a href="index.html"><img src="images/logo-1.png" alt="Radium"></a>
+                        <a href="/prueba"><img src="images/logo-1.png" alt="Radium"></a>
                      </div>
                      
                      <!--Search Box-->
                     <div class="search-box">
-                    	<form method="post" action="index.html">
+                    	<form method="post" action="/prueba">
                         	<div class="form-group">
                             	<input type="search" name="search-field" value="" placeholder="Search">
                                 <button type="submit"><span class="icon flaticon-right11"></span></button>
@@ -86,12 +86,12 @@
                         
                         <div class="navbar-collapse collapse clearfix">
                             <ul class="navigation">
-                                <li class="current dropdown"><a href="index.html">Home</a>
+                                <li class="current dropdown"><a href="/prueba">Home</a>
                                     <ul class="submenu-dropdown">
-                                        <li><a href="index.html">Homepage One</a></li>
-                                        <li><a href="index-2.html">Homepage Two</a></li>
-                                        <li><a href="index-3.html">Homepage Three</a></li>
-                                        <li><a href="index-4.html">Homepage Four</a></li>
+                                        <li><a href="/prueba">Homepage One</a></li>
+                                        <li><a href="/index2">Homepage Two</a></li>
+                                        <li><a href="/index3">Homepage Three</a></li>
+                                        <li><a href="/index4">Homepage Four</a></li>
                                     </ul>
                                 </li>
                                 <li class="dropdown"><a href="about-1.html">About</a>
@@ -417,358 +417,26 @@
     </section>
     
     
-    
-    <!--Default Section-->
-    <section class="default-section purple-theme">
+    <!--Text Intro Section-->
+    <section class="text-intro">
     	<div class="auto-container">
             
         	<div class="row clearfix">
             	
                 <!--Column-->
-                <article class="column icon-column circle-icon-column col-md-4 col-sm-6 col-xs-12">
-                	<div class="inner-box text-left">
-                    	<div class="icon img-circle"><span class="flaticon-like80"></span></div>
-                        <h3>MARKETING STRATEGIES</h3>
-                        <div class="text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore. </div>
+                <article class="column col-md-6 col-sm-12 col-xs-12">
+                	<div class="inner-box main-text">
+                    	<h2>we are radium marketing agency</h2>
+                        <h2>we work for <span class="color_blue">your succcess</span></h2>
                     </div>
                 </article>
                 
                 <!--Column-->
-                <article class="column icon-column circle-icon-column col-md-4 col-sm-6 col-xs-12">
-                	<div class="inner-box text-left">
-                    	<div class="icon img-circle"><span class="flaticon-equalizer38"></span></div>
-                        <h3>IMPROVING STATISTICS </h3>
-                        <div class="text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore. </div>
-                    </div>
-                </article>
-                
-                <!--Column-->
-                <article class="column icon-column circle-icon-column col-md-4 col-sm-6 col-xs-12">
-                	<div class="inner-box text-left">
-                    	<div class="icon img-circle"><span class="flaticon-tool305"></span></div>
-                        <h3>MULTIPLE OPTIONS</h3>
-                        <div class="text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore. </div>
-                    </div>
-                </article>
-                
-            </div>
-        </div>
-    </section>
-    
-    
-    <!--Default Section-->
-    <section class="default-section full-slider-section no-padd-bottom no-padd-top">
-        
-        <div class="auto-container">
-        	
-            <div class="sec-title main-title text-center">
-                <h2 class="default-title text-uppercase">Features Overview</h2>
-                <div class="theme-subtitle">Lorem ipsum dolor sit amet, consetetur sadipscing elitr</div>
-            </div>
-            
-            <!--Single Image Carousel-->
-            <div class="column-carousel one-column upper-controls">
-                
-                <!--Item-->
-                <div class="slide-item">
-                    <figure class="image"><a class="lightbox-image" href="images/resource/full-image-2.jpg" title="Awsome Title Here"><img src="images/resource/full-image-2.jpg" alt=""></a></figure>
-                </div>
-                
-                <!--Item-->
-                <div class="slide-item">
-                    <figure class="image"><a class="lightbox-image" href="images/resource/full-image-2.jpg" title="Awsome Title Here"><img src="images/resource/full-image-2.jpg" alt=""></a></figure>
-                </div>
-                
-                <!--Item-->
-                <div class="slide-item">
-                    <figure class="image"><a class="lightbox-image" href="images/resource/full-image-2.jpg" title="Awsome Title Here"><img src="images/resource/full-image-2.jpg" alt=""></a></figure>
-                </div>
-                
-            </div>
-            
-        </div>
-    </section>
-    
-    
-    <!--Default Section / Services Section-->
-    <section class="default-section services-section bg-parallax" style="background-image:url(images/parallax/image-2.jpg);">
-    	<div class="auto-container">
-            
-        	<div class="row clearfix">
-            	
-                <!--Column-->
-                <article class="column icon-column default-icon-column col-md-4 col-sm-6 col-xs-12">
-                	<div class="inner-box text-left">
-                    	<div class="icon img-circle"><span class="flaticon-bars65"></span></div>
-                        <h3 class="text-uppercase">MARKETING STRATEGIES</h3>
-                        <div class="text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore.</div>
-                    </div>
-                </article>
-                
-                <!--Column-->
-                <article class="column icon-column default-icon-column col-md-4 col-sm-6 col-xs-12">
-                	<div class="inner-box text-left">
-                    	<div class="icon img-circle"><span class="flaticon-science30"></span></div>
-                        <h3 class="text-uppercase">seo research </h3>
-                        <div class="text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore.</div>
-                    </div>
-                </article>
-                
-                <!--Column-->
-                <article class="column icon-column default-icon-column col-md-4 col-sm-6 col-xs-12">
-                	<div class="inner-box text-left">
-                    	<div class="icon img-circle"><span class="flaticon-check64"></span></div>
-                        <h3 class="text-uppercase">keyword analysis</h3>
-                        <div class="text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore.</div>
-                    </div>
-                </article>
-                
-                <!--Column-->
-                <article class="column icon-column default-icon-column col-md-4 col-sm-6 col-xs-12">
-                	<div class="inner-box text-left">
-                    	<div class="icon img-circle"><span class="flaticon-computer21"></span></div>
-                        <h3 class="text-uppercase">dashboard statistics</h3>
-                        <div class="text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore.</div>
-                    </div>
-                </article>
-                
-                <!--Column-->
-                <article class="column icon-column default-icon-column col-md-4 col-sm-6 col-xs-12">
-                	<div class="inner-box text-left">
-                    	<div class="icon img-circle"><span class="flaticon-rocketship4"></span></div>
-                        <h3 class="text-uppercase">traffic booster </h3>
-                        <div class="text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore.</div>
-                    </div>
-                </article>
-                
-                <!--Column-->
-                <article class="column icon-column default-icon-column col-md-4 col-sm-6 col-xs-12">
-                	<div class="inner-box text-left">
-                    	<div class="icon img-circle"><span class="flaticon-configuration28"></span></div>
-                        <h3 class="text-uppercase">Creative Options</h3>
-                        <div class="text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore.</div>
-                    </div>
-                </article>
-                
-            </div>
-        </div>
-    </section>
-    
-    
-    
-    <!--Normal Section-->
-    <section class="normal-section half-section">
-    	<div class="auto-container">
-            
-            <div class="row clearfix">
-            	<!--Column-->
-            	<div class="column col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <article class="column col-md-6 col-sm-12 col-xs-12">
                 	<div class="inner-box">
-                    	<div class="sec-title">
-                    		<h2 class="default-title text-uppercase">WHAT WE DO</h2>
-                			<div class="theme-subtitle">Lorem ipsum dolor sit amet, consetetur sadipscing elitr</div>
-                    	</div>
-                        
-                        <div class="text">
-                        	<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit.</p>
-                        </div>
-                        <br>
-                        
-                        <div class="row clearfix">
-                            <!--Column-->
-                            <div class="col-lg-6 col-md-6 col-xs-12 column">
-                                <ul class="styled-list-one">
-                                	<li>SEO / keyword research</li>
-                                    <li>Front- end developement</li>
-                                    <li>Graphic design</li>
-                                    <li>Wordpress customization</li>
-                                </ul>
-                            </div>
-                            
-                            <!--Column-->
-                            <div class="col-lg-6 col-md-6 col-xs-12 column">
-                                <ul class="styled-list-one">
-                                	<li>Website Analysis</li>
-                                    <li>Dashboard Monitoring</li>
-                                    <li>Data Storage</li>
-                                    <li>Internet Marketing</li>
-                                </ul>
-                            </div>
-                            
-                        </div>
-                        
-                    </div>
-                </div>
-                
-                <!--Column-->
-            	<div class="column col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                	<div class="inner-box">
-                    	
-                        
-                        <!--Progress Levels-->
-                        <div class="progress-levels">
-                        	
-                            <h2 class="default-title text-uppercase">Our skills</h2>
-                            <br>
-                                	
-                            <!--Skill Box-->
-                            <div class="progress-box wow fadeInRight" data-wow-delay="100ms" data-wow-duration="1500ms">
-                                <div class="box-title">social marketng</div>
-                                <div class="inner">
-                                    <div class="bar">
-                                        <div class="bar-innner"><div class="bar-fill" data-percent="80"><div class="percent"></div></div></div>
-                                        
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <!--Skill Box-->
-                            <div class="progress-box wow fadeInRight" data-wow-delay="200ms" data-wow-duration="1500ms">
-                                <div class="box-title">seo &amp; KEYWORD RESEARCH</div>
-                                <div class="inner">
-                                    <div class="bar">
-                                        <div class="bar-innner"><div class="bar-fill" data-percent="90"><div class="percent"></div></div></div>
-                                        
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <!--Skill Box-->
-                            <div class="progress-box wow fadeInRight" data-wow-delay="300ms" data-wow-duration="1500ms">
-                                <div class="box-title">WEB DEVELOPEMENT</div>
-                                <div class="inner">
-                                    <div class="bar">
-                                        <div class="bar-innner"><div class="bar-fill" data-percent="60"><div class="percent"></div></div></div>
-                                        
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <!--Skill Box-->
-                            <div class="progress-box wow fadeInRight" data-wow-delay="400ms" data-wow-duration="1500ms">
-                                <div class="box-title">WORDPRESS CUSTOMIZATION</div>
-                                <div class="inner">
-                                    <div class="bar">
-                                        <div class="bar-innner"><div class="bar-fill" data-percent="88"><div class="percent"></div></div></div>
-                                        
-                                    </div>
-                                </div>
-                            </div>
-                            
-                        </div>
-                        
-                        
-                    </div>
-                </div>
-            </div>
-            
-        </div>
-    </section>
-    
-    
-    
-    <!--Section Intro-->
-    <section class="section-intro" style="background-image:url(images/parallax/image-1.jpg);">
-    	<div class="auto-container">
-        	<div class="sec-title">
-                <h2 class="default-title text-uppercase white_color">our plans &amp; PRICINGS</h2>
-                <div class="theme-subtitle">Lorem ipsum dolor sit amet, consetetur sadipscing elitr</div>
-            </div>
-        </div>
-        <!--Down Arrow-->
-        <div class="down-arrow scroll-to-target" data-target=".scroll-to-this"></div>
-    </section>
-    
-    
-    <!--Pricing Section-->
-    <section class="pricing-section scroll-to-this">
-    	<div class="auto-container">
-                        
-        	<div class="row clearfix">
-            	
-                <!--Pricing Column-->
-                <article class="pricing-column col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                    <div class="inner-box">
-                        <div class="plan-header">
-                        	<h3 class="plan-title">BASIC</h3>
-                            <h2 class="plan-price">$49</h2>
-                            <div class="plan-duration">Per Month</div>
-                        </div>
-                        <ul class="plan-stats">
-                        	<li><span class="icon fa fa-check"></span> Unlimited traffic</li>
-                            <li><span class="icon fa fa-check"></span> 2 GB Disk space</li>
-                            <li><span class="icon fa fa-check"></span> 100 GB Monthly bandwidth</li>
-                            <li><span class="icon fa fa-check"></span> Free security service</li>
-                            <li><span class="icon fa fa-check"></span> 2 Dashboard accounts</li>
-                        </ul>
-                        
-                        <a href="#" class="theme-btn rounded-btn">Signup Now</a>
+                    	Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore.
                     </div>
                 </article>
-                
-                
-                <!--Pricing Column-->
-                <article class="pricing-column col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                    <div class="inner-box">
-                        <div class="plan-header">
-                        	<h3 class="plan-title">Premium</h3>
-                            <h2 class="plan-price">$69</h2>
-                            <div class="plan-duration">Per Month</div>
-                        </div>
-                        <ul class="plan-stats">
-                        	<li><span class="icon fa fa-check"></span> Unlimited traffic</li>
-                            <li><span class="icon fa fa-check"></span> 4 GB Disk space</li>
-                            <li><span class="icon fa fa-check"></span> 200 GB Monthly bandwidth</li>
-                            <li><span class="icon fa fa-check"></span> Free security service</li>
-                            <li><span class="icon fa fa-check"></span> 2 Dashboard accounts</li>
-                        </ul>
-                        
-                        <a href="#" class="theme-btn rounded-btn">Signup Now</a>
-                    </div>
-                </article>
-                
-                
-                <!--Pricing Column-->
-                <article class="pricing-column col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                    <div class="inner-box">
-                        <div class="plan-header">
-                        	<h3 class="plan-title">Developer</h3>
-                            <h2 class="plan-price">$89</h2>
-                            <div class="plan-duration">Per Month</div>
-                        </div>
-                        <ul class="plan-stats">
-                        	<li><span class="icon fa fa-check"></span> Unlimited traffic</li>
-                            <li><span class="icon fa fa-check"></span> 6 GB Disk space</li>
-                            <li><span class="icon fa fa-check"></span> 500 GB Monthly bandwidth</li>
-                            <li><span class="icon fa fa-check"></span> Free security service</li>
-                            <li><span class="icon fa fa-check"></span> 6 Dashboard accounts</li>
-                        </ul>
-                        
-                        <a href="#" class="theme-btn rounded-btn">Signup Now</a>
-                    </div>
-                </article>
-                
-                
-                <!--Pricing Column-->
-                <article class="pricing-column col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                    <div class="inner-box">
-                        <div class="plan-header">
-                        	<h3 class="plan-title">Business</h3>
-                            <h2 class="plan-price">$129</h2>
-                            <div class="plan-duration">Per Month</div>
-                        </div>
-                        <ul class="plan-stats">
-                        	<li><span class="icon fa fa-check"></span> Unlimited traffic</li>
-                            <li><span class="icon fa fa-check"></span> 8 GB Disk space</li>
-                            <li><span class="icon fa fa-check"></span> 1000 GB Monthly bandwidth</li>
-                            <li><span class="icon fa fa-check"></span> Free security service</li>
-                            <li><span class="icon fa fa-check"></span> 8 Dashboard accounts</li>
-                        </ul>
-                        
-                        <a href="#" class="theme-btn rounded-btn">Signup Now</a>
-                    </div>
-                </article>
-                
                 
             </div>
         </div>
@@ -777,137 +445,398 @@
     
     
     <!--Default Section-->
-    <section class="default-section full-slider-section no-padd-bottom">
+    <section class="default-section connected no-padd-top">
+    	<div class="auto-container">
+        	<div class="row clearfix">
+            	
+                <!--Column-->
+                <div class="column icon-column center-icon-column col-md-4 col-sm-6 col-xs-12">
+                	<div class="inner-box text-center">
+                    	<div class="icon img-circle bg_purple"><span class="flaticon-lightbulb23"></span></div>
+                        <h3 class="montserrat-font text-uppercase">CREATIVE IDEAS</h3>
+                        <div class="text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore.</div>
+                    </div>
+                </div>
+                
+                <!--Column-->
+                <div class="column icon-column center-icon-column col-md-4 col-sm-6 col-xs-12">
+                	<div class="inner-box text-center">
+                    	<div class="icon img-circle bg_orange"><span class="flaticon-flying16"></span></div>
+                        <h3 class="montserrat-font text-uppercase">TRAFFIC BOOSTER</h3>
+                        <div class="text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore.</div>
+                    </div>
+                </div>
+                
+                <!--Column-->
+                <div class="column icon-column center-icon-column col-md-4 col-sm-6 col-xs-12">
+                	<div class="inner-box text-center">
+                    	<div class="icon img-circle bg_red"><span class="flaticon-network3"></span></div>
+                        <h3 class="montserrat-font text-uppercase">SOCIAL CONNECT</h3>
+                        <div class="text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore.</div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    
+    
+    <!--Default Section / Background Waves-->
+    <section class="default-section bg-waves bg-color outside-hidden" style="background-image:url(images/background/bg-waves-2.png);">
+    	<div class="auto-container">
         
-        <div class="auto-container">
         	<div class="sec-title text-center main-title">
-                <h2 class="default-title text-uppercase">our photo gallery</h2>
+                <h2 class="default-title text-uppercase">features &amp; OPTIONS</h2>
                 <div class="theme-subtitle">Lorem ipsum dolor sit amet, consetetur sadipscing elitr</div>
+            </div>
+                        
+        	<div class="row clearfix">
+            	
+                <!--Column-->
+                <div class="col-md-6 col-sm-12 col-xs-12">
+                	<!--Featured Icon Column-->
+                    <article class="featured-icon-column">
+                        <div class="inner-box">
+                            <h3><span class="icon img-circle"><span class="flaticon-thumb3"></span></span> Stet clita ea et gubergren, kasd magna no rebum</h3>
+                            <div class="text">
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore. Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!--Featured Icon Column-->
+                    <article class="featured-icon-column">
+                        <div class="inner-box">
+                            <h3><span class="icon img-circle"><span class="flaticon-pin60"></span></span> Ut wisi enim ad minim veniam, quis nostrud exerci tation</h3>
+                            <div class="text">
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore. Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!--Featured Icon Column-->
+                    <article class="featured-icon-column">
+                        <div class="inner-box">
+                            <h3><span class="icon img-circle"><span class="flaticon-tool305"></span></span> Duis autem vel eum iriure dolor in hendrerit in vulputate veli</h3>
+                            <div class="text">
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore. Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
+                            </div>
+                        </div>
+                    </article>
+                    
+                </div>
+                
+                <!--Column / Image Column-->
+                <div class="image-column col-md-6 col-sm-12 col-xs-12">
+                	<figure class="fluid-image-outer"><img src="images/resource/dashboard-image-1.png" alt=""></figure>
+                </div>
+                
+                
+            </div>
+        </div>
+    </section>
+    
+    
+    <!--Circular Section-->
+    <section class="circular-section outside-hidden">
+    
+    	<div class="sec-title text-center main-title">
+            <h2 class="default-title text-uppercase">check our competence</h2>
+            <div class="theme-subtitle">Lorem ipsum dolor sit amet, consetetur sadipscing elitr</div>
+        </div>
+        
+        <!--Circular Outer-->
+    	<div class="circular-outer">
+        	<div class="inner-container">
+            	
+                <!--Featured Box-->
+                <article class="featured-box one icon-center">
+                    <div class="inner-box">
+                        <h3> High Performance</h3>
+                        <div class="text">
+                            <p>sed diam nonumy eirmod tempor invidunt ut labore et dolore.</p>
+                        </div>
+                        <div class="icon img-circle bg_blue"><span class="flaticon-cogwheels10"></span></div>
+                    </div>
+                </article>
+                
+                <!--Featured Box-->
+                <article class="featured-box two icon-right">
+                    <div class="inner-box">
+                        <h3><span class="icon img-circle bg_orange"><span class="flaticon-camera33"></span></span> Pixel Perfection</h3>
+                        <div class="text">
+                            <p>sed diam nonumy eirmod tempor invidunt ut labore et dolore.</p>
+                        </div>
+                    </div>
+                </article>
+                
+                <!--Featured Box-->
+                <article class="featured-box three icon-left">
+                    <div class="inner-box">
+                        <h3><span class="icon img-circle bg_purple"><span class="flaticon-communication38"></span></span> Simple Connections</h3>
+                        <div class="text">
+                            <p>sed diam nonumy eirmod tempor invidunt ut labore et dolore.</p>
+                        </div>
+                    </div>
+                </article>
+                
+                <!--Featured Box-->
+                <article class="featured-box four icon-right">
+                    <div class="inner-box">
+                        <h3><span class="icon img-circle bg_green"><span class="flaticon-diamond24"></span></span> Quality Standards</h3>
+                        <div class="text">
+                            <p>sed diam nonumy eirmod tempor invidunt ut labore et dolore.</p>
+                        </div>
+                    </div>
+                </article>
+                
+                <!--Featured Box-->
+                <article class="featured-box five icon-left">
+                    <div class="inner-box">
+                        <h3><span class="icon img-circle bg_red"><span class="flaticon-share55"></span></span> Social Network</h3>
+                        <div class="text">
+                            <p>sed diam nonumy eirmod tempor invidunt ut labore et dolore.</p>
+                        </div>
+                    </div>
+                </article>
+            	
+                <!--Logo-->
+            	<div class="logo"><a href="#"><img src="images/circular-logo-1.png" alt=""></a></div>
+                
             </div>
         </div>
         
-        <div class="column-carousel full-width four-column">
+    </section>
+    
+    
+    
+    <!--Parallax Section-->
+    <section class="parallax-section" style="background-image:url(images/parallax/image-3.jpg);">
+    	<div class="auto-container">
             
-            <!--Item-->
-            <div class="slide-item portfolio-item">
-                <div class="inner-box">
-                    <figure class="image"><a href="images/gallery/image-1.jpg" class="lightbox-image" title="Awsome Title Here"><img src="images/gallery/image-1.jpg" alt=""></a></figure>
-                    <div class="overlay-box">
-                    	<a href="images/gallery/image-1.jpg" class="zoom-btn lightbox-image" title="Awsome Title Here"><span class="icon flaticon-camera33"></span></a>
-                        <div class="content">
-                            <h3><a href="#">Team in meeting room</a></h3>
-                            <div class="tags"><a href="#">Marketing</a>, <a href="#">SEO</a></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!--Image Box-->
-            <div class="item-box portfolio-item">
-                <div class="inner-box">
-                    <figure class="image"><a href="images/gallery/image-2.jpg" class="lightbox-image" title="Awsome Title Here"><img src="images/gallery/image-2.jpg" alt=""></a></figure>
-                    <div class="overlay-box">
-                    	<a href="images/gallery/image-2.jpg" class="zoom-btn lightbox-image" title="Awsome Title Here"><span class="icon flaticon-camera33"></span></a>
-                        <div class="content">
-                            <h3><a href="#">Team in meeting room</a></h3>
-                            <div class="tags"><a href="#">Marketing</a>, <a href="#">SEO</a></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!--Item-->
-            <div class="slide-item portfolio-item">
-                <div class="inner-box">
-                    <figure class="image"><a href="images/gallery/image-3.jpg" class="lightbox-image" title="Awsome Title Here"><img src="images/gallery/image-3.jpg" alt=""></a></figure>
-                    <div class="overlay-box">
-                    	<a href="images/gallery/image-3.jpg" class="zoom-btn lightbox-image" title="Awsome Title Here"><span class="icon flaticon-camera33"></span></a>
-                        <div class="content">
-                            <h3><a href="#">Team in meeting room</a></h3>
-                            <div class="tags"><a href="#">Marketing</a>, <a href="#">SEO</a></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!--Item-->
-            <div class="slide-item portfolio-item">
-                <div class="inner-box">
-                    <figure class="image"><a href="images/gallery/image-4.jpg" class="lightbox-image" title="Awsome Title Here"><img src="images/gallery/image-4.jpg" alt=""></a></figure>
-                    <div class="overlay-box">
-                    	<a href="images/gallery/image-4.jpg" class="zoom-btn lightbox-image" title="Awsome Title Here"><span class="icon flaticon-camera33"></span></a>
-                        <div class="content">
-                            <h3><a href="#">Team in meeting room</a></h3>
-                            <div class="tags"><a href="#">Marketing</a>, <a href="#">SEO</a></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <h2>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse</h2>
+            <div class="text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr</div>
+            <a class="theme-btn radial-btn bg_red" href="#"><span class="txt">Get Started Now</span> <span class="img-circle fa fa-arrow-right"></span></a>
             
         </div>
     </section>
     
     
-    
-    <!--Featured Three Column-->
-    <section class="default-section featured-three-col">
+    <!--Default Section-->
+    <section class="default-section">
     	<div class="auto-container">
-        	
-            <!--Section Title-->
-            <div class="sec-title main-title text-center">
-                <h2 class="default-title text-uppercase">Latest News</h2>
-                <div class="theme-subtitle">Lorem ipsum dolor sit amet, consetetur sadipscing elitr</div>
-            </div>
-            
+                        
         	<div class="row clearfix">
             	
                 <!--Column-->
-                <div class="col-md-4 col-sm-6 col-xs-12 column">
-                	<article class="inner-box">
-                    	<figure class="image-box"><a href="#"><img src="images/resource/featured-image-1.jpg" alt="" title=""></a></figure>
-                        <div class="content">
-                        	<div class="author-thumb"><img src="images/resource/auth-thumb-1.jpg" alt=""></div>
-                            <ul class="post-info clearfix">
-                                <li><span class="icon flaticon-calendars12"></span> <a href="#">14 Jan, 2015</a></li>
-                                <li><span class="icon flaticon-tags23"></span><a href="#">markerting</a> , <a href="#">SEO</a></li>
-                            </ul>
-                        	<h3><a href="#">Stet clita ea et gubergren, kasd magna no rebum</a></h3>
-                            <div class="text"><p>We will put together a detailed and specific style guide that covers all areas of your brand to ensure that anything produced in the future is on brand.</p></div>
-                        </div>
-                    </article>
+                <div class="column text-column col-lg-4 col-md-6 col-xs-12">
+                	
+                    <h2 class="default-title text-uppercase">Our philosophy</h2>
+                	<div class="line-left"></div>
+                    
+                    <div class="text">
+                    	<p>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus es.</p>
+						<p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, At accusam aliquyam diam diam.</p>
+                    </div>
                 </div>
                 
                 <!--Column-->
-                <div class="col-md-4 col-sm-6 col-xs-12 column">
-                	<article class="inner-box">
-                    	<figure class="image-box"><a href="#"><img src="images/resource/featured-image-2.jpg" alt="" title=""></a></figure>
-                        <div class="content">
-                        	<div class="author-thumb"><img src="images/resource/auth-thumb-2.jpg" alt=""></div>
-                            <ul class="post-info clearfix">
-                                <li><span class="icon flaticon-calendars12"></span> <a href="#">14 Jan, 2015</a></li>
-                                <li><span class="icon flaticon-tags23"></span><a href="#">markerting</a> , <a href="#">SEO</a></li>
-                            </ul>
-                        	<h3><a href="#">Consetetur sadipscing elitr, sed diam nonumy</a></h3>
-                            <div class="text"><p>We will put together a detailed and specific style guide that covers all areas of your brand to ensure that anything produced in the future is on brand.</p></div>
-                        </div>
-                    </article>
+                <div class="column text-column col-lg-4 col-md-6 col-xs-12">
+                	
+                    <h2 class="default-title text-uppercase">What we do</h2>
+                	<div class="line-left"></div>
+                    
+                    <!-- Accordion Box -->
+                    <div class="accordion-box style-two">
+                        
+                        <!-- Accordion -->
+                        <article class="accordion animated out" data-delay="0" data-animation="fadeInUp">
+                            <div class="acc-btn active">Stet clita ea et gubergren, kasd magna <div class="toggle-icon"><span class="plus flaticon-add30"></span><span class="minus flaticon-minus42"></span></div></div>
+                            <div class="acc-content collapsed">
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, At accusam aliquyam diam diam dolore dolores duo eirmod eos erat, et nonumy sed.</p>
+                            </div>
+                        </article>
+                        
+                        <!-- Accordion -->
+                        <article class="accordion animated out" data-delay="0" data-animation="fadeInUp">
+                            <div class="acc-btn">Consetetur sadipscing elitr, sed diam<div class="toggle-icon"><span class="plus flaticon-add30"></span><span class="minus flaticon-minus42"></span></div></div>
+                            <div class="acc-content">
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, At accusam aliquyam diam diam dolore dolores duo eirmod eos erat, et nonumy sed.</p>
+                            </div>
+                        </article>
+                        
+                        <!-- Accordion -->
+                        <article class="accordion animated out" data-delay="0" data-animation="fadeInUp">
+                            <div class="acc-btn">Dolore magna aliquyam erat individum  <div class="toggle-icon"><span class="plus flaticon-add30"></span><span class="minus flaticon-minus42"></span></div></div>
+                            <div class="acc-content">
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, At accusam aliquyam diam diam dolore dolores duo eirmod eos erat, et nonumy sed.</p>
+                            </div>
+                        </article>
+                        
+                    </div>
+                    
+                    
+                        
                 </div>
                 
                 <!--Column-->
-                <div class="col-md-4 col-sm-6 col-xs-12 column">
-                	<article class="inner-box">
-                    	<figure class="image-box"><a href="#"><img src="images/resource/featured-image-3.jpg" alt="" title=""></a></figure>
-                        <div class="content">
-                        	<div class="author-thumb"><img src="images/resource/auth-thumb-3.jpg" alt=""></div>
-                            <ul class="post-info clearfix">
-                                <li><span class="icon flaticon-calendars12"></span> <a href="#">14 Jan, 2015</a></li>
-                                <li><span class="icon flaticon-tags23"></span><a href="#">markerting</a> , <a href="#">SEO</a></li>
-                            </ul>
-                        	<h3><a href="#">Invidunt ut labore et dolore magna aliquyam </a></h3>
-                            <div class="text"><p>We will put together a detailed and specific style guide that covers all areas of your brand to ensure that anything produced in the future is on brand.</p></div>
+                <div class="column text-column col-lg-4 col-md-6 col-xs-12">
+                	
+                    <h2 class="default-title text-uppercase">Our Experiences</h2>
+                	<div class="line-left"></div>
+                    
+                    <!--Progress Levels-->
+                    <div class="progress-levels medium-size">
+                                
+                        <!--Skill Box-->
+                        <div class="progress-box wow fadeInRight" data-wow-delay="100ms" data-wow-duration="1500ms">
+                            <div class="box-title">social marketng</div>
+                            <div class="inner">
+                                <div class="bar">
+                                    <div class="bar-innner"><div class="bar-fill" data-percent="80"><div class="percent"></div></div></div>
+                                    
+                                </div>
+                            </div>
                         </div>
-                    </article>
+                        
+                        <!--Skill Box-->
+                        <div class="progress-box wow fadeInRight" data-wow-delay="200ms" data-wow-duration="1500ms">
+                            <div class="box-title">seo &amp; KEYWORD RESEARCH</div>
+                            <div class="inner">
+                                <div class="bar">
+                                    <div class="bar-innner"><div class="bar-fill" data-percent="90"><div class="percent"></div></div></div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!--Skill Box-->
+                        <div class="progress-box wow fadeInRight" data-wow-delay="300ms" data-wow-duration="1500ms">
+                            <div class="box-title">WEB DEVELOPEMENT</div>
+                            <div class="inner">
+                                <div class="bar">
+                                    <div class="bar-innner"><div class="bar-fill" data-percent="60"><div class="percent"></div></div></div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!--Skill Box-->
+                        <div class="progress-box wow fadeInRight" data-wow-delay="400ms" data-wow-duration="1500ms">
+                            <div class="box-title">WORDPRESS CUSTOMIZATION</div>
+                            <div class="inner">
+                                <div class="bar">
+                                    <div class="bar-innner"><div class="bar-fill" data-percent="88"><div class="percent"></div></div></div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                        
                 </div>
+                
+                
+            </div>
+        </div>
+    </section>
+    
+    
+    <!--Team Section-->
+    <section class="team-section text-center no-padd-top">
+    	<div class="auto-container">
+        
+        	<div class="sec-title main-title">
+                <h2 class="default-title text-uppercase">Meet Our Team</h2>
+                <div class="theme-subtitle">Lorem ipsum dolor sit amet, consetetur sadipscing elitr</div>
+            </div>
+                        
+        	<div class="row clearfix">
+            	
+                <!--Team Member-->
+                <article class="team-member col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="inner-box">
+                        <figure class="image">
+                            <img src="images/resource/team-1.jpg" alt="">
+                            <div class="hover-info">
+                            	<!--Plus Icon-->
+                            	<a href="#" class="icon-plus"><span class="flaticon-plus3"></span></a>
+                                
+                                <div class="text">We have the expertise to create just the right web presence for you.</div>
+                                <div class="social-links">
+                        			<a href="#"><span class="fa fa-facebook-f"></span></a>
+                                    <a href="#"><span class="fa fa-twitter"></span></a>
+                                    <a href="#"><span class="fa fa-google-plus"></span></a>
+                                    <a href="#"><span class="fa fa-linkedin"></span></a>
+                                    <a href="#"><span class="fa fa-instagram"></span></a>            
+                                </div>
+                            </div>
+                        </figure>
+                        
+                        <div class="member-info">
+                        	<h3>Nashid Martines</h3>
+                            <h4>Creative Director</h4>
+                        </div>
+                        
+                    </div>
+                </article>
+                
+                <!--Team Member-->
+                <article class="team-member col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="inner-box">
+                        <figure class="image">
+                            <img src="images/resource/team-2.jpg" alt="">
+                            <div class="hover-info">
+                            	<!--Plus Icon-->
+                            	<a href="#" class="icon-plus"><span class="flaticon-plus3"></span></a>
+                                
+                                <div class="text">We have the expertise to create just the right web presence for you.</div>
+                                <div class="social-links">
+                        			<a href="#"><span class="fa fa-facebook-f"></span></a>
+                                    <a href="#"><span class="fa fa-twitter"></span></a>
+                                    <a href="#"><span class="fa fa-google-plus"></span></a>
+                                    <a href="#"><span class="fa fa-linkedin"></span></a>
+                                    <a href="#"><span class="fa fa-instagram"></span></a>            
+                                </div>
+                            </div>
+                        </figure>
+                        
+                        <div class="member-info">
+                        	<h3>Jackson Willingham</h3>
+                            <h4>Front-end Developer</h4>
+                        </div>
+                        
+                    </div>
+                </article>
+                
+                <!--Team Member-->
+                <article class="team-member col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="inner-box">
+                        <figure class="image">
+                            <img src="images/resource/team-3.jpg" alt="">
+                            <div class="hover-info">
+                            	<!--Plus Icon-->
+                            	<a href="#" class="icon-plus"><span class="flaticon-plus3"></span></a>
+                                
+                                <div class="text">We have the expertise to create just the right web presence for you.</div>
+                                <div class="social-links">
+                        			<a href="#"><span class="fa fa-facebook-f"></span></a>
+                                    <a href="#"><span class="fa fa-twitter"></span></a>
+                                    <a href="#"><span class="fa fa-google-plus"></span></a>
+                                    <a href="#"><span class="fa fa-linkedin"></span></a>
+                                    <a href="#"><span class="fa fa-instagram"></span></a>            
+                                </div>
+                            </div>
+                        </figure>
+                        
+                        <div class="member-info">
+                        	<h3>Yvonne Backfield</h3>
+                            <h4>Marketing Manager</h4>
+                        </div>
+                        
+                    </div>
+                </article>
+                
                 
             </div>
         </div>

@@ -59,12 +59,12 @@
                 
                     <!-- Logo -->
                     <div class="logo">
-                        <a href="index.html"><img src="images/logo-1.png" alt="Radium"></a>
+                        <a href="/prueba"><img src="images/logo-1.png" alt="Radium"></a>
                      </div>
                      
                      <!--Search Box-->
                     <div class="search-box">
-                    	<form method="post" action="index.html">
+                    	<form method="post" action="/prueba">
                         	<div class="form-group">
                             	<input type="search" name="search-field" value="" placeholder="Search">
                                 <button type="submit"><span class="icon flaticon-right11"></span></button>
@@ -86,12 +86,12 @@
                         
                         <div class="navbar-collapse collapse clearfix">
                             <ul class="navigation">
-                                <li class="current dropdown"><a href="index.html">Home</a>
+                                <li class="current dropdown"><a href="/prueba">Home</a>
                                     <ul class="submenu-dropdown">
-                                        <li><a href="index.html">Homepage One</a></li>
-                                        <li><a href="index-2.html">Homepage Two</a></li>
-                                        <li><a href="index-3.html">Homepage Three</a></li>
-                                        <li><a href="index-4.html">Homepage Four</a></li>
+                                        <li><a href="/prueba">Homepage One</a></li>
+                                        <li><a href="/index2">Homepage Two</a></li>
+                                        <li><a href="/index3">Homepage Three</a></li>
+                                        <li><a href="/index4">Homepage Four</a></li>
                                     </ul>
                                 </li>
                                 <li class="dropdown"><a href="about-1.html">About</a>

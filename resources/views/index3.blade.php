@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Radium HTML5 Agency Template | Homepage Style Two</title>
+<title>Radium HTML5 Agency Template | Homepage Style Three</title>
 <!-- Stylesheets -->
 <link href="css/bootstrap.css" rel="stylesheet">
 <link href="css/revolution-slider.css" rel="stylesheet">
@@ -59,12 +59,12 @@
                 
                     <!-- Logo -->
                     <div class="logo">
-                        <a href="index.html"><img src="images/logo-1.png" alt="Radium"></a>
+                        <a href="/prueba"><img src="images/logo-1.png" alt="Radium"></a>
                      </div>
                      
                      <!--Search Box-->
                     <div class="search-box">
-                    	<form method="post" action="index.html">
+                    	<form method="post" action="/prueba">
                         	<div class="form-group">
                             	<input type="search" name="search-field" value="" placeholder="Search">
                                 <button type="submit"><span class="icon flaticon-right11"></span></button>
@@ -86,12 +86,12 @@
                         
                         <div class="navbar-collapse collapse clearfix">
                             <ul class="navigation">
-                                <li class="current dropdown"><a href="index.html">Home</a>
+                                <li class="current dropdown"><a href="/prueba">Home</a>
                                     <ul class="submenu-dropdown">
-                                        <li><a href="index.html">Homepage One</a></li>
-                                        <li><a href="index-2.html">Homepage Two</a></li>
-                                        <li><a href="index-3.html">Homepage Three</a></li>
-                                        <li><a href="index-4.html">Homepage Four</a></li>
+                                        <li><a href="/prueba">Homepage One</a></li>
+                                        <li><a href="/index2">Homepage Two</a></li>
+                                        <li><a href="/index3">Homepage Three</a></li>
+                                        <li><a href="/index4">Homepage Four</a></li>
                                     </ul>
                                 </li>
                                 <li class="dropdown"><a href="about-1.html">About</a>
@@ -419,119 +419,70 @@
     
     
     <!--Default Section-->
-    <section class="default-section">
+    <section class="default-section purple-theme">
     	<div class="auto-container">
+            
         	<div class="row clearfix">
             	
                 <!--Column-->
-                <div class="column icon-column boxed-icon-column col-md-4 col-sm-6 col-xs-12">
+                <article class="column icon-column circle-icon-column col-md-4 col-sm-6 col-xs-12">
                 	<div class="inner-box text-left">
-                    	<div class="icon"><span class="flaticon-looking2"></span></div>
-                        <h3>Stet clita ea et gubergren kasd magna nom</h3>
-                        <div class="text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie.</div>
+                    	<div class="icon img-circle"><span class="flaticon-like80"></span></div>
+                        <h3>MARKETING STRATEGIES</h3>
+                        <div class="text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore. </div>
                     </div>
-                </div>
+                </article>
                 
                 <!--Column-->
-                <div class="column icon-column boxed-icon-column col-md-4 col-sm-6 col-xs-12">
+                <article class="column icon-column circle-icon-column col-md-4 col-sm-6 col-xs-12">
                 	<div class="inner-box text-left">
-                    	<div class="icon"><span class="flaticon-rocketship4"></span></div>
-                        <h3>Ut wisi enim ad minim veniam, quis nostrud </h3>
-                        <div class="text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie.</div>
+                    	<div class="icon img-circle"><span class="flaticon-equalizer38"></span></div>
+                        <h3>IMPROVING STATISTICS </h3>
+                        <div class="text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore. </div>
                     </div>
-                </div>
+                </article>
                 
                 <!--Column-->
-                <div class="column icon-column boxed-icon-column col-md-4 col-sm-6 col-xs-12">
+                <article class="column icon-column circle-icon-column col-md-4 col-sm-6 col-xs-12">
                 	<div class="inner-box text-left">
-                    	<div class="icon"><span class="flaticon-computer21"></span></div>
-                        <h3>Nam liber tempor cum soluta nobis eleifend</h3>
-                        <div class="text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie.</div>
+                    	<div class="icon img-circle"><span class="flaticon-tool305"></span></div>
+                        <h3>MULTIPLE OPTIONS</h3>
+                        <div class="text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore. </div>
                     </div>
-                </div>
+                </article>
                 
             </div>
         </div>
     </section>
     
     
-    <!--Full Image Section-->
-    <section class="full-image-section no-padd-top">
-    	<div class="auto-container">
+    <!--Default Section-->
+    <section class="default-section full-slider-section no-padd-bottom no-padd-top">
+        
+        <div class="auto-container">
         	
-            <div class="sec-title text-center main-title">
-                <h2 class="default-title text-uppercase">use it on any device</h2>
+            <div class="sec-title main-title text-center">
+                <h2 class="default-title text-uppercase">Features Overview</h2>
                 <div class="theme-subtitle">Lorem ipsum dolor sit amet, consetetur sadipscing elitr</div>
             </div>
             
-            <figure class="image text-center"><img src="images/resource/full-image-1.jpg" alt=""></figure>
-            
-        </div>
-        
-        <!--Down Arrow-->
-        <div class="down-arrow scroll-to-target" data-target=".scroll-to-this"></div>
-    </section>
-    
-    
-    
-    <!--Our Features Section-->
-    <section class="features-section scroll-to-this">
-    	<div class="auto-container">
-            
-            <!--Upper Row-->
-            <div class="upper-row clearfix">
+            <!--Single Image Carousel-->
+            <div class="column-carousel one-column upper-controls">
                 
-                <!--Featured Column / Icon Right-->
-                <article class="featured-column icon-right">
-                    <div class="inner-box">
-                        <h3><span class="icon img-circle color_orange"><span class="flaticon-weapon59"></span></span> Accumsan et iusto odio dignissimblandit praesent</h3>
-                        <div class="text">
-                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, At accusam aliquyam diam diam dolore dolores duo eirmod eos erat, et nonumy sed tempor et et invidunt justo labore.</p>
-                        </div>
-                    </div>
-                </article>
+                <!--Item-->
+                <div class="slide-item">
+                    <figure class="image"><a class="lightbox-image" href="images/resource/full-image-2.jpg" title="Awsome Title Here"><img src="images/resource/full-image-2.jpg" alt=""></a></figure>
+                </div>
                 
-                <!--Featured Column / Icon Right-->
-                <article class="featured-column icon-left">
-                    <div class="inner-box">
-                        <h3><span class="icon img-circle color_green"><span class="flaticon-levels1"></span></span> Accumsan et iusto odio dignissimblandit praesent</h3>
-                        <div class="text">
-                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, At accusam aliquyam diam diam dolore dolores duo eirmod eos erat, et nonumy sed tempor et et invidunt justo labore.</p>
-                        </div>
-                    </div>
-                </article>
+                <!--Item-->
+                <div class="slide-item">
+                    <figure class="image"><a class="lightbox-image" href="images/resource/full-image-2.jpg" title="Awsome Title Here"><img src="images/resource/full-image-2.jpg" alt=""></a></figure>
+                </div>
                 
-            </div>
-            
-            <!--Middle Image-->
-            <div class="middle-image">
-                
-                <figure class="image-box"><a href="#"><img src="images/logo-2.png" alt=""></a></figure>
-                
-            </div>
-            
-            <!--Lower Row-->
-            <div class="lower-row clearfix">
-                
-                <!--Featured Column / Icon Right-->
-                <article class="featured-column icon-right">
-                    <div class="inner-box">
-                        <h3><span class="icon img-circle color_purple"><span class="flaticon-cogwheels10"></span></span> Accumsan et iusto odio dignissimblandit praesent</h3>
-                        <div class="text">
-                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, At accusam aliquyam diam diam dolore dolores duo eirmod eos erat, et nonumy sed tempor et et invidunt justo labore.</p>
-                        </div>
-                    </div>
-                </article>
-                
-                <!--Featured Column / Icon Right-->
-                <article class="featured-column icon-left">
-                    <div class="inner-box">
-                        <h3><span class="icon img-circle color_red"><span class="flaticon-gps6"></span></span> Accumsan et iusto odio dignissimblandit praesent</h3>
-                        <div class="text">
-                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, At accusam aliquyam diam diam dolore dolores duo eirmod eos erat, et nonumy sed tempor et et invidunt justo labore.</p>
-                        </div>
-                    </div>
-                </article>
+                <!--Item-->
+                <div class="slide-item">
+                    <figure class="image"><a class="lightbox-image" href="images/resource/full-image-2.jpg" title="Awsome Title Here"><img src="images/resource/full-image-2.jpg" alt=""></a></figure>
+                </div>
                 
             </div>
             
@@ -539,105 +490,181 @@
     </section>
     
     
-    <!--Team Section-->
-    <section class="team-section text-center">
+    <!--Default Section / Services Section-->
+    <section class="default-section services-section bg-parallax" style="background-image:url(images/parallax/image-2.jpg);">
     	<div class="auto-container">
-        
-        	<div class="sec-title main-title">
-                <h2 class="default-title text-uppercase">Meet Our Team</h2>
-                <div class="theme-subtitle">Lorem ipsum dolor sit amet, consetetur sadipscing elitr</div>
-            </div>
-                        
+            
         	<div class="row clearfix">
             	
-                <!--Team Member-->
-                <article class="team-member col-lg-4 col-md-6 col-sm-6 col-xs-12">
-                    <div class="inner-box">
-                        <figure class="image">
-                            <img src="images/resource/team-1.jpg" alt="">
-                            <div class="hover-info">
-                            	<!--Plus Icon-->
-                            	<a href="#" class="icon-plus"><span class="flaticon-plus3"></span></a>
-                                
-                                <div class="text">We have the expertise to create just the right web presence for you.</div>
-                                <div class="social-links">
-                        			<a href="#"><span class="fa fa-facebook-f"></span></a>
-                                    <a href="#"><span class="fa fa-twitter"></span></a>
-                                    <a href="#"><span class="fa fa-google-plus"></span></a>
-                                    <a href="#"><span class="fa fa-linkedin"></span></a>
-                                    <a href="#"><span class="fa fa-instagram"></span></a>            
-                                </div>
-                            </div>
-                        </figure>
-                        
-                        <div class="member-info">
-                        	<h3>Nashid Martines</h3>
-                            <h4>Creative Director</h4>
-                        </div>
-                        
+                <!--Column-->
+                <article class="column icon-column default-icon-column col-md-4 col-sm-6 col-xs-12">
+                	<div class="inner-box text-left">
+                    	<div class="icon img-circle"><span class="flaticon-bars65"></span></div>
+                        <h3 class="text-uppercase">MARKETING STRATEGIES</h3>
+                        <div class="text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore.</div>
                     </div>
                 </article>
                 
-                <!--Team Member-->
-                <article class="team-member col-lg-4 col-md-6 col-sm-6 col-xs-12">
-                    <div class="inner-box">
-                        <figure class="image">
-                            <img src="images/resource/team-2.jpg" alt="">
-                            <div class="hover-info">
-                            	<!--Plus Icon-->
-                            	<a href="#" class="icon-plus"><span class="flaticon-plus3"></span></a>
-                                
-                                <div class="text">We have the expertise to create just the right web presence for you.</div>
-                                <div class="social-links">
-                        			<a href="#"><span class="fa fa-facebook-f"></span></a>
-                                    <a href="#"><span class="fa fa-twitter"></span></a>
-                                    <a href="#"><span class="fa fa-google-plus"></span></a>
-                                    <a href="#"><span class="fa fa-linkedin"></span></a>
-                                    <a href="#"><span class="fa fa-instagram"></span></a>            
-                                </div>
-                            </div>
-                        </figure>
-                        
-                        <div class="member-info">
-                        	<h3>Jackson Willingham</h3>
-                            <h4>Front-end Developer</h4>
-                        </div>
-                        
+                <!--Column-->
+                <article class="column icon-column default-icon-column col-md-4 col-sm-6 col-xs-12">
+                	<div class="inner-box text-left">
+                    	<div class="icon img-circle"><span class="flaticon-science30"></span></div>
+                        <h3 class="text-uppercase">seo research </h3>
+                        <div class="text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore.</div>
                     </div>
                 </article>
                 
-                <!--Team Member-->
-                <article class="team-member col-lg-4 col-md-6 col-sm-6 col-xs-12">
-                    <div class="inner-box">
-                        <figure class="image">
-                            <img src="images/resource/team-3.jpg" alt="">
-                            <div class="hover-info">
-                            	<!--Plus Icon-->
-                            	<a href="#" class="icon-plus"><span class="flaticon-plus3"></span></a>
-                                
-                                <div class="text">We have the expertise to create just the right web presence for you.</div>
-                                <div class="social-links">
-                        			<a href="#"><span class="fa fa-facebook-f"></span></a>
-                                    <a href="#"><span class="fa fa-twitter"></span></a>
-                                    <a href="#"><span class="fa fa-google-plus"></span></a>
-                                    <a href="#"><span class="fa fa-linkedin"></span></a>
-                                    <a href="#"><span class="fa fa-instagram"></span></a>            
-                                </div>
-                            </div>
-                        </figure>
-                        
-                        <div class="member-info">
-                        	<h3>Yvonne Backfield</h3>
-                            <h4>Marketing Manager</h4>
-                        </div>
-                        
+                <!--Column-->
+                <article class="column icon-column default-icon-column col-md-4 col-sm-6 col-xs-12">
+                	<div class="inner-box text-left">
+                    	<div class="icon img-circle"><span class="flaticon-check64"></span></div>
+                        <h3 class="text-uppercase">keyword analysis</h3>
+                        <div class="text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore.</div>
                     </div>
                 </article>
                 
+                <!--Column-->
+                <article class="column icon-column default-icon-column col-md-4 col-sm-6 col-xs-12">
+                	<div class="inner-box text-left">
+                    	<div class="icon img-circle"><span class="flaticon-computer21"></span></div>
+                        <h3 class="text-uppercase">dashboard statistics</h3>
+                        <div class="text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore.</div>
+                    </div>
+                </article>
+                
+                <!--Column-->
+                <article class="column icon-column default-icon-column col-md-4 col-sm-6 col-xs-12">
+                	<div class="inner-box text-left">
+                    	<div class="icon img-circle"><span class="flaticon-rocketship4"></span></div>
+                        <h3 class="text-uppercase">traffic booster </h3>
+                        <div class="text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore.</div>
+                    </div>
+                </article>
+                
+                <!--Column-->
+                <article class="column icon-column default-icon-column col-md-4 col-sm-6 col-xs-12">
+                	<div class="inner-box text-left">
+                    	<div class="icon img-circle"><span class="flaticon-configuration28"></span></div>
+                        <h3 class="text-uppercase">Creative Options</h3>
+                        <div class="text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore.</div>
+                    </div>
+                </article>
                 
             </div>
         </div>
     </section>
+    
+    
+    
+    <!--Normal Section-->
+    <section class="normal-section half-section">
+    	<div class="auto-container">
+            
+            <div class="row clearfix">
+            	<!--Column-->
+            	<div class="column col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                	<div class="inner-box">
+                    	<div class="sec-title">
+                    		<h2 class="default-title text-uppercase">WHAT WE DO</h2>
+                			<div class="theme-subtitle">Lorem ipsum dolor sit amet, consetetur sadipscing elitr</div>
+                    	</div>
+                        
+                        <div class="text">
+                        	<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit.</p>
+                        </div>
+                        <br>
+                        
+                        <div class="row clearfix">
+                            <!--Column-->
+                            <div class="col-lg-6 col-md-6 col-xs-12 column">
+                                <ul class="styled-list-one">
+                                	<li>SEO / keyword research</li>
+                                    <li>Front- end developement</li>
+                                    <li>Graphic design</li>
+                                    <li>Wordpress customization</li>
+                                </ul>
+                            </div>
+                            
+                            <!--Column-->
+                            <div class="col-lg-6 col-md-6 col-xs-12 column">
+                                <ul class="styled-list-one">
+                                	<li>Website Analysis</li>
+                                    <li>Dashboard Monitoring</li>
+                                    <li>Data Storage</li>
+                                    <li>Internet Marketing</li>
+                                </ul>
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                <!--Column-->
+            	<div class="column col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                	<div class="inner-box">
+                    	
+                        
+                        <!--Progress Levels-->
+                        <div class="progress-levels">
+                        	
+                            <h2 class="default-title text-uppercase">Our skills</h2>
+                            <br>
+                                	
+                            <!--Skill Box-->
+                            <div class="progress-box wow fadeInRight" data-wow-delay="100ms" data-wow-duration="1500ms">
+                                <div class="box-title">social marketng</div>
+                                <div class="inner">
+                                    <div class="bar">
+                                        <div class="bar-innner"><div class="bar-fill" data-percent="80"><div class="percent"></div></div></div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!--Skill Box-->
+                            <div class="progress-box wow fadeInRight" data-wow-delay="200ms" data-wow-duration="1500ms">
+                                <div class="box-title">seo &amp; KEYWORD RESEARCH</div>
+                                <div class="inner">
+                                    <div class="bar">
+                                        <div class="bar-innner"><div class="bar-fill" data-percent="90"><div class="percent"></div></div></div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!--Skill Box-->
+                            <div class="progress-box wow fadeInRight" data-wow-delay="300ms" data-wow-duration="1500ms">
+                                <div class="box-title">WEB DEVELOPEMENT</div>
+                                <div class="inner">
+                                    <div class="bar">
+                                        <div class="bar-innner"><div class="bar-fill" data-percent="60"><div class="percent"></div></div></div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!--Skill Box-->
+                            <div class="progress-box wow fadeInRight" data-wow-delay="400ms" data-wow-duration="1500ms">
+                                <div class="box-title">WORDPRESS CUSTOMIZATION</div>
+                                <div class="inner">
+                                    <div class="bar">
+                                        <div class="bar-innner"><div class="bar-fill" data-percent="88"><div class="percent"></div></div></div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    
     
     
     <!--Section Intro-->
@@ -649,12 +676,12 @@
             </div>
         </div>
         <!--Down Arrow-->
-        <div class="down-arrow scroll-to-target" data-target=".scroll-to-that"></div>
+        <div class="down-arrow scroll-to-target" data-target=".scroll-to-this"></div>
     </section>
     
     
     <!--Pricing Section-->
-    <section class="pricing-section scroll-to-that">
+    <section class="pricing-section scroll-to-this">
     	<div class="auto-container">
                         
         	<div class="row clearfix">
@@ -749,8 +776,8 @@
     
     
     
-    <!--Full Slider Section-->
-    <section class="default-section full-slider-section no-padd-bottom outside-hidden">
+    <!--Default Section-->
+    <section class="default-section full-slider-section no-padd-bottom">
         
         <div class="auto-container">
         	<div class="sec-title text-center main-title">
@@ -821,78 +848,9 @@
     </section>
     
     
-    <!--Default Section-->
-    <section class="default-section">
-    	<div class="auto-container">
-        
-            <div class="sec-title text-center main-title">
-                <h2 class="default-title text-uppercase">our service list</h2>
-                <div class="theme-subtitle">Lorem ipsum dolor sit amet, consetetur sadipscing elitr</div>
-            </div>
-            
-        	<div class="row clearfix">
-            	
-                <!--Column-->
-                <article class="column icon-column circle-icon-column col-md-4 col-sm-6 col-xs-12">
-                	<div class="inner-box text-left">
-                    	<div class="icon img-circle"><span class="flaticon-like80"></span></div>
-                        <h3>MARKETING STRATEGIES</h3>
-                        <div class="text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore.</div>
-                    </div>
-                </article>
-                
-                <!--Column-->
-                <article class="column icon-column circle-icon-column col-md-4 col-sm-6 col-xs-12">
-                	<div class="inner-box text-left">
-                    	<div class="icon img-circle"><span class="flaticon-pulse2"></span></div>
-                        <h3>IMPROVING STATISTICS </h3>
-                        <div class="text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore.</div>
-                    </div>
-                </article>
-                
-                <!--Column-->
-                <article class="column icon-column circle-icon-column col-md-4 col-sm-6 col-xs-12">
-                	<div class="inner-box text-left">
-                    	<div class="icon img-circle"><span class="flaticon-drawing17"></span></div>
-                        <h3>MULTIPLE OPTIONS</h3>
-                        <div class="text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore.</div>
-                    </div>
-                </article>
-                
-                <!--Column-->
-                <article class="column icon-column circle-icon-column col-md-4 col-sm-6 col-xs-12">
-                	<div class="inner-box text-left">
-                    	<div class="icon img-circle"><span class="flaticon-clock32"></span></div>
-                        <h3>SEVERAL DIRECTIONS</h3>
-                        <div class="text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore.</div>
-                    </div>
-                </article>
-                
-                <!--Column-->
-                <article class="column icon-column circle-icon-column col-md-4 col-sm-6 col-xs-12">
-                	<div class="inner-box text-left">
-                    	<div class="icon img-circle"><span class="flaticon-flag86"></span></div>
-                        <h3>INTELLIGENT PLANNING </h3>
-                        <div class="text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore.</div>
-                    </div>
-                </article>
-                
-                <!--Column-->
-                <article class="column icon-column circle-icon-column col-md-4 col-sm-6 col-xs-12">
-                	<div class="inner-box text-left">
-                    	<div class="icon img-circle"><span class="flaticon-anchor32"></span></div>
-                        <h3>MEYECATCHING DESIGN</h3>
-                        <div class="text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore.</div>
-                    </div>
-                </article>
-                
-            </div>
-        </div>
-    </section>
-    
     
     <!--Featured Three Column-->
-    <section class="default-section featured-three-col no-padd-top">
+    <section class="default-section featured-three-col">
     	<div class="auto-container">
         	
             <!--Section Title-->
@@ -952,6 +910,50 @@
                 </div>
                 
             </div>
+        </div>
+    </section>
+    
+    
+    <!-- Client Testimonials -->
+    <section class="client-testimonials style-one">
+    	<div class="auto-container">
+        	<!--Section Title-->
+            <div class="sec-title main-title text-center">
+                <h2 class="default-title white_color">CLIENT TESTIMONIALS</h2>
+                <div class="line-centered"></div>
+            </div>
+            
+        	<div class="testimonial-slider-full">
+            	<article class="slide">
+                    <div class="text">“Our teams are up to date with the latest technologies, media trends and are keen to prove themselves in this industry and that’s what you want from an advertising agency, not someone who is relying on the same way of doing things that worked 10 years, 5 years or even a year ago.”</div>
+                    <div class="author-info">Jonathan Doe <div class="time">2 days ago</div></div>
+                </article>
+                <article class="slide">
+                    <div class="text">"Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat et accusam et justo duo dolores et ea rebum."</div>
+                    <div class="author-info">Hamzah Ali <div class="time">2 days ago</div></div>
+                </article>
+                <article class="slide">
+                    <div class="text">"Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren "</div>
+                    <div class="author-info">Aamir Denna <div class="time">2 days ago</div></div>
+                </article>
+            </div>
+            
+        </div>
+    </section>
+    
+    
+    <!-- Client Logos -->
+    <section class="logos-section" style="background-image:url(images/background/logos-bg.jpg);">
+    	<div class="auto-container">
+            
+        	<div class="text-center">
+            	<a href="#" class="image-box"><img src="images/clients/logo-1.png" alt=""></a>
+                <a href="#" class="image-box"><img src="images/clients/logo-2.png" alt=""></a>
+                <a href="#" class="image-box"><img src="images/clients/logo-3.png" alt=""></a>
+                <a href="#" class="image-box"><img src="images/clients/logo-4.png" alt=""></a>
+                <a href="#" class="image-box"><img src="images/clients/logo-5.png" alt=""></a>
+            </div>
+            
         </div>
     </section>
     
