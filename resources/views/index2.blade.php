@@ -38,7 +38,7 @@
                 <div class="top-right">
                 	<!--Social Links Style One-->
                 	<div class="social-links-one clearfix">
-                    	<a href="#" class="facebook"><span class="fa fa-facebook-f"></span></a>
+                    	<a href="https://www.facebook.com/ASEISIUES/" target="_blank"><span class="fa fa-facebook-f"></span></a>
                         <a href="#" class="twitter"><span class="fa fa-twitter"></span></a>
                         <a href="#" class="google-plus"><span class="fa fa-google-plus"></span></a>
                         <a href="#" class="linkedin"><span class="fa fa-linkedin"></span></a>
@@ -86,7 +86,7 @@
                         
                         <div class="navbar-collapse collapse clearfix">
                             <ul class="navigation">
-                                <li class="current dropdown"><a href="/prueba">Home</a>
+                                <li class="current dropdown"><a href="/index2">Home</a>
                                     <ul class="submenu-dropdown">
                                         <li><a href="/prueba">Homepage One</a></li>
                                         <li><a href="/index2">Homepage Two</a></li>
@@ -561,7 +561,7 @@
                                 
                                 <div class="text">We have the expertise to create just the right web presence for you.</div>
                                 <div class="social-links">
-                        			<a href="#"><span class="fa fa-facebook-f"></span></a>
+                        			<a href="https://www.facebook.com/ASEISIUES/?fref=ts" target="_blank"><span class="fa fa-facebook-f"></span></a>
                                     <a href="#"><span class="fa fa-twitter"></span></a>
                                     <a href="#"><span class="fa fa-google-plus"></span></a>
                                     <a href="#"><span class="fa fa-linkedin"></span></a>
