@@ -17,3 +17,12 @@ Route::get('/', function () {
     return view('index');
 });
 
+Route::get('/Solicitudes', function () {
+    return view('');
+});
+
+Route::get('/Servicios', function () {
+    return view('');
+});
+
+/*PAGINAS ESTATICAS*/
