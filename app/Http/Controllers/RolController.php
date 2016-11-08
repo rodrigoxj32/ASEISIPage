@@ -26,7 +26,7 @@ class RolController extends Controller
      */
     public function create()
     {
-        //
+         
     }
 
     /**
@@ -37,7 +37,9 @@ class RolController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        //METODO DE GUARDADO
+
+        
     }
 
     /**
