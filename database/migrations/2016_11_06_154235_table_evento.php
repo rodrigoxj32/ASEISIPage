@@ -18,6 +18,7 @@ class TableEvento extends Migration
             $table->string('nombre_evento',100);
             $table->string('descripcion_evento',200);
             $table->date('fecha_de_realizacion');
+            $table->integer('tipo');//1 para noticia 0 para publicidad
             $table->integer('user_id')->unsigned();
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->timestamps();
