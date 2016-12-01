@@ -1,0 +1,25 @@
+::::::::::::::::::::	
+	INSTALAR ASEISI
+::::::::::::::::::::
+
+1. Ubicarse en la carpeta del proyecto SystemIQA
+  1.1 Renombrar el archivo "env.example" por "env" de la carpeta del proyecto ASEISI
+  1.2 Configurar el archivo "env" con nombre y las credenciales de la base.
+
+2. $composer install
+
+3. $php artisan key:generate
+
+4.
+ 
+IF (Ya hay una base "aseisi" en MySQL)
+	$php artisan migrate:refresh
+ELSE
+	$php artisan migrate
+
+
+5. $composer update
+
+6. $php artisan serve
+
+abc123
