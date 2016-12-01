@@ -39,14 +39,15 @@
                 	<!--Social Links Style One-->
                 	<div class="social-links-one clearfix">
                     	<a href="https://www.facebook.com/ASEISIUES" target="_blank" class="facebook"><span class="fa fa-facebook-f"></span></a>
-                       <!-- <a href="#" class="twitter"><span class="fa fa-twitter"></span></a> 
-                       <a href="#" class="linkedin"><span class="fa fa-linkedin"></span></a>
-                        <a href="#" class="pinterest"><span class="fa fa-pinterest-p"></span></a>
-                        <a href="#" class="instagram"><span class="fa fa-instagram"></span></a>
-                        -->
-                        <a href="#" class="google-plus"><span class="fa fa-google-plus"></span></a>
-                        
+                        <!--<a href="#" target="_blank" class="fa-google-plus"><span class="fa fa-google-plus"></span></a>-->
                     </div>
+                    @if (Auth::guest())
+                        <a style="color:black" href="auth/login">Iniciar Sesion</a> 
+                        
+                    @else
+                        <a style="color:black" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">{{ Auth::user()->name }} <span class="caret"></span></a>
+                        <a style="color:black" href="/auth/logout">Cerrar Sesion</a>
+                    @endif
                 </div>
                 
             </div>
@@ -104,6 +105,20 @@
                                 <li ><a href="blog.html">Eventos</a></li>
                                 
                                 <li><a href="contact.html">Trámites</a></li>
+                            @if (Auth::guest())
+
+                              
+                            @else
+                                @if(Auth::user()->rol_id == 1)
+                                <li class="dropdown"><a class="dropdown-toggle" href="#">Usuarios</a>
+                                <ul class="dropdown-menu">
+                
+                                <li><a style="color:black " href="/register">Registrar</a></li>
+                                <li><a style="color:black " href="">Ver usuarios</a></li>
+                                @endif
+                            @endif                                
+                                </ul>
+                              </li>
                             </ul>
                         </div>
                     </nav><!-- Main Menu End-->
@@ -985,3 +1000,5 @@
 <script src="js/script.js"></script>
 </body>
 </html>
+
+

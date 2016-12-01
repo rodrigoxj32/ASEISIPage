@@ -27,7 +27,7 @@ Route::get('/Servicios', function () {
 
 
 Route::get('home',[
-	'uses' => 'EventoController@home',
+	'uses' => 'UserController@index',
 	'as' => 'home'
 		]);
 
@@ -42,17 +42,29 @@ Route::get('login', [
 
 Route::post('login', 'Auth\AuthController@postLogin');
 
-Route::get('logout', [
+Route::get('auth/logout', 'Auth\AuthController@getLogout');
+
+/*Route::get('auth/login', [
+	'uses'=>'Auth\AuthController@getLogin',
+	'as' => 'login'	
+	]);*/
+
+/*Route::get('logout', [
 	'uses'=>'Auth\AuthController@getLogout',
 	'as' => 'logout'	
-	]);
+	]);*/
 
 
 // Registration routes...
 Route::get('register', [
-	'uses'=>'Auth\AuthController@getRegister',
+	'uses'=>'UserController@create',
 	'as' => 'register'	
 	]);
+
+Route::post('guardarUsuario',[
+        'uses' => 'UserController@store', 
+        'as' => 'auth.register'
+        ]);
 
 Route::post('register', 'Auth\AuthController@postRegister');
 

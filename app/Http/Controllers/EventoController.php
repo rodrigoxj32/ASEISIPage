@@ -87,6 +87,6 @@ class EventoController extends Controller
 
 
     public function home(){
-        return view('index');
+   
     }
 }
