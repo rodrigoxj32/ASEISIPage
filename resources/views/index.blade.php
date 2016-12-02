@@ -45,8 +45,16 @@
                         <a style="color:black" href="login">Iniciar Sesion</a> 
                         
                     @else
-                        <a style="color:black" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">{{ Auth::user()->name }} <span class="caret"></span></a>
-                        <a style="color:black" href="/auth/logout">Cerrar Sesion</a>
+                    <ul class="navigation">
+                     <li class="dropdown"><a style="color:black" class="dropdown-toggle" href="#" aria-expanded="false">{{ Auth::user()->name }} <span></span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a>
+                            <ul class="dropdown-menu">
+                
+                                <li><a style="color:black " href="/reset">Cambiar Contraseña</a></li>
+                                <li><a style="color:black" href="/auth/logout">Cerrar Sesion</a></li>
+                    
+                            </ul>
+                    </li>
+                    </ul>
                     @endif
                 </div>
                 
@@ -102,7 +110,7 @@
                                 <li ><a href="gallery-three-column.html">Portfolio</a>
                                     
                                 </li>
-                                <li ><a href="blog.html">Eventos</a></li>
+                                <li ><a href="/evento">Eventos</a></li>
                                 
                                 <li><a href="contact.html">Trámites</a></li>
                             @if (Auth::guest())
@@ -111,14 +119,15 @@
                             @else
                                 @if(Auth::user()->rol_id == 1)
                                 <li class="dropdown"><a class="dropdown-toggle" href="#">Usuarios</a>
-                                <ul class="dropdown-menu">
+                                  <ul class="dropdown-menu">
                 
-                                <li><a style="color:black " href="/register">Registrar</a></li>
-                                <li><a style="color:black " href="">Ver usuarios</a></li>
+                                    <li><a style="color:black " href="/register">Registrar</a></li>
+                                    <li><a style="color:black " href="/reset">Cambiar Contraseña</a></li>
+                                  </ul>
+                                </li>
                                 @endif
                             @endif                                
-                                </ul>
-                              </li>
+                                
                             </ul>
                         </div>
                     </nav><!-- Main Menu End-->

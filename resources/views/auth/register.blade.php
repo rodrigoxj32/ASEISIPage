@@ -39,14 +39,14 @@
 						<div class="form-group">
 							<label class="col-md-4 control-label">Password</label>
 							<div class="col-md-6">
-								<input  type="password" class="form-control"  id="password" name="password" required onchange="confirmar()"> 
+								<input  type="password" class="form-control"  id="password" name="password" required onchange="confirmar()" pattern=".{5,20}" > 
 							</div>
 						</div>
 
 						<div class="form-group">
 							<label class="col-md-4 control-label">Confirmar Password</label>
 							<div class="col-md-6">
-								<input type="password" id = "password_confirmation" class="form-control" name="password_confirmation" required onchange="confirmar()">
+								<input type="password" id = "password_confirmation" class="form-control" name="password_confirmation" required onchange="confirmar()" pattern=".{5,20}" >
 							</div>
 						</div>
 
@@ -61,12 +61,12 @@
 
 						<div class="col-md-6 col-md-offset-4">
 
-							<h4  id="mensaje" name="" style="display: block; color: red;font-family:verdana;"> Las contraseñas no coinciden</h4>
+							<h4  id="mensaje" name="" style="display: none; color: red;font-family:verdana;"> Las contraseñas no coinciden</h4>
 						</div>
 
-						<div id="boton" class="form-group" style="display: none;" >
+						<div  class="form-group" >
 							<div class="col-md-6 col-md-offset-4">
-								<button type="submit" class="btn btn-primary">
+								<button id="boton" type="submit" class="btn btn-primary" disabled="">
 									Register
 								</button>
 							</div>
@@ -88,11 +88,11 @@
 
 			if (password == password2) {
 				document.getElementById('mensaje').style.display = 'none';
-				document.getElementById('boton').style.display = 'block';
+				document.getElementById('boton').disabled = false;
 
 			}else{
 				document.getElementById('mensaje').style.display = 'block';
-				document.getElementById('boton').style.display = 'none';
+				document.getElementById('boton').disabled = true;	
 			}	
 
 		}

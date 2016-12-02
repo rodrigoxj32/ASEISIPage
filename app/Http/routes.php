@@ -44,17 +44,6 @@ Route::post('login', 'Auth\AuthController@postLogin');
 
 Route::get('auth/logout', 'Auth\AuthController@getLogout');
 
-/*Route::get('auth/login', [
-	'uses'=>'Auth\AuthController@getLogin',
-	'as' => 'login'	
-	]);*/
-
-/*Route::get('logout', [
-	'uses'=>'Auth\AuthController@getLogout',
-	'as' => 'logout'	
-	]);*/
-
-
 // Registration routes...
 Route::get('register', [
 	'uses'=>'UserController@create',
@@ -68,10 +57,20 @@ Route::post('guardarUsuario',[
 
 Route::post('register', 'Auth\AuthController@postRegister');
 
-// Password reset link request routes...
-Route::get('password/email', 'Auth\PasswordController@getEmail');
-Route::post('password/email', 'Auth\PasswordController@postEmail');
 
 // Password reset routes...
-Route::get('password/reset/{token}', 'Auth\PasswordController@getReset');
-Route::post('password/reset', 'Auth\PasswordController@postReset');
+Route::get('reset', [
+	'uses'=>'UserController@reset',
+	'as' => 'reset'	
+	]);
+
+Route::post('resetPassword',[
+        'uses' => 'UserController@Resetstore', 
+        'as' => 'auth.reset'
+        ]);
+
+
+Route::get('evento',[
+	'uses' => 'EventoController@index',
+	'as' => 'evento'
+		]);

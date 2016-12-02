@@ -48,6 +48,18 @@ class UserController extends Controller
         ->with('roles',$roles);
     }
 
+        public function reset(){
+        $roles = Rol::orderBy('nombre_rol','ASC')->lists('nombre_rol','id');
+
+        
+        /*dd(Auth::guest());
+        dd(Auth::user()->id);*/
+
+
+        return view('auth.reset')
+        ->with('roles',$roles);
+    }
+
     /**
      * Store a newly created resource in storage.
      *
@@ -58,6 +70,8 @@ class UserController extends Controller
     {
 
         try {
+                    /*dd(Auth::guest());
+            dd(Auth::user()->password);*/
 
             $usuario = new User();
 
@@ -73,6 +87,28 @@ class UserController extends Controller
         }catch (\Illuminate\Database\QueryException $e){
             flash('EL correo ya existe por favor ingrese uno distinto', 'danger');
             return redirect()->route('register');
+        }
+    
+    }
+
+        public function Resetstore(Request $request){
+
+        try {
+
+            
+            $usuario = User::find(Auth::user()->id);
+
+
+            $usuario->password = bcrypt($request->password);
+
+
+            $usuario->save();
+            flash('Se ha Actualizado la contraseña', 'success');
+            return redirect()->route('reset');
+
+        }catch (\Illuminate\Database\QueryException $e){
+            flash('Verifique los datos', 'danger');
+            return redirect()->route('reset');
         }
     
     }

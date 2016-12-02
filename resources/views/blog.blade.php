@@ -88,7 +88,7 @@
                         
                         <div class="navbar-collapse collapse clearfix">
                             <ul class="navigation">
-                                <li ><a href="index.html">Home</a>
+                                <li ><a href="/">Home</a>
                                   
                                 </li>
                                 <li ><a href="about-2.html">About</a>
@@ -100,7 +100,7 @@
                                 <li ><a href="gallery-three-column.html">Portfolio</a>
                                     
                                 </li>
-                                <li><a href="blog.html">Blog</a>
+                                <li><a href="/evento">Eventos</a>
                                     
                                 </li>
                                 
