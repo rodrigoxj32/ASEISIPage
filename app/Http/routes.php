@@ -25,4 +25,12 @@ Route::get('/Servicios', function () {
     return view('');
 });
 
+/*Rutas login Social*/
+
+Route::get('auth/facebook', 'FacebookController@redirectToProvider')->name('facebook.login');
+Route::get('auth/facebook/callback', 'FacebookController@handleProviderCallback');
+
+Route::get('auth/google', 'GoogleController@redirectToProvider')->name('google.login');
+Route::get('auth/google/callback', 'GoogleController@handleProviderCallback');
+
 /*PAGINAS ESTATICAS*/
