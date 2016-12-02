@@ -42,7 +42,7 @@
                         <!--<a href="#" target="_blank" class="fa-google-plus"><span class="fa fa-google-plus"></span></a>-->
                     </div>
                     @if (Auth::guest())
-                        <a style="color:black" href="auth/login">Iniciar Sesion</a> 
+                        <a style="color:black" href="login">Iniciar Sesion</a> 
                         
                     @else
                         <a style="color:black" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">{{ Auth::user()->name }} <span class="caret"></span></a>
