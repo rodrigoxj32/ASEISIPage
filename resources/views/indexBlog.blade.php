@@ -69,15 +69,15 @@
                                     </div>
 
                                     <div id="galeria_miniatura">
-                                        <img src="images/resource/blog-image-3.jpg" width="200" height="100" onclick="document.getElementById('imagen_a_mostar').src='images/resource/blog-image-3.jpg' "  "> </img>
-                                         <img src="images/resource/blog-image-2.jpg" width="200" height="100" onclick="document.getElementById('imagen_a_mostar').src='images/resource/blog-image-2.jpg' "  "> </img>
-                                         <img src="images/resource/blog-image-3.jpg" width="200" height="100" onclick="document.getElementById('imagen_a_mostar').src='images/resource/blog-image-3.jpg' "  "> </img>
-                                         <img src="images/resource/blog-image-2.jpg" width="200" height="100" onclick="document.getElementById('imagen_a_mostar').src='images/resource/blog-image-2.jpg' "  "> </img>
-                                         <img src="images/resource/blog-image-3.jpg" width="200" height="100" onclick="document.getElementById('imagen_a_mostar').src='images/resource/blog-image-3.jpg' "  "> </img>
-                                         <img src="images/resource/blog-image-2.jpg" width="200" height="100" onclick="document.getElementById('imagen_a_mostar').src='images/resource/blog-image-2.jpg' "  "> </img>
-                                         <img src="images/resource/blog-image-3.jpg" width="200" height="100" onclick="document.getElementById('imagen_a_mostar').src='images/resource/blog-image-3.jpg' "  "> </img>
-                                         <img src="images/resource/blog-image-2.jpg" width="200" height="100" onclick="document.getElementById('imagen_a_mostar').src='images/resource/blog-image-2.jpg' "  "> </img>
-                               
+                                        
+                                    @for($i=0;$i<12;$i++)
+                                         &nbsp&nbsp&nbsp
+                                       <img src="images/resource/blog-image-2.jpg" width="200" height="100" onclick="document.getElementById('imagen_a_mostar').src='images/resource/blog-image-2.jpg' "  "  style="border-width: 10px;border-style: outset; border-color: blue;"></img>
+
+                                   @endfor
+
+
+                                  
 
 
                                     </div>
