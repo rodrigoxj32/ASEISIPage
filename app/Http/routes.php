@@ -70,7 +70,11 @@ Route::post('resetPassword',[
         ]);
 
 
-Route::get('evento',[
+Route::get('/evento', function () {
+    return view('indexBlog');
+});
+
+Route::get('/createBlog',[
 	'uses' => 'EventoController@index',
-	'as' => 'evento'
+	'as' => 'eventoCreate'
 		]);

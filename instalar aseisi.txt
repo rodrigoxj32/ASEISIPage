@@ -2,7 +2,7 @@
 	INSTALAR ASEISI
 ::::::::::::::::::::
 
-1. Ubicarse en la carpeta del proyecto SystemIQA
+1. Ubicarse en la carpeta del proyecto ASEISI
   1.1 Renombrar el archivo "env.example" por "env" de la carpeta del proyecto ASEISI
   1.2 Configurar el archivo "env" con nombre y las credenciales de la base.
 

@@ -37,16 +37,26 @@
                 <div class="top-right">
                     <!--Social Links Style One-->
                     <div class="social-links-one clearfix">
-                        <a href="https://www.facebook.com/ASEISIUES" class="facebook"><span class="fa fa-facebook-f"></span></a>
-                       <!-- <a href="#" class="twitter"><span class="fa fa-twitter"></span></a> 
-                       <a href="#" class="linkedin"><span class="fa fa-linkedin"></span></a>
-                        <a href="#" class="pinterest"><span class="fa fa-pinterest-p"></span></a>
-                        <a href="#" class="instagram"><span class="fa fa-instagram"></span></a>
-                        -->
-                        <a href="#" class="google-plus"><span class="fa fa-google-plus"></span></a>
-                        
+                        <a href="https://www.facebook.com/ASEISIUES" target="_blank" class="facebook"><span class="fa fa-facebook-f"></span></a>
+                        <!--<a href="#" target="_blank" class="fa-google-plus"><span class="fa fa-google-plus"></span></a>-->
                     </div>
+                    @if (Auth::guest())
+                        <a style="color:black" href="login">Iniciar Sesion</a> 
+                        
+                    @else
+                    <ul class="navigation">
+                     <li class="dropdown"><a style="color:black" class="dropdown-toggle" href="#" aria-expanded="false">{{ Auth::user()->name }} <span></span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a>
+                            <ul class="dropdown-menu">
+                
+                                <li><a style="color:black " href="/reset">Cambiar Contraseña</a></li>
+                                <li><a style="color:black" href="/auth/logout">Cerrar Sesion</a></li>
+                    
+                            </ul>
+                    </li>
+                    </ul>
+                    @endif
                 </div>
+                
                 
             </div>
         </div><!-- Header Top End -->
@@ -88,7 +98,7 @@
                         
                         <div class="navbar-collapse collapse clearfix">
                             <ul class="navigation">
-                                <li ><a href="/">Home</a>
+                                <li ><a href="/home">Home</a>
                                   
                                 </li>
                                 <li ><a href="about-2.html">About</a>
@@ -100,11 +110,25 @@
                                 <li ><a href="gallery-three-column.html">Portfolio</a>
                                     
                                 </li>
-                                <li><a href="/evento">Eventos</a>
-                                    
-                                </li>
+
+                                <li ><a href="/evento">Eventos</a></li>
                                 
                                 <li><a href="contact.html">Trámites</a></li>
+                            @if (Auth::guest())
+
+                              
+                            @else
+                                @if(Auth::user()->rol_id == 1)
+                                <li class="dropdown"><a class="dropdown-toggle" href="#">Usuarios</a>
+                                  <ul class="dropdown-menu">
+                
+                                    <li><a style="color:black " href="/register">Registrar</a></li>
+                                    <li><a style="color:black " href="/reset">Cambiar Contraseña</a></li>
+                                  </ul>
+                                </li>
+                                @endif
+                            @endif                                
+                                
                             </ul>
                         </div>
                     </nav><!-- Main Menu End-->
