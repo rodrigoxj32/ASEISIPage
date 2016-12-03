@@ -78,3 +78,8 @@ Route::get('/createBlog',[
 	'uses' => 'EventoController@index',
 	'as' => 'eventoCreate'
 		]);
+
+Route::post('/guardarBlog',[
+        'uses' => 'EventoController@store', 
+        'as' => 'guardarBlog'
+        ]);

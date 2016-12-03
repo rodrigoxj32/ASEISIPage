@@ -110,7 +110,21 @@
                                 <li ><a href="gallery-three-column.html">Portfolio</a>
                                     
                                 </li>
-                                <li ><a href="/evento">Eventos</a></li>
+
+                           @if (Auth::guest())
+                                 <li ><a href="/evento">Eventos</a>
+                              
+                            @else
+                                @if(Auth::user()->rol_id == 1)
+                                <li class="dropdown"><a class="dropdown-toggle" href="">Eventos</a>
+                                  <ul class="dropdown-menu">
+                                    <li ><a href="/evento">Eventos</a>
+                                    <li><a style="color:black " href="/createBlog">Crear Evento</a></li>
+                                    
+                                  </ul>
+                                </li>
+                                @endif
+                            @endif 
                                 
                                 <li><a href="contact.html">Trámites</a></li>
                             @if (Auth::guest())
@@ -874,7 +888,7 @@
     	<div class="auto-container">
             
         	<div class="text-center">
-            	<a href="#" class="image-box"><img src="images/clients/logo-1.png" alt=""></a>
+            	<a href="#" class="image-box"><img src="images/clients/logo-1.png" alt="" ></a>
                 <a href="#" class="image-box"><img src="images/clients/logo-2.png" alt=""></a>
                 <a href="#" class="image-box"><img src="images/clients/logo-3.png" alt=""></a>
                 <a href="#" class="image-box"><img src="images/clients/logo-4.png" alt=""></a>

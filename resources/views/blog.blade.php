@@ -10,8 +10,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 <link href="css/responsive.css" rel="stylesheet">
-<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-<!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+<link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.0/themes/base/jquery-ui.css">
+
+
+
+
 </head>
 
 <body>
@@ -107,11 +110,23 @@
                                 <li ><a href="services-1.html">Services</a>
                                    
                                 </li>
-                                <li ><a href="gallery-three-column.html">Portfolio</a>
+                               
                                     
+                              
+                            @if (Auth::guest())
+                                 <li ><a href="/evento">Eventos</a>
+                              
+                            @else
+                                @if(Auth::user()->rol_id == 1)
+                                <li class="dropdown"><a class="dropdown-toggle" href="">Eventos</a>
+                                  <ul class="dropdown-menu">
+                                    <li ><a href="/evento">Eventos</a>
+                                    <li><a style="color:black " href="/createBlog">Crear Evento</a></li>
+                                    
+                                  </ul>
                                 </li>
-
-                                <li ><a href="/evento">Eventos</a></li>
+                                @endif
+                            @endif 
                                 
                                 <li><a href="contact.html">Trámites</a></li>
                             @if (Auth::guest())
@@ -149,24 +164,34 @@
             </div>
         </div>
         <!--Down Arrow-->
-        <div class="down-arrow scroll-to-target" data-target=".scroll-to-this"></div>
+        <
     </section>
     
-    @yield('content')
+    <section>
+        <!--CODIGO DE TODA LA LOGICA -->
+            @yield('content')
+        <!--CODIGO DE TODA LA LOGICA -->
+        
+    </section>
 
-    <!--CODIGO DE TODA LA LOGICA -->
+    <br>
+  <footer class="main-footer">
+        
+        <!--Footer Upper-->        
+        <div class="footer-upper">
+            <div class="auto-container">
+                <div class="row clearfix">
 
-    <!--CODIGO DE TODA LA LOGICA -->
-
-    <!--Main Footer-->
-    <footer class="main-footer">
-    	
-       
+                </div>
+                
+                <!--Contact Info-->                
+            </div>
+        </div>
         
         <!--Footer Bottom-->
-    	<div class="footer-bottom">
+        <div class="footer-bottom">
             <div class="auto-container clearfix">
-            	
+                <div class="logo pull-left"><a href="#"><img src="images/logo-2.jpg" alt=""></a></div>
                 <!--Copyright-->
                 <div class="copyright pull-right">Copyright 2015 &copy; <strong>Radium - Marketing &amp; SEO PSD Template</strong> | All Rights Reservedd</div>
             </div>
@@ -188,8 +213,7 @@
 <script src="js/jquery.fancybox-media.js"></script>
 <script src="js/wow.js"></script>
 <script src="js/script.js"></script>
-@yield('scripts')
-
+<script src="http://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
 @yield('js')
 </body>
 </html>
