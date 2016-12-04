@@ -107,3 +107,9 @@ Route::get('eliminarComentario/{id}/destroy',[
         'uses' => 'ComentarioController@destroy',
         'as' => 'eliminarComentario'
         ]);
+
+Route::get('eliminarEvento/{id}/destroy',[
+		'middleware' => 'auth',
+        'uses' => 'EventoController@destroy',
+        'as' => 'eliminarEvento'
+        ]);

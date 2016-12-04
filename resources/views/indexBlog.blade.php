@@ -53,6 +53,15 @@
                                 <div class="post-desc">
                                     <div class="text"><p>{{$evento->descripcion_evento}}</p></div>
                                     <div class="text-right"><a href="{{route('verEvento',$evento->id)}}" class="theme-btn rounded-btn-blue">Ver imagenes</a></div>
+                                    @if (Auth::guest())
+                                    @else
+                                        @if(Auth::user()->rol_id == 1)
+                                        <div class="text-left">
+                                        <a style="border-radius: 11px;border-radius: 15px;" href=" {{route('eliminarEvento',$evento->id)}}" onclick="return confirm('¿Seguro que deseas eliminarlo?')" class="btn btn-danger"><font color="black" size="2"> <b>Eliminar</b></font></a>
+                                        </div>
+                                        @endif
+                                    @endif
+                                    
                                 </div>
                             </div>
                         </article>

@@ -154,7 +154,17 @@ class EventoController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $pivote = DB::table('comentario_user') -> where('comentario_id', '=', $id)->delete();
+
+        $imagenes = Imagen::where('evento_id','=',$id)->get();
+
+        foreach ($imagenes as $imagen) {
+            unlink(public_path() .$imagen->direccion);
+        }
+
+        $evento = Evento::where('id', '=', $id)->delete();
+
+        return redirect()->route('eventoIndex');
     }
 
 
