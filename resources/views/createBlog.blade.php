@@ -4,7 +4,8 @@
 
     <br>
  {!! Form::open(['action' => 'EventoController@store','class'=>'form-horizontal','enctype'=>'multipart/form-data' ]) !!}
-				
+		
+    @include('flash::message')		
 
     <div class="panel panel-primary" align="center" style="width: 1000px;margin: auto;  ">
       <div class="panel-heading">Crear Evento</div>
@@ -38,7 +39,7 @@
       <div>
         <br>
         <label>Seleccione las imagenes a subir</label>
-         {!! form::file('imagen1[]', ['class' => 'form-control', 'multiple'])!!}
+         {!! form::file('imagen1[]', ['class' => 'form-control', 'multiple', 'accept'=>'.png,.jpg,.jpeg'])!!}
 
 
   <div class="panel-body">

@@ -42,7 +42,21 @@ class EventoController extends Controller
     {
         //dd($request->all());
 
+        foreach ($request->imagen1 as $imagenes) {
+             $variable = $imagenes->getClientOriginalExtension();
 
+
+
+             if($variable == "png" || $variable=="jpg" || $variable== "jpeg"){
+                //dd($variable);
+
+             }else{
+                //dd($variable);
+                flash('Error en las imagenes por favor seleccione el formato correcto', 'danger');
+
+                return redirect()->route('eventoCreate');
+             }
+        }
         
 
         $evento = new Evento();
