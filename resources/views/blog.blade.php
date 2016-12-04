@@ -4,13 +4,15 @@
 <meta charset="utf-8">
 <title>ASEISI | Eventos</title>
 <!-- Stylesheets -->
-<link href="css/bootstrap.css" rel="stylesheet">
-<link href="css/style.css" rel="stylesheet">
+<link href="{{asset('css/bootstrap.css')}}" rel="stylesheet">
+<link href="{{asset('css/style.css')}}" rel="stylesheet">
 <!-- Responsive -->
+<link href="{{asset('css/responsive.css')}}" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.0/themes/base/jquery-ui.css">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-<link href="css/responsive.css" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.0/themes/base/jquery-ui.css">
+
+
 
 
 
@@ -205,15 +207,17 @@
 <!--Scroll to top-->
 <div class="scroll-to-top scroll-to-target" data-target=".main-header"><span class="fa fa-arrow-up"></span></div>
 
-<script src="js/jquery.js"></script> 
-<script src="js/bootstrap.min.js"></script>
-<script src="js/bxslider.js"></script>
-<script src="js/owl.js"></script>
-<script src="js/jquery.fancybox.pack.js"></script>
-<script src="js/jquery.fancybox-media.js"></script>
-<script src="js/wow.js"></script>
-<script src="js/script.js"></script>
+<script src="{{asset('js/jquery.js')}}"></script> 
+<script src="{{asset('js/bootstrap.min.js')}}"></script>
+<script src="{{asset('js/bxslider.js')}}"></script>
+<script src="{{asset('js/owl.js')}}"></script>
+<script src="{{asset('js/jquery.fancybox.pack.js')}}"></script> 
+<script src="{{asset('js/jquery.fancybox-media.js')}}"></script> 
+<script src="{{asset('js/wow.js')}}"></script>
+<script src="{{asset('js/script.js')}}"></script>
 <script src="http://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>   
+
+
 
 @yield('js')
 </body>

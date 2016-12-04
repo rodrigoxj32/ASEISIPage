@@ -40,7 +40,7 @@ class EventoController extends Controller
      */
     public function store(Request $request)
     {
-        //dd(time());
+        dd($request->all());
 
 
         $evento = new Evento();
@@ -66,7 +66,7 @@ class EventoController extends Controller
 
           $imagen->save();
 
-          return redirect('/evento');
+          return redirect()->route('eventoIndex');
         }
 
          
@@ -81,9 +81,17 @@ class EventoController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
-    {
-        //
+    public function show(){
+        $eventos = Evento::orderBy('id','ASC')->paginate(2);
+
+           $eventos->each(function($eventos){
+            $eventos->imagenes;
+  
+        });
+
+        //dd($eventos);
+
+        return view('indexBlog')->with('eventos',$eventos);
     }
 
     /**
@@ -124,4 +132,18 @@ class EventoController extends Controller
     public function home(){
    
     }
+
+    public function verEvento($id){
+
+        $eventos = Evento::where('id', "=", $id)->paginate(10);
+
+        $eventos->each(function($eventos){
+            $eventos->imagenes;
+  
+        });
+
+        //return redirect('/eventoO')->with('eventos',$eventos);  ;
+
+        return view('verBlog')->with('eventos',$eventos);
+   }
 }

@@ -74,6 +74,11 @@ Route::get('/evento', function () {
     return view('indexBlog');
 });
 
+Route::get('/evento',[
+	'uses' => 'EventoController@show',
+	'as' => 'eventoIndex'
+		]);
+
 Route::get('/createBlog',[
 	'uses' => 'EventoController@index',
 	'as' => 'eventoCreate'
@@ -83,3 +88,12 @@ Route::post('/guardarBlog',[
         'uses' => 'EventoController@store', 
         'as' => 'guardarBlog'
         ]);
+
+Route::get('verEvento/{evento}/ver', [
+    'uses' => 'EventoController@verEvento', 
+    'as'    => 'verEvento'
+    ]);
+
+Route::get('/eventoO', function () {
+    return view('verBlog');
+});

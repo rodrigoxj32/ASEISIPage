@@ -29,12 +29,16 @@
                                            
                         
                         <!--Blog Post-->
+                         @foreach($eventos as $evento)
                         <article class="blog-post">
                             <div class="post-inner">
                                 
                                     <figure >
                                         <!--<img src="images/resource/blog-image-3.jpg" alt="Error en imagen"  width="500" height="300">-->
-                                        <img  src="/images/resource/blog-image-3.jpg" width="869" height="400"/>   
+                                        
+                                        <img  src="{{$evento->imagenes[0]->direccion}}" width="869" height="400"/>   
+
+                                        
                                     </figure>
                               
                                 <div class="post-header">
@@ -44,11 +48,11 @@
                                         <li><span class="fa fa-user"></span>&ensp; Posted by <a href="#">Admin</a></li>
                                         <li><span class="fa fa-server"></span>&ensp; <a href="#">Marketing</a> , <a href="#">SEO</a></li>
                                     </ul>
-                                    <h2><a href="#">Titulo del evento</a></h2>
+                                    <h2><a href="#">{{$evento->nombre_evento}}</a></h2>
                                 </div>
                                 <div class="post-desc">
-                                    <div class="text"><p>Aca va la desscripcion del evento</p></div>
-                                    <div class="text-right"><a href="#" class="theme-btn rounded-btn-blue">Read More</a></div>
+                                    <div class="text"><p>{{$evento->descripcion_evento}}</p></div>
+                                    <div class="text-right"><a href="{{route('verEvento',$evento->id)}}" class="theme-btn rounded-btn-blue">Ver imagenes</a></div>
                                 </div>
                             </div>
                         </article>
@@ -57,38 +61,13 @@
           
                     
                     <br>
+                    @endforeach
 
+                    {!! $eventos->appends(Request::all())->render() !!}
+                    <br>
                  
                 <!--Blog Post-->
-                        <article class="blog-post">
-                            <div class="post-inner" id="galeria">
-                            
-                                <figure >
-                                    <div id="galeria_base">
-                                      <img src="/images/resource/blog-image-3.jpg" width="869" height="400" id="imagen_a_mostar">
-                                    </div>
-
-                                    <div id="galeria_miniatura">
-                                        
-                                    @for($i=0;$i<12;$i++)
-                                         &nbsp&nbsp&nbsp
-                                       <img src="/images/resource/blog-image-2.jpg" width="200" height="100" onclick="document.getElementById('imagen_a_mostar').src='images/resource/blog-image-2.jpg' "  "  style="border-width: 10px;border-style: outset; border-color: blue;"></img>
-
-                                    @endfor
-
-
-                                  
-
-
-                                    </div>
-                                      
-                                </figure>
-                          
-                                <div class="post-header">
-                                </div>
-                       
-                            </div>
-                        </article>                   
+                  
 
 
                     </section>
