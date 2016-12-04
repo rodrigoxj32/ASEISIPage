@@ -2,7 +2,7 @@
 
 @section('content')
 
- {!! Form::open(['action' => 'ComentarioController@store','class'=>'form-horizontal','enctype'=>'multipart/form-data' ]) !!}
+ {!! Form::open(['action' => 'ComentarioController@store' ,'class'=>'form-horizontal','enctype'=>'multipart/form-data' ]) !!}
 
 <br>
 
@@ -83,11 +83,42 @@
 	</div>
 	  <div class="panel-body">
                {!! form::submit('Guardar', ['class'=> 'btn btn-primary btn-lg' ]) !!}  
-		  </div>
+	</div>
+
+
+	<br>
+
 	</div>
 </div>
 	@endif
 @endif
+
+        			<table class="table">
+      				<thead>
+      					<tr>
+      						<th width="20%"> <font size="5">Nombre</font> </th>
+      						<th> <font size="5">Comentarios</font> </th>
+      					</tr>
+      				</thead>
+      				<tbody>
+      		@foreach($comentarios as $comen)
+      			@foreach($comen->user as $co)
+      		
+      				<tr>
+      					<td ><font size="3"> <B>{{$co->name}}</B></font></td>
+      					<td><font size="4">{{$comen->opinion}}</font> </td>
+      				</tr>
+      				
+      					
+      	
+      			
+      			<br>
+      			@endforeach
+      		
+      		@endforeach
+      					</tbody>
+      			</table>
+
 
 {!! Form::close() !!}
 

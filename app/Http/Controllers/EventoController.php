@@ -9,6 +9,8 @@ use App\Http\Controllers\Controller;
 use App\Evento;
 use App\Imagen;
 use Carbon\Carbon;
+use DB;
+use App\Comentario;
 
 class EventoController extends Controller
 {
@@ -112,8 +114,9 @@ class EventoController extends Controller
 
            $eventos->each(function($eventos){
             $eventos->imagenes;
-  
         });
+
+
 
         //dd($eventos);
 
@@ -165,11 +168,20 @@ class EventoController extends Controller
 
         $eventos->each(function($eventos){
             $eventos->imagenes;
-  
+            $eventos->comentarios;            
         });
+
+        $comentarios = Comentario::where('evento_id', "=", $id)->paginate(10);
+        $comentarios->each(function($comentarios){
+            $comentarios->user;
+        });
+
+        //dd($comentarios);
 
         //return redirect('/eventoO')->with('eventos',$eventos);  ;
 
-        return view('verBlog')->with('eventos',$eventos);
+        return view('verBlog')
+        ->with('eventos',$eventos)
+        ->with('comentarios',$comentarios);
    }
 }

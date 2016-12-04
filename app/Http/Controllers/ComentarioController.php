@@ -57,10 +57,10 @@ class ComentarioController extends Controller
 
         $comentario->save();
 
-        $comentario->user()->sync()
+        $comentario->user()->sync($usuario);
 
 
-        //$comentario->save();
+        return redirect('/verEvento/'.$request->evento_id.'/ver');
     }
 
     /**
