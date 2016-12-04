@@ -103,9 +103,11 @@ class ComentarioController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
-    {
-        //
-    }
+    public function destroy($id){
+        $comentario = Comentario::where('id', '=', $id)->delete();
+
+        flash('Se han borrado los porcentajes', 'danger' );
+
+        return redirect()->route('Pnotas.index');
 }
 

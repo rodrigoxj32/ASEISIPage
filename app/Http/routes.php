@@ -15,7 +15,7 @@
 
 Route::get('/', function () {
     return view('index');
-});
+});	
 
 Route::get('/Solicitudes', function () {
     return view('');
@@ -80,11 +80,13 @@ Route::get('/evento',[
 		]);
 
 Route::get('/createBlog',[
+	'middleware' => 'auth',
 	'uses' => 'EventoController@index',
 	'as' => 'eventoCreate'
 		]);
 
 Route::post('/guardarBlog',[
+		'middleware' => 'auth',
         'uses' => 'EventoController@store', 
         'as' => 'guardarBlog'
         ]);
@@ -98,4 +100,10 @@ Route::get('verEvento/{evento}/ver', [
 Route::post('/guardarComentario',[
         'uses' => 'ComentarioController@store', 
         'as' => 'guardarComentario'
+        ]);
+
+Route::get('eliminarComentario/{id}/destroy',[
+		'middleware' => 'auth',
+        'uses' => 'ComentarioController@destroy',
+        'as' => 'eliminarComentario'
         ]);

@@ -98,7 +98,7 @@
                         
                         <div class="navbar-collapse collapse clearfix">
                             <ul class="navigation">
-                                <li ><a href="index.html">Home</a>
+                                <li ><a href="/">Home</a>
                                   
                                 </li>
                                 <li ><a href="about-2.html">About</a>
@@ -123,6 +123,10 @@
                                     
                                   </ul>
                                 </li>
+                                @else
+                                    @if(Auth::user()->rol_id == 2)
+                                    <li ><a href="/evento">Eventos</a>
+                                    @endif
                                 @endif
                             @endif 
                                 

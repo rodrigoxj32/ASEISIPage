@@ -93,20 +93,32 @@
 	@endif
 @endif
 
-        			<table class="table">
-      				<thead>
-      					<tr>
-      						<th width="20%"> <font size="5">Nombre</font> </th>
-      						<th> <font size="5">Comentarios</font> </th>
-      					</tr>
-      				</thead>
-      				<tbody>
+        	<table class="table">
+  				<thead>
+  					<tr>
+					<th width="20%"> <font size="5">Nombre</font> </th>
+					<th> <font size="5">Comentarios</font> </th>
+					@if (Auth::guest())
+					@else
+					@if(Auth::user()->rol_id == 1)
+						<th> <font size="5">Eliminar</font> </th>
+  						@endif
+  						@endif
+  					</tr>
+  				</thead>
+  				<tbody>
       		@foreach($comentarios as $comen)
       			@foreach($comen->user as $co)
       		
       				<tr>
       					<td ><font size="3"> <B>{{$co->name}}</B></font></td>
       					<td><font size="4">{{$comen->opinion}}</font> </td>
+      					@if (Auth::guest())
+      					@else
+      					@if(Auth::user()->rol_id == 1)
+      						<td width="10%">						<a href=" {{route('eliminarComentario',$comen->id)}}" onclick="return confirm('¿Seguro que deseas eliminarlo?')" class="btn btn-danger"><font color="black" size="2"> <b>Eliminar	</b>  </font></a> </td>
+      					@endif
+      					@endif      					
       				</tr>
       				
       					
