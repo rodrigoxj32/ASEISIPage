@@ -40,8 +40,10 @@ class EventoController extends Controller
      */
     public function store(Request $request)
     {
-        dd($request->all());
+        //dd($request->all());
 
+
+        
 
         $evento = new Evento();
 
@@ -52,24 +54,34 @@ class EventoController extends Controller
         $evento->user_id = \Auth::user()->id;
 
         $evento->save();
+
+
                      
-        $imagen  = new Imagen();
+        
+        foreach ($request->imagen1 as $imagenes) {
+            
+            if(file($imagenes)){
+            $imagen  = new Imagen();  
 
-        if($request->file('imagen1')){
-          $original = $request->file('imagen1');
+              $original =$imagenes;
+            
+              $imagen->nombre_imagen =  time().'.' . $original->getClientOriginalExtension();
+              $imagen->direccion = "/images/gallery/".$imagen->nombre_imagen;
+              $dire =  public_path(). "/images/gallery";
+              $imagen->evento()->associate($evento);
+              $original->move($dire, $imagen->nombre_imagen);
 
-          $imagen->nombre_imagen =  time().'.' . $original->getClientOriginalExtension();
-          $imagen->direccion = "/images/gallery/".$imagen->nombre_imagen;
-          $dire =  public_path(). "/images/gallery";
-          $imagen->evento()->associate($evento);
-          $original->move($dire, $imagen->nombre_imagen);
+             $imagen->save();
+              
+            }
 
-          $imagen->save();
-
-          return redirect()->route('eventoIndex');
+            for ($i=0; $i <100000000; $i++) { 
+                # code...
+            }
         }
+        //dd($request->imagen1);
 
-         
+         return redirect()->route('eventoIndex');
 
          //return view ('indexBlog');
 
@@ -82,7 +94,7 @@ class EventoController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function show(){
-        $eventos = Evento::orderBy('id','ASC')->paginate(2);
+        $eventos = Evento::orderBy('id','DESC')->paginate(2);
 
            $eventos->each(function($eventos){
             $eventos->imagenes;

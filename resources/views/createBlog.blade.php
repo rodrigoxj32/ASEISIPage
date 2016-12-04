@@ -31,17 +31,19 @@
           
         </div>
 
-
+        <div style="display: none">
+          <input type="text" name="user_id" value="{{Auth::user()->id}}">
+        </div>
 
       <div>
         <br>
         <label>Seleccione las imagenes a subir</label>
-         {!! form::file('imagen1', ['class' => 'form-control'])!!}
-      </div>
+         {!! form::file('imagen1[]', ['class' => 'form-control', 'multiple'])!!}
 
-        <br>
-        <input type="submit" name="">
-      </div>
+
+  <div class="panel-body">
+               {!! form::submit('Guardar', ['class'=> 'btn btn-primary btn-lg' ]) !!}  
+         </div>
     </div>
 {!! Form::close() !!}
 

@@ -44,9 +44,9 @@
                                 <div class="post-header">
                                     
                                     <ul class="post-info">
-                                         <li><span class="fa fa-clock-o"></span>&ensp; 30 may 2015</li>
+                                         <li><span class="fa fa-clock-o"></span>&ensp; {{$evento->fecha_de_realizacion}}</li>
                                         <li><span class="fa fa-user"></span>&ensp; Posted by <a href="#">Admin</a></li>
-                                        <li><span class="fa fa-server"></span>&ensp; <a href="#">Marketing</a> , <a href="#">SEO</a></li>
+                                        <li><span class="fa fa-server"></span>&ensp; <a href="#">ASEISI</a> , <a href="#"></a></li>
                                     </ul>
                                     <h2><a href="#">{{$evento->nombre_evento}}</a></h2>
                                 </div>

@@ -94,6 +94,8 @@ Route::get('verEvento/{evento}/ver', [
     'as'    => 'verEvento'
     ]);
 
-Route::get('/eventoO', function () {
-    return view('verBlog');
-});
+
+Route::post('/guardarComentario',[
+        'uses' => 'ComentarioController@store', 
+        'as' => 'guardarComentario'
+        ]);

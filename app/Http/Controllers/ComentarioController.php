@@ -6,6 +6,9 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use App\Comentario;
+use App\Evento;
+use App\User;
 
 class ComentarioController extends Controller
 {
@@ -37,7 +40,27 @@ class ComentarioController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $comentario = new Comentario();
+
+        $usuario = User::where('id', "=", $request->user_id)->get();
+        $user;
+
+        foreach ($usuario as $U) {
+            $user = $U;
+        }
+
+        //dd($user->name);
+
+        //$comentario->user_id = $request->user_id;
+        $comentario->evento_id = $request->evento_id;
+        $comentario->opinion = $request->Descripcion;
+
+        $comentario->save();
+
+        $comentario->user()->sync()
+
+
+        //$comentario->save();
     }
 
     /**
@@ -85,3 +108,4 @@ class ComentarioController extends Controller
         //
     }
 }
+
