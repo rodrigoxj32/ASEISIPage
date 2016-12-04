@@ -213,7 +213,8 @@
 <script src="js/jquery.fancybox-media.js"></script>
 <script src="js/wow.js"></script>
 <script src="js/script.js"></script>
-<script src="http://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+<script src="http://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>   
+
 @yield('js')
 </body>
 </html>

@@ -18,12 +18,13 @@ class Evento extends Model
         return $this->hasMany('App\Comentario');
     }
 
+    public function imagenes(){
+        return $this->hasMany('App\Imagen');
+    }
+
     public function user(){
         return $this->belongsTo('App\User');
     }
 
-    public function imagenes(){
-        return $this->belongsToMany('App\Imagen');
-    }
 
 }

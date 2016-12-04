@@ -34,7 +34,7 @@
                                 
                                     <figure >
                                         <!--<img src="images/resource/blog-image-3.jpg" alt="Error en imagen"  width="500" height="300">-->
-                                        <img onclick="javascript:this.width=869;this.height=400" ondblclick="javascript:this.width=1024;this.height=727" src="images/resource/blog-image-3.jpg" width="869" height="400"/>   
+                                        <img  src="/images/resource/blog-image-3.jpg" width="869" height="400"/>   
                                     </figure>
                               
                                 <div class="post-header">
@@ -65,16 +65,16 @@
                             
                                 <figure >
                                     <div id="galeria_base">
-                                      <img src="images/resource/blog-image-3.jpg" width="869" height="400" id="imagen_a_mostar">
+                                      <img src="/images/resource/blog-image-3.jpg" width="869" height="400" id="imagen_a_mostar">
                                     </div>
 
                                     <div id="galeria_miniatura">
                                         
                                     @for($i=0;$i<12;$i++)
                                          &nbsp&nbsp&nbsp
-                                       <img src="images/resource/blog-image-2.jpg" width="200" height="100" onclick="document.getElementById('imagen_a_mostar').src='images/resource/blog-image-2.jpg' "  "  style="border-width: 10px;border-style: outset; border-color: blue;"></img>
+                                       <img src="/images/resource/blog-image-2.jpg" width="200" height="100" onclick="document.getElementById('imagen_a_mostar').src='images/resource/blog-image-2.jpg' "  "  style="border-width: 10px;border-style: outset; border-color: blue;"></img>
 
-                                   @endfor
+                                    @endfor
 
 
                                   

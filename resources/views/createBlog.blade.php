@@ -3,7 +3,7 @@
 @section('content')
 
     <br>
- {!! Form::open(['action' => 'EventoController@store','class'=>'form-horizontal' ]) !!}
+ {!! Form::open(['action' => 'EventoController@store','class'=>'form-horizontal','enctype'=>'multipart/form-data' ]) !!}
 				
 
     <div class="panel panel-primary" align="center" style="width: 1000px;margin: auto;  ">
@@ -33,6 +33,12 @@
 
 
 
+      <div>
+        <br>
+        <label>Seleccione las imagenes a subir</label>
+         {!! form::file('imagen1', ['class' => 'form-control'])!!}
+      </div>
+
         <br>
         <input type="submit" name="">
       </div>
@@ -46,9 +52,13 @@
 
   <script>
     $('#datepicker').datepicker({
-        format: 'yyyy-mm-dd',
+        dateFormat: 'yy-mm-dd',
         startDate: '-2d'
       });
+
+
+
+
 
   </script>
 @endsection('js')
