@@ -116,7 +116,7 @@
       					@if (Auth::guest())
       					@else
       					@if(Auth::user()->rol_id == 1)
-      						<td width="10%">						<a href=" {{route('eliminarComentario',$comen->id)}}" onclick="return confirm('¿Seguro que deseas eliminarlo?')" class="btn btn-danger"><font color="black" size="2"> <b>Eliminar	</b>  </font></a> </td>
+      						<td width="10%"><a href=" {{route('eliminarComentario',$comen->id)}}" onclick="return confirm('¿Seguro que deseas eliminarlo?')" class="btn btn-danger"><font color="black" size="2"> <b>Eliminar</b></font></a> </td>
       					@endif
       					@endif      					
       				</tr>

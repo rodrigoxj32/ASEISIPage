@@ -9,7 +9,7 @@ use App\Http\Controllers\Controller;
 use App\Comentario;
 use App\Evento;
 use App\User;
-
+use DB;
 class ComentarioController extends Controller
 {
     /**
@@ -104,10 +104,32 @@ class ComentarioController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function destroy($id){
+
+        $temp = DB::table('comentario_user') -> where('comentario_id', '=', $id)->get();
+
+
+        
+        foreach ($temp as $v) {
+           // dd($v);             
+            $evento = Comentario::where("id","=", $v->comentario_id)->get();
+
+        }
+
+        
+        foreach ($evento as $key) {
+                    $even = $key->evento_id;
+                }        
+        
+
+//        dd($even);
+
+        $pivote = DB::table('comentario_user') -> where('comentario_id', '=', $id)->delete();
+
         $comentario = Comentario::where('id', '=', $id)->delete();
 
-        flash('Se han borrado los porcentajes', 'danger' );
+        //flash('Se han borrado los porcentajes', 'danger' );
 
-        return redirect()->route('Pnotas.index');
+            return redirect('/verEvento/'.$even.'/ver');        
+    }
 }
 
