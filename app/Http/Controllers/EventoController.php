@@ -66,7 +66,7 @@ class EventoController extends Controller
         $evento->nombre_evento = $request->Titulo;
         $evento->fecha_de_realizacion = $request->fecha;
         $evento->descripcion_evento = $request->Descripcion;
-        $evento->tipo = 1;
+        $evento->tipo = $request->tipo;
         $evento->user_id = \Auth::user()->id;
 
         $evento->save();
@@ -96,8 +96,12 @@ class EventoController extends Controller
             }
         }
         //dd($request->imagen1);
-
-         return redirect()->route('eventoIndex');
+        if ($request->tipo == 1) {
+            return redirect()->route('eventoIndex');
+        }else{
+            return redirect()->route('publicidadIndex');
+        }
+         
 
          //return view ('indexBlog');
 
@@ -117,10 +121,22 @@ class EventoController extends Controller
         });
 
 
-
         //dd($eventos);
 
         return view('indexBlog')->with('eventos',$eventos);
+    }
+
+        public function show2(){
+        $eventos = Evento::orderBy('id','DESC')->paginate(2);
+
+           $eventos->each(function($eventos){
+            $eventos->imagenes;
+        });
+
+   
+        //dd($eventos);
+
+        return view('indexPublicidad')->with('eventos',$eventos);
     }
 
     /**
@@ -162,9 +178,20 @@ class EventoController extends Controller
             unlink(public_path() .$imagen->direccion);
         }
 
-        $evento = Evento::where('id', '=', $id)->delete();
+        $evento = Evento::where('id', '=', $id)->get();
 
-        return redirect()->route('eventoIndex');
+        foreach ($evento as $event) {
+            $E = $event->tipo;
+        }
+        $eventos = Evento::where('id', '=', $id)->delete();
+
+
+        if ($E == 1) {
+            return redirect()->route('eventoIndex');
+        }else{
+            return redirect()->route('publicidadIndex');
+        }
+        
     }
 
 

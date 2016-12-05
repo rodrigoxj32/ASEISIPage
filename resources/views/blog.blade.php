@@ -106,13 +106,13 @@
                                 <li ><a href="/">Home</a>
                                   
                                 </li>
-                                <li ><a href="about-2.html">About</a>
-                                   
-                                </li>
+                             
                                 <li ><a href="services-1.html">Services</a>
                                    
                                 </li>
-                               
+                                <li ><a href="/publicidad">Publicidad</a>
+                                   
+                                </li>
                                     
                               
                             @if (Auth::guest())

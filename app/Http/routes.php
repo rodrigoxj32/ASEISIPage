@@ -113,3 +113,9 @@ Route::get('eliminarEvento/{id}/destroy',[
         'uses' => 'EventoController@destroy',
         'as' => 'eliminarEvento'
         ]);
+
+
+Route::get('/publicidad',[
+	'uses' => 'EventoController@show2',
+	'as' => 'publicidadIndex'
+		]);

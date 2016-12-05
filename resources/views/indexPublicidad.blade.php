@@ -30,7 +30,7 @@
                         
                         <!--Blog Post-->
                          @foreach($eventos as $evento)
-                         @if($evento->tipo == 1)
+                         @if($evento->tipo == 0)
                         <article class="blog-post">
                             <div class="post-inner">
                                 
