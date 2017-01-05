@@ -10,16 +10,13 @@
 
 3. $php artisan key:generate
 
-4.
- 
-IF (Ya hay una base "aseisi" en MySQL)
-	$php artisan migrate:refresh
-ELSE
-	$php artisan migrate
-
+4. $php artisan migrate --seed
 
 5. $composer update
 
 6. $php artisan serve
 
-abc123
+
+
+usuario : aseisi@outlook.es
+contraseña: aseisi
