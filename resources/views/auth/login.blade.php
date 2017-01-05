@@ -50,11 +50,13 @@
 								<button type="submit" class="btn btn-primary" style="margin-right: 15px;">
 									Login
 								</button>
-									<a class="btn btn-primary" href="{{route('google.login')}}">
-                                    Google
-                                </a>
-								<a href="/password/email">Forgot Your Password?</a>
+								<br>
+								<br>
+								<a class="btn btn-danger" href="{{route('google.login')}}">
+                                    Sign in with Google
+                                </a>								
 							</div>
+
 						</div>
 					</form>
 				</div>
