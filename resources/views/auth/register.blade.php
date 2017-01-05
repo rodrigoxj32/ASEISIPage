@@ -54,7 +54,7 @@
 							<label class="col-md-4 control-label">Rol</label>
 							<div class="col-md-6">
 							 
-	            			{!! Form::select('rol_id', $roles, null, ['class' => 'form-control ', 'placeholder'=> 'Seleccione una materia', 'required']) !!}						
+	            			{!! Form::select('rol_id', $roles, null, ['class' => 'form-control ', 'placeholder'=> 'Seleccione un Rol', 'required']) !!}						
 							</div>
 							
 						</div>
