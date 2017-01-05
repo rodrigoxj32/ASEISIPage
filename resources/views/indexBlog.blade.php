@@ -43,14 +43,13 @@
                                     </figure>
                               
                                 <div class="post-header">
-                                    @if (Auth::guest())
-                                    @else
+                  
                                     <ul class="post-info">
                                          <li><span class="fa fa-clock-o"></span>&ensp; {{$evento->fecha_de_realizacion}}</li>
-                                        <li><span class="fa fa-user"></span>&ensp; Posted by <a >{{ Auth::user()->name }} </a></li>
+                                        <li><span class="fa fa-user"></span>&ensp; Posted by <a ></a>{{$evento->user->name}}</li>
                                         <li><span class="fa fa-server"></span>&ensp; <a >ASEISI</a> , <a href="#"></a></li>
                                     </ul>
-                                    @endif
+                                 
                                     <h2><a href="#">{{$evento->nombre_evento}}</a></h2>
                                 </div>
                                 <div class="post-desc">

@@ -72,9 +72,6 @@ Route::post('resetPassword',[
         ]);
 
 
-Route::get('/evento', function () {
-    return view('indexBlog');
-});
 
 Route::get('/evento',[
 	'uses' => 'EventoController@show',

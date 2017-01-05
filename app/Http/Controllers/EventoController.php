@@ -116,8 +116,9 @@ class EventoController extends Controller
     public function show(){
         $eventos = Evento::orderBy('id','DESC')->paginate(2);
 
-           $eventos->each(function($eventos){
+        $eventos->each(function($eventos){
             $eventos->imagenes;
+            $eventos->user;
         });
 
 
@@ -213,7 +214,7 @@ class EventoController extends Controller
             $comentarios->user;
         });
 
-        //dd($comentarios);
+        //dd($eventos);
 
         //return redirect('/eventoO')->with('eventos',$eventos);  ;
 
