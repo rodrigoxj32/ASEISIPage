@@ -27,7 +27,17 @@
 					@if (Auth::guest())
 					@else
 						@if(Auth::user()->rol_id == 1)
-							<td width="10%"><a href=" {{route('eliminarDocumento',$documento->id)}}" onclick="return confirm('¿Seguro que deseas eliminarlo?')" class="btn btn-danger"><font color="black" size="2"> <b>Eliminar</b></font></a> </td>
+							<td width="10%">
+
+							<a href=" {{route('editarDocumento',$documento->id)}}" onclick="return confirm('¿Seguro que deseas Editar?')" class="btn btn-warning"><font color="black" size="2"> <b>Editar</b></font></a> 
+
+							&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp	
+							<a href=" {{route('eliminarDocumento',$documento->id)}}" onclick="return confirm('¿Seguro que deseas eliminarlo?')" class="btn btn-danger"><font color="black" size="2"> <b>Eliminar</b></font></a> 
+
+							
+							
+
+							</td>
 						@endif
 					@endif      					
 				</tr>

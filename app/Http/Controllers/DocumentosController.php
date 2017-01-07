@@ -77,9 +77,11 @@ class DocumentosController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
-    {
-        //
+    public function edit($id){
+        $documento = Documentos::find($id);   
+
+        return view ('editDocumentos')
+        ->with('documento',$documento);
     }
 
     /**
@@ -89,9 +91,17 @@ class DocumentosController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
-    {
-        //
+    public function update(Request $request, $id){
+        $documento = Documentos::find($id);
+
+        $documento->nombre_documento = $request->nombre;
+        $documento->descripcion_documento = $request->Descripcion;
+        $documento->direccion_documento = $request->Direccion;
+        $documento->user_id = $request->user_id;
+
+        $documento->save();
+
+        return redirect()->route('documentoIndex');
     }
 
     /**
@@ -100,8 +110,10 @@ class DocumentosController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
-    {
-        //
+    public function destroy($id){
+        
+        $documento = Documentos::where('id', '=', $id)->delete();
+
+        return redirect()->route('documentoIndex');
     }
 }

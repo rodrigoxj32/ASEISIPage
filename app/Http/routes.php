@@ -140,4 +140,16 @@ Route::get('eliminarDocumento/{id}/destroy',[
         'uses' => 'DocumentosController@destroy',
         'as' => 'eliminarDocumento'
         ]);
+
+Route::get('editar/{id}/edit', [
+	'middleware' => 'auth',
+	'uses' => 'DocumentosController@edit',
+    'as' => 'editarDocumento'
+        ]);
+
+Route::put('cambiar/{id}', [
+	'middleware' => 'auth',
+    'uses' => 'DocumentosController@update',
+    'as' => 'updateDocumento'
+        ]);
 /*FIN DE RUTAS PARA DOCUMENTOS*/
