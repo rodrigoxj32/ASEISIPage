@@ -134,4 +134,10 @@ Route::get('/verDocumento',[
 	'uses' => 'DocumentosController@index',
 	'as' => 'documentoIndex'
 		]);
+
+Route::get('eliminarDocumento/{id}/destroy',[
+		'middleware' => 'auth',
+        'uses' => 'DocumentosController@destroy',
+        'as' => 'eliminarDocumento'
+        ]);
 /*FIN DE RUTAS PARA DOCUMENTOS*/

@@ -85,15 +85,12 @@
                {!! form::submit('Guardar', ['class'=> 'btn btn-primary btn-lg' ]) !!}  
 	</div>
 
-
-	<br>
-
 	</div>
 </div>
 	@endif
 @endif
 
-        	<table class="table">
+        <table class="table">
   				<thead>
   					<tr>
 					<th width="20%"> <font size="5">Nombre</font> </th>

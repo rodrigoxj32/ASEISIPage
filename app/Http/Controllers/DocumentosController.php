@@ -17,9 +17,16 @@ class DocumentosController extends Controller
      */
     public function index(){
 
+        $documentos = Documentos::orderBy('id','DESC')->paginate(2);
 
+        $documentos->each(function($documentos){   
+            $documentos->user;
+        });
+
+
+        //dd($documentos);       
         
-        return view('indexDocumentos');
+        return view('indexDocumentos')->with('documentos',$documentos);
     }
 
     /**

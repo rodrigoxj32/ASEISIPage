@@ -132,6 +132,7 @@ class EventoController extends Controller
 
            $eventos->each(function($eventos){
             $eventos->imagenes;
+            $eventos->user;
         });
 
    
