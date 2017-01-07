@@ -72,7 +72,7 @@ Route::post('resetPassword',[
         ]);
 
 
-
+/*RUTAS PARA EVENTO*/
 Route::get('/evento',[
 	'uses' => 'EventoController@show',
 	'as' => 'eventoIndex'
@@ -118,3 +118,17 @@ Route::get('/publicidad',[
 	'uses' => 'EventoController@show2',
 	'as' => 'publicidadIndex'
 		]);
+/*FIN DE RUTA PARA EVENTOS*/
+
+/*RUTAS PARA DOCUMENTOS*/
+Route::get('/crearDocumento',[
+	'uses' => 'DocumentosController@show',
+	'as' => 'documentosCreate'
+		]);
+
+Route::post('/guardarDocumento',[
+		'middleware' => 'auth',
+        'uses' => 'DocumentosController@store',
+        'as' => 'guardarDocumento'
+        ]);
+/*FIN DE RUTAS PARA DOCUMENTOS*/

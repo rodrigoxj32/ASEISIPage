@@ -129,7 +129,27 @@
                                 @endif
                             @endif 
                                 
-                                <li><a href="/Documentos">Documentos</a></li>
+                            
+                           @if (Auth::guest())
+                                 <li ><a href="/Documentos">Documentos</a>
+                              
+                            @else
+                                @if(Auth::user()->rol_id == 1)
+                                <li class="dropdown"><a class="dropdown-toggle" href="">Documentos</a>
+                                  <ul class="dropdown-menu">
+                                    <li ><a href="/Documentos">Documentos</a>
+                                    <li><a style="color:black " href="/crearDocumento">Subir nuevo Documento</a></li>
+                                    
+                                  </ul>
+                                </li>
+                                @else
+                                    @if(Auth::user()->rol_id == 2)
+                                    <li ><a href="/Documentos">Eventos</a>
+                                    @endif
+                                @endif
+                            @endif 
+
+
                             @if (Auth::guest())
 
                               
