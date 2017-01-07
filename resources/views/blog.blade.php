@@ -158,7 +158,7 @@
                                 @if(Auth::user()->rol_id == 1)
                                 <li class="dropdown"><a class="dropdown-toggle" href="/verDocumento">Documentos</a>
                                   <ul class="dropdown-menu">
-                                    <li><a style="color:black " href="/crearDocumento">Subir nuevo Documento</a></li>
+                                    <li><a style="color:black " href="/crearDocumento">Agregar nuevo Documento</a></li>
                                     
                                   </ul>
                                 </li>

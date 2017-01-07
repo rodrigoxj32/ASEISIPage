@@ -46,7 +46,8 @@
                         
                     @else
                     <ul class="navigation">
-                     <li class="dropdown"><a style="color:black" class="dropdown-toggle" href="#" aria-expanded="false">{{ Auth::user()->name }} <span></span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a>
+                     <li class="dropdown">
+                        <a style="color:black" class="dropdown-toggle" href="#" aria-expanded="false">{{ Auth::user()->name }} <span></span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a>
                             <ul class="dropdown-menu">
                                 @if(Auth::user()->rol_id == 2)
                                     <li><a style="color:black" href="/auth/logout">Cerrar Sesion</a></li>
@@ -155,7 +156,7 @@
                                 @if(Auth::user()->rol_id == 1)
                                 <li class="dropdown"><a class="dropdown-toggle" href="/verDocumento">Documentos</a>
                                   <ul class="dropdown-menu">
-                                    <li><a style="color:black " href="/crearDocumento">Subir nuevo Documento</a></li>
+                                    <li><a style="color:black " href="/crearDocumento">Agregar nuevo Documento</a></li>
                                     
                                   </ul>
                                 </li>
