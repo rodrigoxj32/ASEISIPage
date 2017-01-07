@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>ASEISI | Eventos</title>
+<title>ASEISI</title>
 <!-- Stylesheets -->
 <link href="{{asset('css/bootstrap.css')}}" rel="stylesheet">
 <link href="{{asset('css/style.css')}}" rel="stylesheet">
@@ -75,7 +75,7 @@
                 
                     <!-- Logo -->
                     <div class="logo">
-                        <a href="index.html"><img src="images/logo-1.png" alt="Aseisi"></a>
+                        <a href="/"><img src="images/logo-1.png" alt="Aseisi"></a>
                      </div>
                      
                      <!--Search Box
@@ -107,12 +107,28 @@
                                   
                                 </li>
                              
-                                <li ><a href="services-1.html">Services</a>
+                                <li ><a href="">Services</a>
                                    
                                 </li>
-                                <li ><a href="/publicidad">Publicidad</a>
-                                   
+
+
+                          @if (Auth::guest())
+                                 <li ><a href="/publicidad">Publicidad</a>
+                              
+                            @else
+                                @if(Auth::user()->rol_id == 1)
+                                <li class="dropdown"><a class="dropdown-toggle" href="/publicidad">Publicidad</a>
+                                  <ul class="dropdown-menu">
+                                    <li><a style="color:black " href="/createBlog">Crear Publicidad</a></li>
+                                    
+                                  </ul>
                                 </li>
+                                @else
+                                    @if(Auth::user()->rol_id == 2)
+                                    <li ><a href="/publicidad">Publicidad</a>
+                                    @endif
+                                @endif
+                            @endif     
                                     
                               
                             @if (Auth::guest())
@@ -120,9 +136,8 @@
                               
                             @else
                                 @if(Auth::user()->rol_id == 1)
-                                <li class="dropdown"><a class="dropdown-toggle" href="">Eventos</a>
+                                <li class="dropdown"><a class="dropdown-toggle" href="/evento">Eventos</a>
                                   <ul class="dropdown-menu">
-                                    <li ><a href="/evento">Eventos</a>
                                     <li><a style="color:black " href="/createBlog">Crear Evento</a></li>
                                     
                                   </ul>
@@ -135,20 +150,19 @@
                             @endif 
                                 
                            @if (Auth::guest())
-                                <li ><a href="/Documentos">Documentos</a>
+                                <li ><a href="/verDocumento">Documentos</a>
                               
                             @else
                                 @if(Auth::user()->rol_id == 1)
                                 <li class="dropdown"><a class="dropdown-toggle" href="">Documentos</a>
                                   <ul class="dropdown-menu">
-                                    <li ><a href="/Documentos">Documentos</a>
                                     <li><a style="color:black " href="/crearDocumento">Subir nuevo Documento</a></li>
                                     
                                   </ul>
                                 </li>
                                 @else
                                     @if(Auth::user()->rol_id == 2)
-                                    <li ><a href="/Documentos">Eventos</a>
+                                    <li ><a href="/verDocumento">Eventos</a>
                                     @endif
                                 @endif
                             @endif 

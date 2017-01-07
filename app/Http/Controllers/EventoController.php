@@ -67,7 +67,7 @@ class EventoController extends Controller
         $evento->fecha_de_realizacion = $request->fecha;
         $evento->descripcion_evento = $request->Descripcion;
         $evento->tipo = $request->tipo;
-        $evento->user_id = \Auth::user()->id;
+        $evento->user_id = $request->user_id;
 
         $evento->save();
 

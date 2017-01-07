@@ -14,7 +14,7 @@
 
         <div>
           <label>Nombre</label>
-          <input type="text" class="form-control" name="Titulo" placeholder="Nombre del documento" required="">  
+          <input type="text" class="form-control" name="nombre" placeholder="Nombre del documento" required="">  
         </div>
         
 
@@ -31,9 +31,13 @@
           <input type="url" class="form-control" name="Direccion" placeholder="Direccion del documento" required="">  
         </div>
 
+        @if(Auth::guest())
+
+        @else
         <div style="display: none">
           <input type="text" name="user_id" value="{{Auth::user()->id}}">
         </div>
+        @endif
 
       <div>
         <br>

@@ -70,7 +70,7 @@
                 
                     <!-- Logo -->
                     <div class="logo">
-                        <a href="index.html"><img src="images/logo-1.png" alt="Aseisi"></a>
+                        <a href="/"><img src="images/logo-1.png" alt="Aseisi"></a>
                      </div>
                      
                      <!--Search Box
@@ -102,13 +102,29 @@
                                   
                                 </li>
                                 
-                                <li ><a href="services-1.html">Services</a>
+                                <li ><a href="">Services</a>
                                    
                                 </li>
              
-                                <li ><a href="/publicidad">Publicidad</a>
-                                   
+
+
+                          @if (Auth::guest())
+                                 <li ><a href="/publicidad">Publicidad</a>
+                              
+                            @else
+                                @if(Auth::user()->rol_id == 1)
+                                <li class="dropdown"><a class="dropdown-toggle" href="/publicidad">Publicidad</a>
+                                  <ul class="dropdown-menu">
+                                    <li><a style="color:black " href="/createBlog">Crear Publicidad</a></li>
+                                    
+                                  </ul>
                                 </li>
+                                @else
+                                    @if(Auth::user()->rol_id == 2)
+                                    <li ><a href="/publicidad">Publicidad</a>
+                                    @endif
+                                @endif
+                            @endif
 
                            @if (Auth::guest())
                                  <li ><a href="/evento">Eventos</a>
@@ -117,8 +133,7 @@
                                 @if(Auth::user()->rol_id == 1)
                                 <li class="dropdown"><a class="dropdown-toggle" href="">Eventos</a>
                                   <ul class="dropdown-menu">
-                                    <li ><a href="/evento">Eventos</a>
-                                    <li><a style="color:black " href="/createBlog">Crear Evento</a></li>
+                                        <li><a style="color:black " href="/createBlog">Crear Evento</a></li>
                                     
                                   </ul>
                                 </li>
@@ -131,20 +146,19 @@
                                 
                             
                            @if (Auth::guest())
-                                 <li ><a href="/Documentos">Documentos</a>
+                                 <li ><a href="/verDocumento">Documentos</a>
                               
                             @else
                                 @if(Auth::user()->rol_id == 1)
                                 <li class="dropdown"><a class="dropdown-toggle" href="">Documentos</a>
                                   <ul class="dropdown-menu">
-                                    <li ><a href="/Documentos">Documentos</a>
                                     <li><a style="color:black " href="/crearDocumento">Subir nuevo Documento</a></li>
                                     
                                   </ul>
                                 </li>
                                 @else
                                     @if(Auth::user()->rol_id == 2)
-                                    <li ><a href="/Documentos">Eventos</a>
+                                    <li ><a href="/verDocumento">Eventos</a>
                                     @endif
                                 @endif
                             @endif 
@@ -243,7 +257,7 @@
                     data-endelementdelay="0.3"
                     data-endspeed="1200"
                     data-endeasing="Power4.easeIn"
-                    style="z-index: 4; max-width: auto; max-height: auto; white-space: nowrap;"><a class="theme-btn radial-btn" href="about-2.html"><span class="txt">Adelante!</span> <span class="img-circle fa fa-arrow-right"></span></a></div>
+                    style="z-index: 4; max-width: auto; max-height: auto; white-space: nowrap;"><a class="theme-btn radial-btn" href=""><span class="txt">Adelante!</span> <span class="img-circle fa fa-arrow-right"></span></a></div>
                     
                     
                     </li>
@@ -308,7 +322,7 @@
                     data-endelementdelay="0.3"
                     data-endspeed="1200"
                     data-endeasing="Power4.easeIn"
-                    style="z-index: 4; max-width: auto; max-height: auto; white-space: nowrap;"><a class="theme-btn radial-btn" href="about-2.html"><span class="txt">Vamos! </span> <span class="img-circle fa fa-arrow-right"></span></a></div>
+                    style="z-index: 4; max-width: auto; max-height: auto; white-space: nowrap;"><a class="theme-btn radial-btn" href=""><span class="txt">Vamos! </span> <span class="img-circle fa fa-arrow-right"></span></a></div>
                     
                     
                     </li>
@@ -373,7 +387,7 @@
                     data-endelementdelay="0.3"
                     data-endspeed="1200"
                     data-endeasing="Power4.easeIn"
-                    style="z-index: 4; max-width: auto; max-height: auto; white-space: nowrap;"><a class="theme-btn radial-btn" href="about-2.html"><span class="txt">Vamos!</span> <span class="img-circle fa fa-arrow-right"></span></a></div>
+                    style="z-index: 4; max-width: auto; max-height: auto; white-space: nowrap;"><a class="theme-btn radial-btn" href=""><span class="txt">Vamos!</span> <span class="img-circle fa fa-arrow-right"></span></a></div>
                     
                     
                     </li>
@@ -438,7 +452,7 @@
                     data-endelementdelay="0.3"
                     data-endspeed="1200"
                     data-endeasing="Power4.easeIn"
-                    style="z-index: 4; max-width: auto; max-height: auto; white-space: nowrap;"><a class="theme-btn radial-btn" href="about-2.html"><span class="txt">Vamos!</span> <span class="img-circle fa fa-arrow-right"></span></a></div>
+                    style="z-index: 4; max-width: auto; max-height: auto; white-space: nowrap;"><a class="theme-btn radial-btn" href=""><span class="txt">Vamos!</span> <span class="img-circle fa fa-arrow-right"></span></a></div>
                     
                     
                     </li>

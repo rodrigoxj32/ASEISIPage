@@ -91,7 +91,7 @@ class UserController extends Controller
     
     }
 
-        public function Resetstore(Request $request){
+    public function Resetstore(Request $request){
 
         try {
 

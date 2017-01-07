@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use App\Documentos;
 
 class DocumentosController extends Controller
 {
@@ -14,9 +15,11 @@ class DocumentosController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
-    {
-        //
+    public function index(){
+
+
+        
+        return view('indexDocumentos');
     }
 
     /**
@@ -35,9 +38,19 @@ class DocumentosController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
-    {
-        dd($request->all());
+    public function store(Request $request){
+        //dd($request->all());
+
+        $documento = new Documentos();
+
+        $documento->nombre_documento = $request->nombre;
+        $documento->descripcion_documento = $request->Descripcion;
+        $documento->direccion_documento = $request->Direccion;
+        $documento->user_id = $request->user_id;
+
+        $documento->save();
+
+        return redirect()->route('documentoIndex');
     }
 
     /**

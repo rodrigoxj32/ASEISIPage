@@ -21,9 +21,6 @@ Route::get('/Solicitudes', function () {
     return view('');
 });
 
-Route::get('/Documentos', function () {
-    return view('Documentos');
-});
 
 
 Route::get('home',[
@@ -122,13 +119,19 @@ Route::get('/publicidad',[
 
 /*RUTAS PARA DOCUMENTOS*/
 Route::get('/crearDocumento',[
+	'middleware' => 'auth',
 	'uses' => 'DocumentosController@show',
 	'as' => 'documentosCreate'
 		]);
 
 Route::post('/guardarDocumento',[
-		'middleware' => 'auth',
-        'uses' => 'DocumentosController@store',
-        'as' => 'guardarDocumento'
+	'middleware' => 'auth',
+    'uses' => 'DocumentosController@store',
+ 	'as' => 'guardarDocumento'
         ]);
+
+Route::get('/verDocumento',[
+	'uses' => 'DocumentosController@index',
+	'as' => 'documentoIndex'
+		]);
 /*FIN DE RUTAS PARA DOCUMENTOS*/

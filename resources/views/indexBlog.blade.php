@@ -12,19 +12,7 @@
                 <div class="col-lg-9 col-md-8 col-sm-6 col-xs-12">
                     <section class="blog-container">
                         
-                        <!--Blog Post-->
-                        <article class="blog-post">
-                            <div class="post-inner">
-                                <div class="image-box">
-                                    <ul class="image-slider">
-                                        <li><a href="images/resource/blog-image-1.jpg" class="lightbox-image"><img src="images/resource/blog-image-1.jpg" alt=""></a></li>
-                                        <li><a href="images/resource/blog-image-2.jpg" class="lightbox-image"><img src="images/resource/blog-image-2.jpg" alt=""></a></li>
-                                        <li><a href="images/resource/blog-image-3.jpg" class="lightbox-image"><img src="images/resource/blog-image-3.jpg" alt=""></a></li>
-                                    </ul>
-                                </div>
-
-                            </div>
-                        </article>
+            
                         
                                            
                         
