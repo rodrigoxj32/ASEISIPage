@@ -39,7 +39,7 @@ Route::get('login', [
 	'as' => 'login'
 	]);
 
-Route::get('auth/google', 'GoogleController@redirectToProvider')->name('facebook.login');
+Route::get('auth/google', 'GoogleController@redirectToProvider')->name('google.login');
 Route::get('auth/google/callback', 'GoogleController@handleProviderCallback');
 
 Route::get('auth/facebook', 'FacebookController@redirectToProvider')->name('facebook.login');
