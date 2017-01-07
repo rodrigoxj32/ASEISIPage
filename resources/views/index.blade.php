@@ -129,7 +129,7 @@
                                 @endif
                             @endif 
                                 
-                                <li><a href="contact.html">Trámites</a></li>
+                                <li><a href="/Documentos">Documentos</a></li>
                             @if (Auth::guest())
 
                               
@@ -967,7 +967,7 @@
                     <div class="col-lg-4 col-sm-12 col-xs-12 column">
                         <div class="footer-widget newsletter-widget">
                             <h2>Subscribe Newsletter</h2>	
-                            <form method="post" action="contact.html">
+                            <form method="post" action="/Documentos">
                             	<div class="form-group">
                                 	<input type="text" name="username" value="" placeholder="Enter Name" required>
                                 </div>

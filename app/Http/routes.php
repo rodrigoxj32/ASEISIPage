@@ -21,8 +21,8 @@ Route::get('/Solicitudes', function () {
     return view('');
 });
 
-Route::get('/Servicios', function () {
-    return view('');
+Route::get('/Documentos', function () {
+    return view('Documentos');
 });
 
 

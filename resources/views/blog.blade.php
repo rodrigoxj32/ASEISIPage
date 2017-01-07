@@ -134,7 +134,7 @@
                                 @endif
                             @endif 
                                 
-                                <li><a href="contact.html">Trámites</a></li>
+                                <li><a href="/Documentos">Documentos</a></li>
                             @if (Auth::guest())
 
                               

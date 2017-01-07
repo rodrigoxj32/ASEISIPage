@@ -10,7 +10,7 @@ class Evento extends Model
 
     protected $fillable = ['nombre_evento', 
     'descripcion_evento',
-    'echa_de_realizacion'];
+    'fecha_de_realizacion'];
 
 
     //relacion uno a muchos con comentarios
