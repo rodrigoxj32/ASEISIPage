@@ -20,3 +20,16 @@
 
 usuario : aseisi@outlook.es
 contraseña: aseisi
+
+
+NOTA: EN WINDOWS DEBES HACER LO SIGUIENTE SI TRABAJAS CON XAMPP
+Copiar el archivo "cacert.pem.txt" y pegarlo en la direccion:
+C:\xampp\php
+
+Luego buscar el archivo PHP.ini que se encuentra en la direccion:
+C:\xampp\php
+Abrelo y busca :[curl] y agregas la siguiente linea:
+
+curl.cainfo = "C:\xampp\php\cacert.pem.txt"
+
+Esto es para que funcione le logeo con redes sociales
