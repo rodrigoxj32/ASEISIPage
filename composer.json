@@ -8,6 +8,8 @@
         "php": ">=5.5.9",
         "laravel/framework": "5.1.*",
         "laravelcollective/html": "5.1.*",
+        "laracasts/flash": "^2.0",
+        "nesbot/carbon": "^1.21",
         "laravel/socialite": "^2.0"
     },
     "require-dev": {

@@ -23,7 +23,7 @@ class TableComentario extends Migration
 
 
            //tabla pivote de comentario usuario
-        Schema::create('user_comentario', function(Blueprint $table){
+        Schema::create('comentario_user', function(Blueprint $table){
             $table->increments('id');
             $table->integer('user_id')->unsigned();
             $table->integer('comentario_id')->unsigned();

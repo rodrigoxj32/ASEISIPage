@@ -16,7 +16,7 @@ class TableEvento extends Migration
         Schema::create('eventos', function (Blueprint $table) {
             $table->increments('id');
             $table->string('nombre_evento',100);
-            $table->string('descripcion_evento',200);
+            $table->string('descripcion_evento',250);
             $table->date('fecha_de_realizacion');
             $table->integer('tipo');//1 para noticia 0 para publicidad
             $table->integer('user_id')->unsigned();

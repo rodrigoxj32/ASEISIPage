@@ -10,7 +10,7 @@ class Evento extends Model
 
     protected $fillable = ['nombre_evento', 
     'descripcion_evento',
-    'echa_de_realizacion'];
+    'fecha_de_realizacion'];
 
 
     //relacion uno a muchos con comentarios
@@ -18,12 +18,17 @@ class Evento extends Model
         return $this->hasMany('App\Comentario');
     }
 
+    public function imagenes(){
+        return $this->hasMany('App\Imagen');
+    }
+
     public function user(){
         return $this->belongsTo('App\User');
     }
 
-    public function imagenes(){
-        return $this->belongsToMany('App\Imagen');
-    }
+
+
+    
+
 
 }

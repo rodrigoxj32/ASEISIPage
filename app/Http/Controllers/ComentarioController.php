@@ -6,7 +6,10 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
-
+use App\Comentario;
+use App\Evento;
+use App\User;
+use DB;
 class ComentarioController extends Controller
 {
     /**
@@ -37,7 +40,27 @@ class ComentarioController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $comentario = new Comentario();
+
+        $usuario = User::where('id', "=", $request->user_id)->get();
+        $user;
+
+        foreach ($usuario as $U) {
+            $user = $U;
+        }
+
+        //dd($user->name);
+
+        //$comentario->user_id = $request->user_id;
+        $comentario->evento_id = $request->evento_id;
+        $comentario->opinion = $request->Descripcion;
+
+        $comentario->save();
+
+        $comentario->user()->sync($usuario);
+
+
+        return redirect('/verEvento/'.$request->evento_id.'/ver');
     }
 
     /**
@@ -80,8 +103,33 @@ class ComentarioController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
-    {
-        //
+    public function destroy($id){
+
+        $temp = DB::table('comentario_user') -> where('comentario_id', '=', $id)->get();
+
+
+        
+        foreach ($temp as $v) {
+           // dd($v);             
+            $evento = Comentario::where("id","=", $v->comentario_id)->get();
+
+        }
+
+        
+        foreach ($evento as $key) {
+                    $even = $key->evento_id;
+                }        
+        
+
+//        dd($even);
+
+        $pivote = DB::table('comentario_user') -> where('comentario_id', '=', $id)->delete();
+
+        $comentario = Comentario::where('id', '=', $id)->delete();
+
+        //flash('Se han borrado los porcentajes', 'danger' );
+
+            return redirect('/verEvento/'.$even.'/ver');        
     }
 }
+
