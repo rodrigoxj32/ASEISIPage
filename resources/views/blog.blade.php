@@ -201,8 +201,8 @@
     <section class="page-title" style="background-image:url(images/parallax/image-1.jpg);">
     	<div class="auto-container">
         	<div class="sec-title">
-                <h1>Our Blog</h1>
-                <div class="page-subtitle">Eventos </div>
+                <h1></h1>
+                <div class="page-subtitle"></div>
             </div>
         </div>
         <!--Down Arrow-->
