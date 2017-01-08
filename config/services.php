@@ -1,7 +1,5 @@
 <?php
-
 return [
-
     /*
     |--------------------------------------------------------------------------
     | Third Party Services
@@ -13,22 +11,18 @@ return [
     | to have a conventional place to find your various credentials.
     |
     */
-
     'mailgun' => [
         'domain' => '',
         'secret' => '',
     ],
-
     'mandrill' => [
         'secret' => '',
     ],
-
     'ses' => [
         'key' => '',
         'secret' => '',
         'region' => 'us-east-1',
     ],
-
     'stripe' => [
         'model'  => App\User::class,
         'key' => '',
@@ -38,6 +32,10 @@ return [
       'client_id' => '805657215467-bqa5ihq8nmorpiljhk2d4s94fqhstpkj.apps.googleusercontent.com',
       'client_secret' => 'X57rnsVI7Uz_EQTzBzqA-lVd',
       'redirect' => 'http://localhost:8000/auth/google/callback',
-  ],
-
+    ],
+    'facebook' => [
+      'client_id' => '1296887863708520',
+      'client_secret' => '153a33db7ea7a31c242115e4b38f2b6d',
+      'redirect' => 'http://localhost:8000/auth/facebook/callback',
+    ],
 ];

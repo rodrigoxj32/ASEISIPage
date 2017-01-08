@@ -39,6 +39,9 @@ Route::get('login', [
 Route::get('auth/google', 'GoogleController@redirectToProvider')->name('google.login');
 Route::get('auth/google/callback', 'GoogleController@handleProviderCallback');
 
+Route::get('auth/facebook', 'FacebookController@redirectToProvider')->name('facebook.login');
+Route::get('auth/facebook/callback', 'FacebookController@handleProviderCallback');
+
 Route::post('login', 'Auth\AuthController@postLogin');
 
 Route::get('auth/logout', 'Auth\AuthController@getLogout');
