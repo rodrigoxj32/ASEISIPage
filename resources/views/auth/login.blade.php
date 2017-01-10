@@ -4,8 +4,8 @@
 <div class="container-fluid">
 	<div class="row">
 		<div class="col-md-8 col-md-offset-2">
-			<div class="panel panel-default">
-				<div class="panel-heading" style="background-color:#2ecc71;font-family:fantasy;font-size:1cm; color:white;">LOGIN</div>
+			<div class="panel panel-default" style="box-shadow: 15px 15px 5px #22313F;">
+				<div class="panel-heading" style="background-color:#19B5FE;font-family:fantasy;font-size:1cm; color:white;">LOGIN</div>
 				<div class="panel-body" style="background-color:white;">
 					@if (count($errors) > 0)
 						<div class="alert alert-danger">
@@ -47,19 +47,20 @@
 
 						<div class="form-group">
 							<div class="col-md-6 col-md-offset-4">
-								<button type="submit" class="btn btn-primary" style="width:3cm;">
+								<button type="submit" class="btn btn-default" style="width:3cm;background-color:#19B5FE;color:white;">
 									Login
 								</button>
-								<a class="btn btn-primary" style="width:3cm;" href="{{route('facebook.login')}}">
-                  Sign in with Facebook
+								<a class="btn btn-default" style="width:3cm;background-color:#19B5FE;color:white;" href="{{route('facebook.login')}}">
+                  Facebook
         				</a>
-								<a class="btn btn-danger" style="width:3cm;" href="{{route('google.login')}}">
-                  Sign in with Google
+								<a class="btn btn-default" style="width:3cm;background-color:#19B5FE;color:white;" href="{{route('google.login')}}">
+                  Google
                 </a>
 							</div>
 						</div>
 					</form>
 				</div>
+
 			</div>
 		</div>
 	</div>
