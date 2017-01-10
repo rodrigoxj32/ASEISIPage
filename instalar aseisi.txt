@@ -1,4 +1,4 @@
-::::::::::::::::::::	
+::::::::::::::::::::
 	INSTALAR ASEISI
 ::::::::::::::::::::
 
@@ -32,4 +32,4 @@ Abrelo y busca :[curl] y agregas la siguiente linea:
 
 curl.cainfo = "C:\xampp\php\cacert.pem.txt"
 
-Esto es para que funcione le logeo con redes sociales
+Esto es para que funcione el logeo con redes sociales
