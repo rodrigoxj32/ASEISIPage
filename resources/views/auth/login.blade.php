@@ -53,12 +53,21 @@
 								<br>
 								<br>
 								<a class="btn btn-danger" href="{{route('google.login')}}">
+<<<<<<< HEAD
                   Sign in with Google
                 </a>
 								<a class="btn btn-danger" href="{{route('facebook.login')}}">
                   Sign in with Facebook
                 </a>
+=======
+                                    Sign in with Google
+                                </a>
+>>>>>>> master
 							</div>
+							<a class="btn btn-danger" href="{{route('facebook.login')}}">
+																	Sign in with Facebook
+															</a>
+						</div>
 
 						</div>
 					</form>
