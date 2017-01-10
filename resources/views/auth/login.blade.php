@@ -5,8 +5,8 @@
 	<div class="row">
 		<div class="col-md-8 col-md-offset-2">
 			<div class="panel panel-default">
-				<div class="panel-heading">Login</div>
-				<div class="panel-body">
+				<div class="panel-heading" style="background-color:#2ecc71;font-family:fantasy;font-size:1cm; color:white;">LOGIN</div>
+				<div class="panel-body" style="background-color:white;">
 					@if (count($errors) > 0)
 						<div class="alert alert-danger">
 							Por favor corrige los siguientes errores:<br><br>
@@ -47,26 +47,16 @@
 
 						<div class="form-group">
 							<div class="col-md-6 col-md-offset-4">
-								<button type="submit" class="btn btn-primary" style="margin-right: 15px;">
+								<button type="submit" class="btn btn-primary" style="width:3cm;">
 									Login
 								</button>
-								<br>
-								<br>
-
-								<a class="btn btn-primary" href="{{route('facebook.login')}}">
-                  				Sign in with Facebook
-                				</a>
-                				<br>
-                                <br>	
-                                
-								<a class="btn btn-danger" href="{{route('google.login')}}">
-                                    Sign in with Google
-                                </a>								
-
-                                
-   								
+								<a class="btn btn-primary" style="width:3cm;" href="{{route('facebook.login')}}">
+                  Sign in with Facebook
+        				</a>
+								<a class="btn btn-danger" style="width:3cm;" href="{{route('google.login')}}">
+                  Sign in with Google
+                </a>
 							</div>
-
 						</div>
 					</form>
 				</div>
