@@ -44,9 +44,6 @@
 
         <div>
             <br>
-
-
-
             <div class="panel-body">
                 {!! form::submit('Guardar', ['class'=> 'btn btn-primary btn-lg' ]) !!}  
             </div>

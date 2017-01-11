@@ -70,7 +70,7 @@
 
                             <!-- Logo -->
                             <div class="logo">
-                                <a href="/"><img src="images/logo-1.png" alt="Aseisi"></a>
+                                <a href="/"><img src="/images/logo-1.png" alt="Aseisi"></a>
                             </div>
 
                             <!--Search Box

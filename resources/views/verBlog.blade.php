@@ -42,7 +42,7 @@
                                 @foreach($eventos as $evento)
                                 @foreach($evento->imagenes as $imagen)
                                 &nbsp&nbsp&nbsp
-                                <img src="{{$imagen->direccion}}" width="200" height="100" onclick="document.getElementById('imagen_a_mostar').src ='{{$imagen->direccion}} ' "  "  style="border-width: 10px;border-style: outset; border-color: blue;"></img>
+                                <img src="{{$imagen->direccion}}" width="200" height="100" onclick="document.getElementById('imagen_a_mostar').src ='{{$imagen->direccion}} ' " style="border-width: 10px;border-style: outset; border-color:#00B16A;"></img>
                                 @endforeach
                                 @endforeach
                             </div>
@@ -67,67 +67,75 @@
 @if(Auth::user()->rol_id == 1 || Auth::user()->rol_id == 2)
 <div class="sidebar-page scroll-to-this">
     <div class="auto-container">
-        <div class="row clearfix">
-
-            <div class="col-lg-9 col-md-8 col-sm-6 col-xs-12">
-                <label>Comentarios</label>
-                <textarea rows="4" cols="50" class="form-control" name="Descripcion" maxlength="250"></textarea>
+        <div class="panel panel-primary">
+            <div class="row clearfix">
+                <div class="panel-heading"><h2 style="margin-left: 1%;">DEJA TU COMENTARIO</h2></div>
+                <div class="panel-body">
+                    <div class="col-lg-9 col-md-8 col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            <div class="col-sm-10">
+                                <textarea rows="4" cols="50" class="form-control" name="Descripcion" maxlength="250"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="display: none">
+                    <input type="text" name="user_id" value="{{Auth::user()->id}}">
+                    <input type="text" name="evento_id" value="{{$eventos[0]->id}}">
+                </div>			
             </div>
-            <br>
-
-            <div style="display: none">
-                <input type="text" name="user_id" value="{{Auth::user()->id}}">
-                <input type="text" name="evento_id" value="{{$eventos[0]->id}}">
-            </div>			
-
+            <div class="form-group">
+                <div style="margin-left: 2%;" class="col-sm-10">
+                    {!! form::submit('Guardar', ['class'=> 'btn btn-primary' ]) !!} 
+                </div>
+            </div>
         </div>
-        <div class="panel-body">
-            {!! form::submit('Guardar', ['class'=> 'btn btn-primary btn-lg' ]) !!}  
-        </div>
-
     </div>
 </div>
 @endif
 @endif
 
-<table class="table">
-    <thead>
-        <tr>
-            <th width="20%"> <font size="5">Nombre</font> </th>
-            <th> <font size="5">Comentarios</font> </th>
-            @if (Auth::guest())
-            @else
-            @if(Auth::user()->rol_id == 1)
-            <th> <font size="5">Eliminar</font> </th>
-            @endif
-            @endif
-        </tr>
-    </thead>
-    <tbody>
-        @foreach($comentarios as $comen)
-        @foreach($comen->user as $co)
+<div class="row">
+    <div class="col-lg-10">
+        <table class="table" style="margin-left: 10%;margin-right: 10%;">
+            <thead>
+                <tr>
+                    <th width="20%"> <font size="5">Nombre</font> </th>
+                    <th> <font size="5">Comentarios</font> </th>
+                    @if (Auth::guest())
+                    @else
+                    @if(Auth::user()->rol_id == 1)
+                    <th> <font size="5">Eliminar</font> </th>
+                    @endif
+                    @endif
+                </tr>
+            </thead>
+            <tbody>
+                @foreach($comentarios as $comen)
+                @foreach($comen->user as $co)
 
-        <tr>
-            <td ><font size="3"> <B>{{$co->name}}</B></font></td>
-            <td><font size="4">{{$comen->opinion}}</font> </td>
-            @if (Auth::guest())
-            @else
-            @if(Auth::user()->rol_id == 1)
-            <td width="10%"><a href=" {{route('eliminarComentario',$comen->id)}}" onclick="return confirm('¿Seguro que deseas eliminarlo?')" class="btn btn-danger"><font color="black" size="2"> <b>Eliminar</b></font></a> </td>
-            @endif
-            @endif      					
-        </tr>
+                <tr>
+                    <td ><font size="3"> <B>{{$co->name}}</B></font></td>
+                    <td><font size="4">{{$comen->opinion}}</font> </td>
+                    @if (Auth::guest())
+                    @else
+                    @if(Auth::user()->rol_id == 1)
+                    <td width="10%"><a href=" {{route('eliminarComentario',$comen->id)}}" onclick="return confirm('¿Seguro que deseas eliminarlo?')" class="btn btn-danger"><font color="black" size="2"> <b>Eliminar</b></font></a> </td>
+                    @endif
+                    @endif      					
+                </tr>
 
 
 
 
-    <br>
-    @endforeach
+            <br>
+            @endforeach
 
-    @endforeach
-    </tbody>
-</table>
-
+            @endforeach
+            </tbody>
+        </table>
+    </div>
+</div>
 
 {!! Form::close() !!}
 

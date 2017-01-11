@@ -7,7 +7,7 @@
 
 @include('flash::message')
 
-<div class="panel panel-primary" style="width: 1000px;margin: auto;  ">
+<div class="panel panel-primary" style="width:1000px;margin:auto;">
     <div class="panel-heading" align="center">Subir nuevo documento</div>
     <div class="panel-body" >
 

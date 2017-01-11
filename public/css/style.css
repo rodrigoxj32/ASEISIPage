@@ -4396,3 +4396,8 @@ ul,li{
 	font-size: 1.3cm;
 	font-family: fantasy;
 }
+
+img{
+    height: auto;
+    max-width: 100%;
+}

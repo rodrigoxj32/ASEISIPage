@@ -21,7 +21,7 @@
         @foreach($documentos as $documento)
 
         <tr>
-            <td ><a href="{{$documento->direccion_documento}}" target="_blank"><img src="images/documento.png" alt="Aseisi" ></a></td>
+            <td ><a href="{{$documento->direccion_documento}}" target="_blank"><img src="images/documento.png" alt="Aseisi" class="img-responsive"></a></td>
             <td><font size="4">{{$documento->nombre_documento}}</font> </td>
             <td><font size="4">{{$documento->descripcion_documento}}</font> </td>
             @if (Auth::guest())
@@ -33,9 +33,6 @@
 
                 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp	
                 <a href=" {{route('eliminarDocumento',$documento->id)}}" onclick="return confirm('¿Seguro que deseas eliminarlo?')" class="btn btn-danger"><font color="black" size="2"> <b>Eliminar</b></font></a> 
-
-
-
 
             </td>
             @endif
