@@ -28,7 +28,7 @@
         <div class="form-group">
             <label class="col-sm-2 control-label">Descripcion</label>
             <div class="col-sm-10">
-                <textarea rows="4" cols="50" class="form-control" name="Descripcion" maxlength="250"></textarea>
+                <textarea rows="4" cols="50" class="form-control" name="Descripcion" maxlength="65530"></textarea>
             </div>
         </div>
 

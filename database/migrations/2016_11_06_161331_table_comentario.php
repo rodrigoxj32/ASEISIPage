@@ -15,7 +15,7 @@ class TableComentario extends Migration
     {
         Schema::create('comentarios', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('opinion');
+            $table->text('opinion');
             $table->integer('evento_id')->unsigned();
             $table->foreign('evento_id')->references('id')->on('eventos')->onDelete('cascade');
             $table->timestamps();

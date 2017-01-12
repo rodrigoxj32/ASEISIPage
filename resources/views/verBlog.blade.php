@@ -46,6 +46,7 @@
                                 @endforeach
                                 @endforeach
                             </div>
+
                         </div>
                     </article>
 
@@ -74,7 +75,7 @@
                     <div class="col-lg-9 col-md-8 col-sm-6 col-xs-12">
                         <div class="form-group">
                             <div class="col-sm-10">
-                                <textarea rows="4" cols="50" class="form-control" name="Descripcion" maxlength="250"></textarea>
+                                <textarea rows="4" cols="50" class="form-control" name="Descripcion" maxlength="65530"></textarea>
                             </div>
                         </div>
                     </div>
@@ -101,11 +102,11 @@
             <thead>
                 <tr>
                     <th width="20%"> <font size="5">Nombre</font> </th>
-                    <th> <font size="5">Comentarios</font> </th>
+                    <th width="60%"> <font size="5">Comentarios</font> </th>
                     @if (Auth::guest())
                     @else
                     @if(Auth::user()->rol_id == 1)
-                    <th> <font size="5">Eliminar</font> </th>
+                    <th width="20%"> <font size="5">Eliminar</font> </th>
                     @endif
                     @endif
                 </tr>
@@ -115,8 +116,8 @@
                 @foreach($comen->user as $co)
 
                 <tr>
-                    <td ><font size="3"> <B>{{$co->name}}</B></font></td>
-                    <td><font size="4">{{$comen->opinion}}</font> </td>
+                    <td width="20%"><font size="3"> <B>{{$co->name}}</B></font></td>
+                    <td width="60%"><font size="4">{{$comen->opinion}}</font> </td>
                     @if (Auth::guest())
                     @else
                     @if(Auth::user()->rol_id == 1)
