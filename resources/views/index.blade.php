@@ -105,29 +105,24 @@
 
                                         </li>
 
-                                        <li ><a href="">Services</a>
-
-                                        </li>
-
-
 
                                         @if (Auth::guest())
                                         <li ><a href="/publicidad">Publicidad</a>
 
                                             @else
-                                            @if(Auth::user()->rol_id == 1)
-                                        <li class="dropdown"><a class="dropdown-toggle" href="/publicidad">Publicidad</a>
-                                            <ul class="dropdown-menu">
-                                                <li><a style="color:black " href="/createBlog">Crear Publicidad</a></li>
+                                                @if(Auth::user()->rol_id == 1)
+                                                     <li class="dropdown"><a class="dropdown-toggle" href="/publicidad">Publicidad</a>
+                                                         <ul class="dropdown-menu">
+                                                             <li><a style="color:black " href="/createBlog">Crear Publicidad</a></li>
 
-                                            </ul>
-                                        </li>
-                                        @else
-                                        @if(Auth::user()->rol_id == 2)
-                                        <li ><a href="/publicidad">Publicidad</a>
-                                            @endif
-                                            @endif
-                                            @endif
+                                                        </ul>
+                                                    </li>
+                                                @else
+                                                    @if(Auth::user()->rol_id == 2)
+                                                        <li ><a href="/publicidad">Publicidad</a>
+                                                    @endif
+                                                @endif
+                                        @endif
 
                                             @if (Auth::guest())
                                         <li ><a href="/evento">Eventos</a>
@@ -146,6 +141,25 @@
                                             @endif
                                             @endif
                                             @endif
+
+                                        @if (Auth::guest())
+                                        <li ><a href="/tiempo">Futuros Eventos</a>
+
+                                            @else
+                                                @if(Auth::user()->rol_id == 1)
+                                                     <li class="dropdown"><a class="dropdown-toggle" href="/tiempo">Futuros Eventos</a>
+                                                         <ul class="dropdown-menu">
+                                                             <li><a style="color:black " href="/createTiempo">Crear Evento Futuro</a></li>
+
+                                                        </ul>
+                                                    </li>
+                                                @else
+                                                    @if(Auth::user()->rol_id == 2)
+                                                        <li ><a href="/tiempo">Futuros Eventos</a>
+                                                    @endif
+                                                @endif
+                                        @endif
+
 
 
                                             @if (Auth::guest())

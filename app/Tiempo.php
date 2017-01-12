@@ -13,15 +13,6 @@ class Tiempo extends Model
     'fecha_de_realizacion_tiempo'];
 
 
-    //relacion uno a muchos con comentarios
-    public function comentarios(){
-        return $this->hasMany('App\Comentario');
-    }
-
-    public function imagenes(){
-        return $this->hasMany('App\Imagen');
-    }
-
     public function user(){
         return $this->belongsTo('App\User');
     }

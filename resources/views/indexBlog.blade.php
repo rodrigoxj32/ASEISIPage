@@ -19,10 +19,8 @@
                         <div class="post-inner">
 
                             <figure >
-                                <!--<img src="images/resource/blog-image-3.jpg" alt="Error en imagen"  width="500" height="300">-->
 
                                 <img  src="{{$evento->imagenes[0]->direccion}}" class="img-responsive"/>   
-
 
                             </figure>
 

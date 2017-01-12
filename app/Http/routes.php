@@ -17,9 +17,7 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::get('/tiempo', function () {
-    return view('tiempoEvento');
-});
+
 
 
 Route::get('home',[
@@ -158,9 +156,15 @@ Route::put('cambiar/{id}', [
 
 /*INICIO DE RUTAS PARA EVENTO TIEMPO*/
 
+Route::get('/tiempo',[
+	'uses' => 'TiempoController@index',
+	'as' => 'tiempoIndex'
+		]);
+
+
 Route::get('/createTiempo',[
 	'middleware' => 'auth',
-	'uses' => 'TiempoController@index',
+	'uses' => 'TiempoController@create',
 	'as' => 'tiempoCreate'
 		]);
 
@@ -169,5 +173,6 @@ Route::post('/guardarTiempo',[
         'uses' => 'TiempoController@store',
         'as' => 'guardarTiempo'
         ]);
+
 
 /*FIN DE RUTAS PARA EVENTO TIEMPO*/

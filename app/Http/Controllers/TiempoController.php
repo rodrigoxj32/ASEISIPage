@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use App\Tiempo;
+use Carbon\Carbon;
 
 class TiempoController extends Controller
 {
@@ -15,7 +17,33 @@ class TiempoController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index(){
-        return view('createTiempo');
+        $eventos = Tiempo::orderBy('id','DESC')->paginate(2);
+
+        $eventos->each(function($eventos){
+            $eventos->user;
+        });
+
+        $cantidad= 0;
+        foreach ($eventos as $evento) {
+            $cantidad++;
+
+            $segundos= strtotime($evento->fecha_de_realizacion_tiempo)- time();
+
+            if($segundos<=0){
+                $evento->fecha_de_realizacion_tiempo =0; 
+            }
+            else{
+                $evento->fecha_de_realizacion_tiempo = $segundos;
+            }
+        }
+
+        //dd(time());
+
+        //dd($eventos);
+
+        return view('tiempoEvento')
+        ->with('eventos',$eventos)
+        ->with('cantidad',$cantidad);
     }
 
     /**
@@ -23,9 +51,8 @@ class TiempoController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
-    {
-        //
+    public function create(){
+        return view('createTiempo');
     }
 
     /**
@@ -38,9 +65,16 @@ class TiempoController extends Controller
 
         $union = $request->fecha ." ". $request->hora;
 
-        echo $union."<br>";
-        dd($request->all()); 
+        $tiempo = new Tiempo();
 
+        $tiempo->nombre_tiempo = $request->Titulo;
+        $tiempo->descripcion_tiempo = $request->Descripcion;
+        $tiempo->fecha_de_realizacion_tiempo = $union;
+        $tiempo->user_id = $request->user_id;
+
+        $tiempo->save();
+
+        return redirect()->route('tiempoIndex');
 
     }
 
