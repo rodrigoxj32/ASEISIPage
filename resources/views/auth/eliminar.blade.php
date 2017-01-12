@@ -2,7 +2,11 @@
 
 @section('content')
 
-<table class="table table-striped">
+<input type="text" id="search" placeholder="Escribe para buscar..." />
+<br>
+<br>
+
+<table id="table" class="table table-striped">
 	<thead>
 		<tr>
 			<th><font size="5">Nombre</font></th>
@@ -33,3 +37,12 @@
 {!! $users->appends(Request::all())->render() !!}
 
 @endsection
+
+@section('js')
+<script type="text/javascript">
+	$(function () {
+
+	  $('#search').quicksearch('table tbody tr');								
+	});
+</script>
+@endsection('js')
