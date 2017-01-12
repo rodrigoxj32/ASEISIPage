@@ -552,7 +552,7 @@
                 <div class="auto-container">
 
                     <div class="sec-title text-center main-title">
-                        <h2 class="default-title text-uppercase">NOTICIAS</h2>
+                        <h2 class="default-title text-uppercase">Nuestra labor</h2>
                         <div class="theme-subtitle">ASEISI día a día</div>
                     </div>
 
@@ -563,9 +563,9 @@
                             <!--Featured Icon Column-->
                             <article class="featured-icon-column">
                                 <div class="inner-box">
-                                    <h3><span class="icon img-circle"><span class="flaticon-thumb3"></span></span> Stet clita ea et gubergren, kasd magna no rebum</h3>
+                                    <h3><span class="icon img-circle"><span class="flaticon-thumb3"></span></span>Ayudar</h3>
                                     <div class="text">
-                                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore. Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
+                                        <p>Buscamos ayudar al crecimiento de la carrera de ingenieria de sistemas informaticos.</p>
                                     </div>
                                 </div>
                             </article>
@@ -573,9 +573,9 @@
                             <!--Featured Icon Column-->
                             <article class="featured-icon-column">
                                 <div class="inner-box">
-                                    <h3><span class="icon img-circle"><span class="flaticon-pin60"></span></span> Ut wisi enim ad minim veniam, quis nostrud exerci tation</h3>
+                                    <h3><span class="icon img-circle"><span class="flaticon-pin60"></span></span> EncuentranosS</h3>
                                     <div class="text">
-                                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore. Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
+                                        <p>Puedes acercarte al local de ASEISI y siempre te ayudaremos con tus dudas ya sea sobre temas, academicos, administrativos o afines a la informatica</p>
                                     </div>
                                 </div>
                             </article>
@@ -583,375 +583,19 @@
                             <!--Featured Icon Column-->
                             <article class="featured-icon-column">
                                 <div class="inner-box">
-                                    <h3><span class="icon img-circle"><span class="flaticon-tool305"></span></span> Duis autem vel eum iriure dolor in hendrerit in vulputate veli</h3>
+                                    <h3><span class="icon img-circle"><span class="flaticon-tool305"></span></span> Talleres,Cursos</h3>
                                     <div class="text">
-                                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore. Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
+                                        <p>Como ASEISI sabemos que la carrera de Ingenieria de Sistemas Informaticos, cambia dia a dia y por eso ofrecemos cursos para poder solventar las necesidades de conocimiento que tienen los estudiantes.</p>
                                     </div>
                                 </div>
                             </article>
 
                         </div>
 
-                        <!--Column / Image Column-->
-                        <div class="image-column col-md-6 col-sm-12 col-xs-12">
-                            <figure class="fluid-image-outer"><img src="images/resource/dashboard-image-1.jpg" alt="News"></figure>
-                        </div>
-
 
                     </div>
                 </div>
             </section>
-
-
-            <!--Circular Section
-            <section class="circular-section outside-hidden">
-        
-                <div class="sec-title text-center main-title">
-                    <h2 class="default-title text-uppercase">check our competence</h2>
-                    <div class="theme-subtitle">Lorem ipsum dolor sit amet, consetetur sadipscing elitr</div>
-                </div>-->
-
-            <!--Circular Outer
-            <div class="circular-outer">
-                    <div class="inner-container">
-            -->
-            <!--Featured Box-
-            <article class="featured-box one icon-center">
-                <div class="inner-box">
-                    <h3> High Performance</h3>
-                    <div class="text">
-                        <p>sed diam nonumy eirmod tempor invidunt ut labore et dolore.</p>
-                    </div>
-                    <div class="icon img-circle bg_blue"><span class="flaticon-cogwheels10"></span></div>
-                </div>
-            </article>
-
-            <!--Featured Box-
-            <article class="featured-box two icon-right">
-                <div class="inner-box">
-                    <h3><span class="icon img-circle bg_orange"><span class="flaticon-camera33"></span></span> Pixel Perfection</h3>
-                    <div class="text">
-                        <p>sed diam nonumy eirmod tempor invidunt ut labore et dolore.</p>
-                    </div>
-                </div>
-            </article>
-
-            <!--Featured Box-
-            <article class="featured-box three icon-left">
-                <div class="inner-box">
-                    <h3><span class="icon img-circle bg_purple"><span class="flaticon-communication38"></span></span> Simple Connections</h3>
-                    <div class="text">
-                        <p>sed diam nonumy eirmod tempor invidunt ut labore et dolore.</p>
-                    </div>
-                </div>
-            </article>
-
-            <!--Featured Box-
-            <article class="featured-box four icon-right">
-                <div class="inner-box">
-                    <h3><span class="icon img-circle bg_green"><span class="flaticon-diamond24"></span></span> Quality Standards</h3>
-                    <div class="text">
-                        <p>sed diam nonumy eirmod tempor invidunt ut labore et dolore.</p>
-                    </div>
-                </div>
-            </article>
-
-            <!--Featured Box->
-            <article class="featured-box five icon-left">
-                <div class="inner-box">
-                    <h3><span class="icon img-circle bg_red"><span class="flaticon-share55"></span></span> Social Network</h3>
-                    <div class="text">
-                        <p>sed diam nonumy eirmod tempor invidunt ut labore et dolore.</p>
-                    </div>
-                </div>
-            </article>
-
-            <!--Logo->
-            <div class="logo"><a href="#"><img src="images/circular-logo-1.png" alt=""></a></div>
-
-        </div>
-    </div>
-
-</section>
-
-
-
-            <!--Parallax Section->
-            <section class="parallax-section" style="background-image:url(images/parallax/image-3.jpg);">
-                <div class="auto-container">
-        
-                    <h2>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse</h2>
-                    <div class="text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr</div>
-                    <a class="theme-btn radial-btn bg_red" href="#"><span class="txt">Get Started Now</span> <span class="img-circle fa fa-arrow-right"></span></a>
-        
-                </div>
-            </section>
-        
-        
-            <!--Default Section-->
-            <section class="default-section">
-                <div class="auto-container">
-
-                    <div class="row clearfix">
-
-                        <!--Column-->
-                        <div class="column text-column col-lg-4 col-md-6 col-xs-12">
-
-                            <h2 class="default-title text-uppercase">Our philosophy</h2>
-                            <div class="line-left"></div>
-
-                            <div class="text">
-                                <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus es.</p>
-                                <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, At accusam aliquyam diam diam.</p>
-                            </div>
-                        </div>
-
-                        <!--Column-->
-                        <div class="column text-column col-lg-4 col-md-6 col-xs-12">
-
-                            <h2 class="default-title text-uppercase">What we do</h2>
-                            <div class="line-left"></div>
-
-                            <!-- Accordion Box -->
-                            <div class="accordion-box style-two">
-
-                                <!-- Accordion -->
-                                <article class="accordion animated out" data-delay="0" data-animation="fadeInUp">
-                                    <div class="acc-btn active">Stet clita ea et gubergren, kasd magna <div class="toggle-icon"><span class="plus flaticon-add30"></span><span class="minus flaticon-minus42"></span></div></div>
-                                    <div class="acc-content collapsed">
-                                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, At accusam aliquyam diam diam dolore dolores duo eirmod eos erat, et nonumy sed.</p>
-                                    </div>
-                                </article>
-
-                                <!-- Accordion -->
-                                <article class="accordion animated out" data-delay="0" data-animation="fadeInUp">
-                                    <div class="acc-btn">Consetetur sadipscing elitr, sed diam<div class="toggle-icon"><span class="plus flaticon-add30"></span><span class="minus flaticon-minus42"></span></div></div>
-                                    <div class="acc-content">
-                                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, At accusam aliquyam diam diam dolore dolores duo eirmod eos erat, et nonumy sed.</p>
-                                    </div>
-                                </article>
-
-                                <!-- Accordion -->
-                                <article class="accordion animated out" data-delay="0" data-animation="fadeInUp">
-                                    <div class="acc-btn">Dolore magna aliquyam erat individum  <div class="toggle-icon"><span class="plus flaticon-add30"></span><span class="minus flaticon-minus42"></span></div></div>
-                                    <div class="acc-content">
-                                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, At accusam aliquyam diam diam dolore dolores duo eirmod eos erat, et nonumy sed.</p>
-                                    </div>
-                                </article>
-
-                            </div>
-
-
-
-                        </div>
-
-                        <!--Column-->
-                        <div class="column text-column col-lg-4 col-md-6 col-xs-12">
-
-                            <h2 class="default-title text-uppercase">Our Experiences</h2>
-                            <div class="line-left"></div>
-
-                            <!--Progress Levels-->
-                            <div class="progress-levels medium-size">
-
-                                <!--Skill Box-->
-                                <div class="progress-box wow fadeInRight" data-wow-delay="100ms" data-wow-duration="1500ms">
-                                    <div class="box-title">social marketng</div>
-                                    <div class="inner">
-                                        <div class="bar">
-                                            <div class="bar-innner"><div class="bar-fill" data-percent="80"><div class="percent"></div></div></div>
-
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!--Skill Box-->
-                                <div class="progress-box wow fadeInRight" data-wow-delay="200ms" data-wow-duration="1500ms">
-                                    <div class="box-title">seo &amp; KEYWORD RESEARCH</div>
-                                    <div class="inner">
-                                        <div class="bar">
-                                            <div class="bar-innner"><div class="bar-fill" data-percent="90"><div class="percent"></div></div></div>
-
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!--Skill Box-->
-                                <div class="progress-box wow fadeInRight" data-wow-delay="300ms" data-wow-duration="1500ms">
-                                    <div class="box-title">WEB DEVELOPEMENT</div>
-                                    <div class="inner">
-                                        <div class="bar">
-                                            <div class="bar-innner"><div class="bar-fill" data-percent="60"><div class="percent"></div></div></div>
-
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!--Skill Box-->
-                                <div class="progress-box wow fadeInRight" data-wow-delay="400ms" data-wow-duration="1500ms">
-                                    <div class="box-title">WORDPRESS CUSTOMIZATION</div>
-                                    <div class="inner">
-                                        <div class="bar">
-                                            <div class="bar-innner"><div class="bar-fill" data-percent="88"><div class="percent"></div></div></div>
-
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                        </div>
-
-
-                    </div>
-                </div>
-            </section>
-
-
-            <!--Team Section-->
-            <section class="team-section text-center no-padd-top">
-                <div class="auto-container">
-
-                    <div class="sec-title main-title">
-                        <h2 class="default-title text-uppercase">Meet Our Team</h2>
-                        <div class="theme-subtitle">Lorem ipsum dolor sit amet, consetetur sadipscing elitr</div>
-                    </div>
-
-                    <div class="row clearfix">
-
-                        <!--Team Member-->
-                        <article class="team-member col-lg-4 col-md-6 col-sm-6 col-xs-12">
-                            <div class="inner-box">
-                                <figure class="image">
-                                    <img src="images/resource/team-1.jpg" alt="">
-                                    <div class="hover-info">
-                                        <!--Plus Icon-->
-                                        <a href="#" class="icon-plus"><span class="flaticon-plus3"></span></a>
-
-                                        <div class="text">We have the expertise to create just the right web presence for you.</div>
-                                        <div class="social-links">
-                                            <a href="#"><span class="fa fa-facebook-f"></span></a>
-                                            <a href="#"><span class="fa fa-twitter"></span></a>
-                                            <a href="#"><span class="fa fa-google-plus"></span></a>
-                                            <a href="#"><span class="fa fa-linkedin"></span></a>
-                                            <a href="#"><span class="fa fa-instagram"></span></a>
-                                        </div>
-                                    </div>
-                                </figure>
-
-                                <div class="member-info">
-                                    <h3>Nashid Martines</h3>
-                                    <h4>Creative Director</h4>
-                                </div>
-
-                            </div>
-                        </article>
-
-                        <!--Team Member-->
-                        <article class="team-member col-lg-4 col-md-6 col-sm-6 col-xs-12">
-                            <div class="inner-box">
-                                <figure class="image">
-                                    <img src="images/resource/team-2.jpg" alt="">
-                                    <div class="hover-info">
-                                        <!--Plus Icon-->
-                                        <a href="#" class="icon-plus"><span class="flaticon-plus3"></span></a>
-
-                                        <div class="text">We have the expertise to create just the right web presence for you.</div>
-                                        <div class="social-links">
-                                            <a href="#"><span class="fa fa-facebook-f"></span></a>
-                                            <a href="#"><span class="fa fa-twitter"></span></a>
-                                            <a href="#"><span class="fa fa-google-plus"></span></a>
-                                            <a href="#"><span class="fa fa-linkedin"></span></a>
-                                            <a href="#"><span class="fa fa-instagram"></span></a>
-                                        </div>
-                                    </div>
-                                </figure>
-
-                                <div class="member-info">
-                                    <h3>Jackson Willingham</h3>
-                                    <h4>Front-end Developer</h4>
-                                </div>
-
-                            </div>
-                        </article>
-
-                        <!--Team Member-->
-                        <article class="team-member col-lg-4 col-md-6 col-sm-6 col-xs-12">
-                            <div class="inner-box">
-                                <figure class="image">
-                                    <img src="images/resource/team-3.jpg" alt="">
-                                    <div class="hover-info">
-                                        <!--Plus Icon-->
-                                        <a href="#" class="icon-plus"><span class="flaticon-plus3"></span></a>
-
-                                        <div class="text">We have the expertise to create just the right web presence for you.</div>
-                                        <div class="social-links">
-                                            <a href="#"><span class="fa fa-facebook-f"></span></a>
-                                            <a href="#"><span class="fa fa-twitter"></span></a>
-                                            <a href="#"><span class="fa fa-google-plus"></span></a>
-                                            <a href="#"><span class="fa fa-linkedin"></span></a>
-                                            <a href="#"><span class="fa fa-instagram"></span></a>
-                                        </div>
-                                    </div>
-                                </figure>
-
-                                <div class="member-info">
-                                    <h3>Yvonne Backfield</h3>
-                                    <h4>Marketing Manager</h4>
-                                </div>
-
-                            </div>
-                        </article>
-
-
-                    </div>
-                </div>
-            </section>
-
-
-            <!-- Client Testimonials -->
-            <section class="client-testimonials style-one">
-                <div class="auto-container">
-                    <!--Section Title-->
-                    <div class="sec-title main-title text-center">
-                        <h2 class="default-title white_color">CLIENT TESTIMONIALS</h2>
-                        <div class="line-centered"></div>
-                    </div>
-
-                    <div class="testimonial-slider-full">
-                        <article class="slide">
-                            <div class="text">“Our teams are up to date with the latest technologies, media trends and are keen to prove themselves in this industry and that’s what you want from an advertising agency, not someone who is relying on the same way of doing things that worked 10 years, 5 years or even a year ago.”</div>
-                            <div class="author-info">Jonathan Doe <div class="time">2 days ago</div></div>
-                        </article>
-                        <article class="slide">
-                            <div class="text">"Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat et accusam et justo duo dolores et ea rebum."</div>
-                            <div class="author-info">Hamzah Ali <div class="time">2 days ago</div></div>
-                        </article>
-                        <article class="slide">
-                            <div class="text">"Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren "</div>
-                            <div class="author-info">Aamir Denna <div class="time">2 days ago</div></div>
-                        </article>
-                    </div>
-
-                </div>
-            </section>
-
-
-            <!-- Client Logos -->
-            <section class="logos-section" style="background-image:url(images/background/logos-bg.jpg);">
-                <div class="auto-container">
-
-                    <div class="text-center">
-                        <a href="#" class="image-box"><img src="images/clients/logo-1.png" alt="" ></a>
-                        <a href="#" class="image-box"><img src="images/clients/logo-2.png" alt=""></a>
-                        <a href="#" class="image-box"><img src="images/clients/logo-3.png" alt=""></a>
-                        <a href="#" class="image-box"><img src="images/clients/logo-4.png" alt=""></a>
-                        <a href="#" class="image-box"><img src="images/clients/logo-5.png" alt=""></a>
-                    </div>
-
-                </div>
-            </section>
-
 
 
             <!--Main Footer-->
@@ -963,88 +607,15 @@
                         <div class="row clearfix">
 
                             <div class="col-lg-4 col-sm-6 col-xs-12 column">
-                                <div class="footer-widget about-widget">
-                                    <h2>About Us</h2>
-                                    <div class="text">
-                                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea.</p>
-                                    </div>
 
-                                    <div class="social-links">
-                                        <a href="#"><span class="fa fa-facebook-f"></span></a>
-                                        <a href="#"><span class="fa fa-twitter"></span></a>
-                                        <a href="#"><span class="fa fa-dribbble"></span></a>
-                                        <a href="#"><span class="fa fa-google-plus"></span></a>
-                                        <a href="#"><span class="fa fa-pinterest"></span></a>
-                                        <a href="#"><span class="fa fa-instagram"></span></a>
-                                    </div>
-
-                                </div>
                             </div>
 
-                            <!--Footer Column-->
-                            <div class="col-lg-4 col-sm-6 col-xs-12 column">
-                                <h2>Quick Links</h2>
-                                <div class="row clearfix">
 
-                                    <div class="col-lg-6 col-sm-6 col-xs-12">
-                                        <div class="footer-widget links-widget">
-                                            <ul>
-                                                <li><a href="#">Our Company</a></li>
-                                                <li><a href="#">Our Philosophy</a></li>
-                                                <li><a href="#">Monthly Statistics</a></li>
-                                                <li><a href="#">Marketing Strategies</a></li>
-                                                <li><a href="#">Our Services</a></li>
-                                            </ul>
-
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-6 col-sm-6 col-xs-12">
-                                        <div class="footer-widget links-widget">
-                                            <ul>
-                                                <li><a href="#">Support Forums</a></li>
-                                                <li><a href="#">FAQ &amp; Help Center</a></li>
-                                                <li><a href="#">Register an account</a></li>
-                                                <li><a href="#">Login with account</a></li>
-                                                <li><a href="#">Careers</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-
-                            <!--Footer Column-->
-                            <div class="col-lg-4 col-sm-12 col-xs-12 column">
-                                <div class="footer-widget newsletter-widget">
-                                    <h2>Subscribe Newsletter</h2>
-                                    <form method="post" action="/Documentos">
-                                        <div class="form-group">
-                                            <input type="text" name="username" value="" placeholder="Enter Name" required>
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="text" name="useremail" value="" placeholder="Enter Email" required>
-                                        </div>
-                                        <div class="form-group">
-                                            <button type="submit" class="theme-btn radial-btn bg_orange"><span class="txt">Subscribe Now</span> <span class="img-circle fa fa-arrow-right"></span></button>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
 
 
                         </div>
 
-                        <!--Contact Info-->
-                        <div class="contact-info">
-                            <ul>
-                                <li><span class="bullet">&bull;</span> 78 Fashion Street, Beverly Hill</li>
-                                <li><span class="bullet">&bull;</span> Abony, NYC 12041</li>
-                                <li><span class="bullet">&bull;</span> Phone: (800) 0123 4567 890</li>
-                                <li><span class="bullet">&bull;</span> E-mail:  radium@envato.com</li>
 
-                            </ul>
-                        </div>
 
                     </div>
                 </div>

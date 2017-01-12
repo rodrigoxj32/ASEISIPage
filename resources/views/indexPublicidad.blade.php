@@ -36,7 +36,7 @@
                             </div>
                             <div class="post-desc">
                                 <div class="text"><p>{{$evento->descripcion_evento}}</p></div>
-                                <div class="text-right"><a href="{{route('verEvento',$evento->id)}}" class="theme-btn rounded-btn-blue">Ver imagenes</a></div>
+                                <div class="text-left"><a href="{{route('verEvento',$evento->id)}}" class="theme-btn rounded-btn-blue">Ver imagenes</a></div><br>
                                 @if (Auth::guest())
                                 @else
                                 @if(Auth::user()->rol_id == 1)
@@ -67,79 +67,7 @@
             <!--Content Side-->
 
             <!--Sidebar-->	
-            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                <aside class="sidebar">
-
-
-                    <!-- Popular Categories -->
-                    <div class="widget popular-categories wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
-                        <div class="sidebar-title"><h3>Popular Categories</h3></div>
-
-                        <ul class="list">
-                            <li><a class="clearfix" href="#"><span class="txt pull-left">Internet Marketing </span> <span class="count pull-right">(05)</span></a></li>
-                            <li><a class="clearfix" href="#"><span class="txt pull-left">Search Engine Optimization</span> <span class="count pull-right">(08)</span></a></li>
-                            <li><a class="clearfix" href="#"><span class="txt pull-left">Webdevelopement</span> <span class="count pull-right">(12)</span></a></li>
-                            <li><a class="clearfix" href="#"><span class="txt pull-left">Creative Strategies</span> <span class="count pull-right">(33)</span></a></li>
-                            <li><a class="clearfix" href="#"><span class="txt pull-left">Webhosting Services</span> <span class="count pull-right">(07)</span></a></li>
-                        </ul>
-
-                    </div>
-
-                    <!-- Recent Posts -->
-                    <div class="widget recent-posts wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
-                        <div class="sidebar-title"><h3>Latest News</h3></div>
-
-                        <div class="post">
-                            <div class="post-thumb"><a href="#"><img src="images/resource/thumb-1.jpg" alt=""></a></div>
-                            <h4><a href="#">Lorem ipsum dolor sit amet consetetur</a></h4>
-                            <div class="post-info"><span class="icon flaticon-calendars12"></span> 11/01/2015 </div>
-                        </div>
-
-                        <div class="post">
-                            <div class="post-thumb"><a href="#"><img src="images/resource/thumb-2.jpg" alt=""></a></div>
-                            <h4><a href="#">Lorem ipsum dolor sit amet consetetur</a></h4>
-                            <div class="post-info"><span class="icon flaticon-calendars12"></span> 11/01/2015 </div>
-                        </div>
-
-                        <div class="post">
-                            <div class="post-thumb"><a href="#"><img src="images/resource/thumb-3.jpg" alt=""></a></div>
-                            <h4><a href="#">Lorem ipsum dolor sit amet consetetur</a></h4>
-                            <div class="post-info"><span class="icon flaticon-calendars12"></span> 11/01/2015 </div>
-                        </div>
-
-                    </div>
-
-                    <!-- Recent From Gallery -->
-                    <div class="widget recent-gallery">
-                        <div class="sidebar-title"><h3>Flicker Gallery</h3></div>
-
-                        <div class="clearfix">
-                            <figure class="image"><a href="images/resource/blog-image-1.jpg" class="lightbox-image"><img src="images/resource/thumb-1.jpg" alt=""></a></figure>
-                            <figure class="image"><a href="images/resource/blog-image-2.jpg" class="lightbox-image"><img src="images/resource/thumb-2.jpg" alt=""></a></figure>
-                            <figure class="image"><a href="images/resource/blog-image-3.jpg" class="lightbox-image"><img src="images/resource/thumb-3.jpg" alt=""></a></figure>
-                            <figure class="image"><a href="images/resource/blog-image-1.jpg" class="lightbox-image"><img src="images/resource/thumb-4.jpg" alt=""></a></figure>
-                            <figure class="image"><a href="images/resource/blog-image-2.jpg" class="lightbox-image"><img src="images/resource/thumb-5.jpg" alt=""></a></figure>
-                            <figure class="image"><a href="images/resource/blog-image-3.jpg" class="lightbox-image"><img src="images/resource/thumb-6.jpg" alt=""></a></figure>
-                        </div>
-
-                    </div>
-
-                    <!-- Popular Tags -->
-                    <div class="widget popular-tags">
-                        <div class="sidebar-title"><h3>Popular Tags</h3></div>
-                        <a href="#">Creative</a>
-                        <a href="#">Media</a>
-                        <a href="#">SEO</a>
-                        <a href="#">Marketing</a>
-                        <a href="#">Development</a>
-                        <a href="#">Website</a>
-                        <a href="#">Design</a>
-                    </div>
-
-                </aside>
-
-
-            </div>
+            
             <!--Sidebar-->
 
         </div>

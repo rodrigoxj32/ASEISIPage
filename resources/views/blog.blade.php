@@ -208,16 +208,15 @@
 
 
             <!--Page Title-->
-            <section class="page-title" style="background-image:url(images/parallax/image-1.jpg);">
+           <!-- <section class="page-title" style="background-image:url(images/parallax/image-1.jpg);">
                 <div class="auto-container">
                     <div class="sec-title">
                         <h1></h1>
                         <div class="page-subtitle"></div>
                     </div>
                 </div>
-                <!--Down Arrow-->
-                <
-            </section>
+                
+            </section>-->
 
             <section>
                 <!--CODIGO DE TODA LA LOGICA -->
