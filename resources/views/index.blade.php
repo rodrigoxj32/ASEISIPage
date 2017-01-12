@@ -134,7 +134,7 @@
 
                                             @else
                                             @if(Auth::user()->rol_id == 1)
-                                        <li class="dropdown"><a class="dropdown-toggle" href="">Eventos</a>
+                                        <li class="dropdown"><a class="dropdown-toggle" href="/evento">Eventos</a>
                                             <ul class="dropdown-menu">
                                                 <li><a style="color:black " href="/createBlog">Crear Evento</a></li>
 
