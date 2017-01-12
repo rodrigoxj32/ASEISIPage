@@ -63,6 +63,16 @@ Route::get('reset', [
 	'as' => 'reset'
 	]);
 
+Route::get('verUsuarios', [
+	'uses'=>'UserController@show',
+	'as' => 'verUsuarios'
+	]);
+
+Route::get('eliminarUsuario/{id}/destroy',[
+    'uses' => 'UserController@destroy',
+    'as' => 'eliminarUsuario'
+    ]);
+
 Route::post('resetPassword',[
         'uses' => 'UserController@Resetstore',
         'as' => 'auth.reset'

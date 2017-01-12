@@ -119,9 +119,13 @@ class UserController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
-    {
-        //
+    public function show(){
+
+        $users = User::orderBy('id','DESC')->paginate(20    );
+
+        return view('auth.eliminar')
+        ->with('users',$users);
+        
     }
 
     /**
@@ -153,8 +157,9 @@ class UserController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
-    {
-        //
+    public function destroy($id){
+        $usuario = User::where('id', '=', $id)->delete();
+
+        return redirect()->route('verUsuarios');
     }
 }

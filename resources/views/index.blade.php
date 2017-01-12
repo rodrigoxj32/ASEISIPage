@@ -190,7 +190,10 @@
                                             <ul class="dropdown-menu">
 
                                                 <li><a style="color:black " href="/register">Registrar</a></li>
+                                                <li><a style="color:black " href="/verUsuarios">Ver Usuarios</a></li>
                                                 <li><a style="color:black " href="/reset">Cambiar Contraseña</a></li>
+
+                                                
                                             </ul>
                                         </li>
                                         @endif
