@@ -102,11 +102,11 @@
             <thead>
                 <tr>
                     <th width="20%"> <font size="5">Nombre</font> </th>
-                    <th width="60%"> <font size="5">Comentarios</font> </th>
+                    <th > <font size="5">Comentarios</font> </th>
                     @if (Auth::guest())
                     @else
                     @if(Auth::user()->rol_id == 1)
-                    <th width="20%"> <font size="5">Eliminar</font> </th>
+                    <th > <font size="5">Eliminar</font> </th>
                     @endif
                     @endif
                 </tr>
@@ -116,8 +116,8 @@
                 @foreach($comen->user as $co)
 
                 <tr>
-                    <td width="20%"><font size="3"> <B>{{$co->name}}</B></font></td>
-                    <td width="60%"><font size="4">{{$comen->opinion}}</font> </td>
+                    <td ><font size="3"> <B>{{$co->name}}</B></font></td>
+                    <td ><font size="4">{{$comen->opinion}}</font> </td>
                     @if (Auth::guest())
                     @else
                     @if(Auth::user()->rol_id == 1)
