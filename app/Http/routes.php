@@ -174,5 +174,21 @@ Route::post('/guardarTiempo',[
         'as' => 'guardarTiempo'
         ]);
 
+Route::get('eliminarTiempo/{id}/destroy',[
+		'middleware' => 'auth',
+        'uses' => 'TiempoController@destroy',
+        'as' => 'eliminarTiempo'
+        ]);
 
+Route::get('editarTiempo/{id}/edit', [
+	'middleware' => 'auth',
+	'uses' => 'TiempoController@edit',
+    'as' => 'editarTiempo'
+        ]);
+
+Route::put('cambiarTiempo/{id}', [
+	'middleware' => 'auth',
+    'uses' => 'TiempoController@update',
+    'as' => 'updateTiempo'
+	]);
 /*FIN DE RUTAS PARA EVENTO TIEMPO*/

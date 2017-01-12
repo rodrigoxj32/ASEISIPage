@@ -30,7 +30,7 @@ class TiempoController extends Controller
             $segundos= strtotime($evento->fecha_de_realizacion_tiempo)- time();
 
             if($segundos<=0){
-                $evento->fecha_de_realizacion_tiempo =0; 
+                $evento->fecha_de_realizacion_tiempo =0.1; 
             }
             else{
                 $evento->fecha_de_realizacion_tiempo = $segundos;
@@ -95,9 +95,15 @@ class TiempoController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
-    {
-        //
+    public function edit($id){
+        $tiempo = Tiempo::find($id);
+
+        $FH = explode(" ", $tiempo->fecha_de_realizacion_tiempo);
+
+
+        return view ('editTiempo')
+        ->with('tiempo',$tiempo)
+        ->with('FH',$FH);
     }
 
     /**
@@ -107,9 +113,20 @@ class TiempoController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
-    {
-        //
+    public function update(Request $request, $id){
+
+        $union = $request->fecha ." ". $request->hora;
+
+        $tiempo = Tiempo::find($id);
+
+        $tiempo->nombre_tiempo = $request->Titulo;
+        $tiempo->descripcion_tiempo = $request->Descripcion;
+        $tiempo->fecha_de_realizacion_tiempo = $union;
+        $tiempo->user_id = $request->user_id;
+
+        $tiempo->save();
+
+        return redirect()->route('tiempoIndex');
     }
 
     /**
@@ -118,8 +135,9 @@ class TiempoController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
-    {
-        //
+    public function destroy($id){
+        $tiempo = Tiempo::where('id', '=', $id)->delete();
+
+        return redirect()->route('tiempoIndex');
     }
 }
