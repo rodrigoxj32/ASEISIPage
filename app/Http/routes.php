@@ -17,10 +17,9 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::get('/Solicitudes', function () {
-    return view('');
+Route::get('/tiempo', function () {
+    return view('tiempoEvento');
 });
-
 
 
 Route::get('home',[
@@ -156,3 +155,19 @@ Route::put('cambiar/{id}', [
     'as' => 'updateDocumento'
         ]);
 /*FIN DE RUTAS PARA DOCUMENTOS*/
+
+/*INICIO DE RUTAS PARA EVENTO TIEMPO*/
+
+Route::get('/createTiempo',[
+	'middleware' => 'auth',
+	'uses' => 'TiempoController@index',
+	'as' => 'tiempoCreate'
+		]);
+
+Route::post('/guardarTiempo',[
+		'middleware' => 'auth',
+        'uses' => 'TiempoController@store',
+        'as' => 'guardarTiempo'
+        ]);
+
+/*FIN DE RUTAS PARA EVENTO TIEMPO*/

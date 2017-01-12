@@ -6,6 +6,10 @@
         <!-- Stylesheets -->
         <link href="{{asset('css/bootstrap.css')}}" rel="stylesheet">
         <link href="{{asset('css/style.css')}}" rel="stylesheet">
+        <link href="{{asset('css/TimeCircles.css')}}" rel="stylesheet" />
+        <link href="{{asset('css/jquery.flipcountdown.css')}}" rel="stylesheet" />
+        <link href="{{asset('css/flipclock.css')}}" rel="stylesheet" />
+        <link href="{{asset('css/bootstrap-clockpicker.min.css')}}" rel="stylesheet"/>
         <!-- Responsive -->
         <link href="{{asset('css/responsive.css')}}" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.0/themes/base/jquery-ui.css">
@@ -198,7 +202,9 @@
 
             <section>
                 <!--CODIGO DE TODA LA LOGICA -->
+
                 @yield('content')
+
                 <!--CODIGO DE TODA LA LOGICA -->
 
             </section>
@@ -242,8 +248,14 @@
         <script src="{{asset('js/jquery.fancybox-media.js')}}"></script>
         <script src="{{asset('js/wow.js')}}"></script>
         <script src="{{asset('js/script.js')}}"></script>
+        <script src="{{asset('js/TimeCircles.js')}}"}}></script>
+        <script src="{{asset('js/jquery.flipcountdown.js')}}"}}></script>
+        <script src="{{asset('js/countdown.js')}}"}}></script>
+        <script src="{{asset('js/flipclock.min.js')}}"}}></script>
+        <script src="{{asset('js/flipclock.js')}}"}}></script>
+        <script src="{{asset('js/bootstrap-clockpicker.min.js') }}"></script>
         <script src="http://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
-
+        
 
 
         @yield('js')
