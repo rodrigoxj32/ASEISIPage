@@ -19,7 +19,6 @@ Route::get('/', function () {
 
 
 
-
 Route::get('home',[
 	'uses' => 'UserController@index',
 	'as' => 'home'
@@ -43,7 +42,64 @@ Route::post('login', 'Auth\AuthController@postLogin');
 
 Route::get('auth/logout', 'Auth\AuthController@getLogout');
 
-// Registration routes...
+
+
+
+/*RUTAS PARA EVENTO*/
+Route::get('/evento',[
+	'uses' => 'EventoController@show',
+	'as' => 'eventoIndex'
+		]);
+
+
+Route::get('verEvento/{evento}/ver', [
+    'uses' => 'EventoController@verEvento',
+    'as'    => 'verEvento'
+    ]);
+
+
+Route::post('/guardarComentario',[
+        'uses' => 'ComentarioController@store',
+        'as' => 'guardarComentario'
+        ]);
+
+
+Route::get('/publicidad',[
+	'uses' => 'EventoController@show2',
+	'as' => 'publicidadIndex'
+		]);
+
+/*FIN DE RUTA PARA EVENTOS*/
+
+
+
+/*RUTAS PARA DOCUMENTOS*/
+
+Route::get('/verDocumento',[
+	'uses' => 'DocumentosController@index',
+	'as' => 'documentoIndex'
+		]);
+
+/*FIN DE RUTAS PARA DOCUMENTOS*/
+
+
+
+/*INICIO DE RUTAS PARA EVENTO TIEMPO*/
+
+Route::get('/tiempo',[
+	'uses' => 'TiempoController@index',
+	'as' => 'tiempoIndex'
+		]);
+
+/*FIN DE RUTAS PARA EVENTO TIEMPO*/
+
+
+
+
+Route::group(['middleware'=>['auth','Administrador']],function(){
+
+/* INICIO RUTAS DE ADMINISTRACION DE USUARIOS*/
+	// Registration routes...
 Route::get('register', [
 	'uses'=>'UserController@create',
 	'as' => 'register'
@@ -77,128 +133,88 @@ Route::post('resetPassword',[
         'uses' => 'UserController@Resetstore',
         'as' => 'auth.reset'
         ]);
+/* FIN RUTAS DE ADMINISTRACION DE USUARIOS*/
 
 
-/*RUTAS PARA EVENTO*/
-Route::get('/evento',[
-	'uses' => 'EventoController@show',
-	'as' => 'eventoIndex'
-		]);
+/*INICIO RUTAS ADMINISTRACION DE EVENTOS Y PUBLICIDAD*/
 
-Route::get('/createBlog',[
-	'middleware' => 'auth',
+Route::get('/createBlog',[	
 	'uses' => 'EventoController@index',
 	'as' => 'eventoCreate'
 		]);
-
 Route::post('/guardarBlog',[
-		'middleware' => 'auth',
         'uses' => 'EventoController@store',
         'as' => 'guardarBlog'
         ]);
 
-Route::get('verEvento/{evento}/ver', [
-    'uses' => 'EventoController@verEvento',
-    'as'    => 'verEvento'
-    ]);
-
-
-Route::post('/guardarComentario',[
-        'uses' => 'ComentarioController@store',
-        'as' => 'guardarComentario'
-        ]);
-
 Route::get('eliminarComentario/{id}/destroy',[
-		'middleware' => 'auth',
         'uses' => 'ComentarioController@destroy',
         'as' => 'eliminarComentario'
         ]);
-
 Route::get('eliminarEvento/{id}/destroy',[
-		'middleware' => 'auth',
         'uses' => 'EventoController@destroy',
         'as' => 'eliminarEvento'
         ]);
 
+/*FIN RUTAS ADMINISTRACION DE EVENTOS Y PUBLICIDAD*/
 
-Route::get('/publicidad',[
-	'uses' => 'EventoController@show2',
-	'as' => 'publicidadIndex'
-		]);
-/*FIN DE RUTA PARA EVENTOS*/
 
-/*RUTAS PARA DOCUMENTOS*/
-Route::get('/crearDocumento',[
-	'middleware' => 'auth',
+/*INICIO RUTAS ADMINISTRACION DOCUMENTOS*/
+	Route::get('/crearDocumento',[
 	'uses' => 'DocumentosController@show',
 	'as' => 'documentosCreate'
 		]);
 
-Route::post('/guardarDocumento',[
-	'middleware' => 'auth',
+	Route::post('/guardarDocumento',[
     'uses' => 'DocumentosController@store',
  	'as' => 'guardarDocumento'
         ]);
 
-Route::get('/verDocumento',[
-	'uses' => 'DocumentosController@index',
-	'as' => 'documentoIndex'
-		]);
-
-Route::get('eliminarDocumento/{id}/destroy',[
-		'middleware' => 'auth',
+	Route::get('eliminarDocumento/{id}/destroy',[
         'uses' => 'DocumentosController@destroy',
         'as' => 'eliminarDocumento'
         ]);
 
-Route::get('editar/{id}/edit', [
-	'middleware' => 'auth',
-	'uses' => 'DocumentosController@edit',
-    'as' => 'editarDocumento'
-        ]);
+	Route::get('editar/{id}/edit', [
+		'uses' => 'DocumentosController@edit',
+	    'as' => 'editarDocumento'
+	        ]);
 
-Route::put('cambiar/{id}', [
-	'middleware' => 'auth',
-    'uses' => 'DocumentosController@update',
-    'as' => 'updateDocumento'
-        ]);
-/*FIN DE RUTAS PARA DOCUMENTOS*/
+	Route::put('cambiar/{id}', [
+	    'uses' => 'DocumentosController@update',
+	    'as' => 'updateDocumento'
+	        ]);
 
-/*INICIO DE RUTAS PARA EVENTO TIEMPO*/
+/*FIN RUTAS ADMINISTRACION DOCUMENTOS*/
 
-Route::get('/tiempo',[
-	'uses' => 'TiempoController@index',
-	'as' => 'tiempoIndex'
-		]);
 
+
+/*INICIO RUTAS ADMINISTRACION DE EVENTO DE TIEMPO*/
 
 Route::get('/createTiempo',[
-	'middleware' => 'auth',
 	'uses' => 'TiempoController@create',
 	'as' => 'tiempoCreate'
 		]);
 
 Route::post('/guardarTiempo',[
-		'middleware' => 'auth',
-        'uses' => 'TiempoController@store',
-        'as' => 'guardarTiempo'
-        ]);
+    'uses' => 'TiempoController@store',
+    'as' => 'guardarTiempo'
+    ]);
 
 Route::get('eliminarTiempo/{id}/destroy',[
-		'middleware' => 'auth',
-        'uses' => 'TiempoController@destroy',
-        'as' => 'eliminarTiempo'
-        ]);
+    'uses' => 'TiempoController@destroy',
+    'as' => 'eliminarTiempo'
+    ]);
 
 Route::get('editarTiempo/{id}/edit', [
-	'middleware' => 'auth',
 	'uses' => 'TiempoController@edit',
     'as' => 'editarTiempo'
         ]);
 
 Route::put('cambiarTiempo/{id}', [
-	'middleware' => 'auth',
     'uses' => 'TiempoController@update',
     'as' => 'updateTiempo'
 	]);
-/*FIN DE RUTAS PARA EVENTO TIEMPO*/
+
+/*FIN RUTAS ADMINISTRACION DE EVENTO DE TIEMPO*/
+});

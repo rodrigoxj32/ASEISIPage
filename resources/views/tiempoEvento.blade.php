@@ -8,10 +8,10 @@
 
 			<h1>{{$evento->nombre_tiempo}}</h1><br>
 			
-		<article>
-			<div class="{{$evento->id}}" style="margin:2em;"></div>
+		<article >
+			<div  align="center" class="{{$evento->id}}" style="margin:2em;"></div>
 
-		 <div class="form-group">
+		 <div class="form-group" align="center">
 	            
 		    <div class="col-sm-10">
 		        <textarea readonly rows="2" cols="20" class="form-control" name="Descripcion" maxlength="250">{{$evento->descripcion_tiempo}}</textarea>
