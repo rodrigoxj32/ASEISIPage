@@ -114,7 +114,7 @@ class EventoController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function show(){
-        $eventos = Evento::orderBy('id','DESC')->paginate(2);
+        $eventos = Evento::orderBy('id','DESC')->paginate(3);
 
         $eventos->each(function($eventos){
             $eventos->imagenes;
@@ -128,7 +128,7 @@ class EventoController extends Controller
     }
 
         public function show2(){
-        $eventos = Evento::orderBy('id','DESC')->paginate(2);
+        $eventos = Evento::orderBy('id','DESC')->paginate(3);
 
            $eventos->each(function($eventos){
             $eventos->imagenes;

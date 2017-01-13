@@ -17,7 +17,7 @@ class DocumentosController extends Controller
      */
     public function index(){
 
-        $documentos = Documentos::orderBy('id','DESC')->paginate(2);
+        $documentos = Documentos::orderBy('id','DESC')->paginate(5);
 
         $documentos->each(function($documentos){   
             $documentos->user;

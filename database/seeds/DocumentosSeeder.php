@@ -39,5 +39,14 @@ class DocumentosSeeder extends Seeder
             'user_id'=>1,
         ]);
 
+
+        DB::table('documentos')->insert([
+            'nombre_documento' => '',
+            'descripcion_documento' => '',
+            'direccion_documento' => '',
+            'user_id'=>1,
+        ]);
+
+
     }
 }

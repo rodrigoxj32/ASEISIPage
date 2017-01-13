@@ -17,7 +17,7 @@ class TiempoController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index(){
-        $eventos = Tiempo::orderBy('id','DESC')->paginate(2);
+        $eventos = Tiempo::orderBy('id','DESC')->paginate(4);
 
         $eventos->each(function($eventos){
             $eventos->user;
