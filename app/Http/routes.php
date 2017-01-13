@@ -17,8 +17,6 @@ Route::get('/', function () {
     return view('index');
 });
 
-
-
 Route::get('home',[
 	'uses' => 'UserController@index',
 	'as' => 'home'
