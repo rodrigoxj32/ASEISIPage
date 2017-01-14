@@ -42,7 +42,10 @@ class EventoController extends Controller
      */
     public function store(Request $request)
     {
-        //dd($request->all());
+        if($request->imagen1 == null){
+            dd($request->all());    
+        }
+        
 
         foreach ($request->imagen1 as $imagenes) {
              $variable = $imagenes->getClientOriginalExtension();
