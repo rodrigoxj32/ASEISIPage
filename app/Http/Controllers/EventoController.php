@@ -42,25 +42,32 @@ class EventoController extends Controller
      */
     public function store(Request $request)
     {
-        if($request->imagen1 == null){
-            dd($request->all());    
-        }
+
+            //dd($request->all());
+
         
 
         foreach ($request->imagen1 as $imagenes) {
-             $variable = $imagenes->getClientOriginalExtension();
+            if ($imagenes == null) {
+                flash('Error por favor seleccione al menos una imagen para poder continuar', 'danger');
+
+                 return redirect()->route('eventoCreate');
+            }else{
+                $variable = $imagenes->getClientOriginalExtension();
 
 
 
-             if($variable == "png" || $variable=="jpg" || $variable== "jpeg"){
-                //dd($variable);
+                if($variable == "png" || $variable=="jpg" || $variable== "jpeg"){
+                    //dd($variable);
 
-             }else{
-                //dd($variable);
-                flash('Error en las imagenes por favor seleccione el formato correcto', 'danger');
+                }else{
+                    //dd($variable);
+                    flash('Error en las imagenes por favor seleccione el formato correcto', 'danger');
 
-                return redirect()->route('eventoCreate');
-             }
+                    return redirect()->route('eventoCreate');
+                } 
+            }
+             
         }
         
 
@@ -79,7 +86,7 @@ class EventoController extends Controller
         
         foreach ($request->imagen1 as $imagenes) {
             
-            if(file($imagenes)){
+            if($imagenes!=null ){
             $imagen  = new Imagen();  
 
               $original =$imagenes;

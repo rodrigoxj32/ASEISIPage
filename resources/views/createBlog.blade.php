@@ -28,7 +28,7 @@
         <div class="form-group">
             <label class="col-sm-2 control-label">Descripcion</label>
             <div class="col-sm-10">
-                <textarea rows="4" cols="50" class="form-control" name="Descripcion" maxlength="65530"></textarea>
+                <textarea rows="4" cols="50" class="form-control" name="Descripcion" maxlength="65530" required=""></textarea>
             </div>
         </div>
 
@@ -47,7 +47,7 @@
         <div class="form-group">
             <label class="col-sm-2 control-label">Seleccione las imagenes a subir</label>
             <div class="col-sm-10">
-                {!! form::file('imagen1[]', ['class' => 'form-control', 'multiple', 'accept'=>'.png,.jpg,.jpeg'])!!}
+                {!! form::file('imagen1[]', ['class' => 'form-control', 'multiple', 'accept'=>'.png,.jpg,.jpeg', 'required'])!!}
             </div>
         </div>
 
