@@ -68,6 +68,13 @@ Route::get('/publicidad',[
 	'as' => 'publicidadIndex'
 		]);
 
+
+Route::get('eliminarComentario/{id}/destroy',[
+		'middleware' => 'auth',
+        'uses' => 'ComentarioController@destroy',
+        'as' => 'eliminarComentario'
+        ]);
+
 /*FIN DE RUTA PARA EVENTOS*/
 
 
@@ -141,15 +148,12 @@ Route::get('/createBlog',[
 	'uses' => 'EventoController@index',
 	'as' => 'eventoCreate'
 		]);
+
 Route::post('/guardarBlog',[
         'uses' => 'EventoController@store',
         'as' => 'guardarBlog'
         ]);
 
-Route::get('eliminarComentario/{id}/destroy',[
-        'uses' => 'ComentarioController@destroy',
-        'as' => 'eliminarComentario'
-        ]);
 Route::get('eliminarEvento/{id}/destroy',[
         'uses' => 'EventoController@destroy',
         'as' => 'eliminarEvento'

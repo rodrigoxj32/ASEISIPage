@@ -105,9 +105,9 @@
                     <th > <font size="5">Comentarios</font> </th>
                     @if (Auth::guest())
                     @else
-                    @if(Auth::user()->rol_id == 1)
-                    <th > <font size="5">Eliminar</font> </th>
-                    @endif
+                        @if(Auth::user()->rol_id == 1)
+                            <th > <font size="5">Eliminar</font> </th>
+                        @endif
                     @endif
                 </tr>
             </thead>
@@ -120,9 +120,13 @@
                     <td ><font size="4">{{$comen->opinion}}</font> </td>
                     @if (Auth::guest())
                     @else
-                    @if(Auth::user()->rol_id == 1)
-                    <td width="10%"><a href=" {{route('eliminarComentario',$comen->id)}}" onclick="return confirm('¿Seguro que deseas eliminarlo?')" class="btn btn-danger"><font color="black" size="2"> <b>Eliminar</b></font></a> </td>
-                    @endif
+                        @if(Auth::user()->rol_id == 1)
+                            <td width="10%"><a href=" {{route('eliminarComentario',$comen->id)}}" onclick="return confirm('¿Seguro que deseas eliminarlo?')" class="btn btn-danger"><font color="black" size="2"> <b>Eliminar</b></font></a> </td>
+                        @else
+                            @if(Auth::user()->id == $co->id)
+                                <td width="10%"><a href=" {{route('eliminarComentario',$comen->id)}}" onclick="return confirm('¿Seguro que deseas eliminarlo?')" class="btn btn-danger"><font color="black" size="2"> <b>Eliminar</b></font></a> </td>
+                            @endif
+                        @endif
                     @endif      					
                 </tr>
 
