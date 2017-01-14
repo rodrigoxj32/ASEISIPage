@@ -98,7 +98,7 @@
 
 <div class="row">
     <div class="col-lg-10">
-        <table class="table" style="margin-left: 10%;margin-right: 10%;">
+        <table class="table" style="margin-left: 1%;margin-right: 5%;">
             <thead>
                 <tr>
                     <th width="20%"> <font size="5">Nombre</font> </th>
