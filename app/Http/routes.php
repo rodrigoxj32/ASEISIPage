@@ -42,8 +42,6 @@ Route::post('login', 'Auth\AuthController@postLogin');
 Route::get('auth/logout', 'Auth\AuthController@getLogout');
 
 
-
-
 /*RUTAS PARA EVENTO*/
 Route::get('/evento',[
 	'uses' => 'EventoController@show',
@@ -98,7 +96,6 @@ Route::get('/tiempo',[
 		]);
 
 /*FIN DE RUTAS PARA EVENTO TIEMPO*/
-
 
 
 
